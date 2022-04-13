@@ -12,7 +12,7 @@
         \\ Black 0
         CatppuccinBlack0="22,19,32"
         \\ Black 4
-		CatppuccinSelection="87,82,104"
+		CatppuccinBlack4="87,82,104"
         \\ Black 3
         CatppuccinBlack3="48,45,65"
         \\ Black 4
@@ -49,33 +49,33 @@
 		\\ spectrum bg, menu highlight, counter, button highlight
 		Accent2="242,143,173" 
 
-		ToolbarBG="CatppuccinBackground"
+		ToolbarBG="CatppuccinBlack3"
 		HeaderBG="CatppuccinBackground"
 		PanelBG="CatppuccinBackground"
 		MainBG="CatppuccinBackground"
 
 		ScrollbarBG="CatppuccinBackground"
-		ScrollbarButton="CatppuccinSelection"
-		ScrollbarButtonHighlight="CatppuccinComment"
+		ScrollbarButton="CatppuccinGray1"
+		ScrollbarButtonHighlight="CatppuccinSky"
 		
 		TextHighlight="CatppuccinPink"
 		TextHeader="Accent1"
 		TextDefault="CatppuccinForeground"
-		TextLowLight="CatppuccinSelection"
-		TextMin="CatppuccinComment"
+		TextLowLight="CatppuccinGray1"
+		TextMin="CatppuccinGray1"
 		
-		Highlight="CatppuccinSelection"
-		Highlight-Bdr="CatppuccinComment"
+		Highlight="CatppuccinGray1"
+		Highlight-Bdr="Accent1"
 		Highlight-Disabled="CatppuccinBackground"
 		Highlight-Text="CatppuccinBlack0"
 
-		SelectedPlayingPanel="CatppuccinSelection"
-		SelectedPlayingPanelLow="CatppuccinSelection"
-		SelectedFilterPanel="CatppuccinSelection"
-		SelectedFilterPanelLow="CatppuccinSelection"
-		SelectedMainPanel="CatppuccinSelection"
-		SelectedMainPanelLow="CatppuccinSelection"
-        Selected="CatppuccinSelection"
+		SelectedPlayingPanel="CatppuccinGray1"
+		SelectedPlayingPanelLow="CatppuccinGray1"
+		SelectedFilterPanel="CatppuccinGray1"
+		SelectedFilterPanelLow="CatppuccinGray1"
+		SelectedMainPanel="CatppuccinGray1"
+		SelectedMainPanelLow="CatppuccinGray1"
+        Selected="CatppuccinGray1"
 
         Button="CatppuccinBlack4"
         Button-Bdr="CatppuccinGray1"
@@ -98,12 +98,12 @@
 	<element id="MenuIcon" fg="220,220,220" />
 \\ Menus
 	<element id="Menu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
-	<element id="Menu.ParentItem.Pressed" bg="43,43,43" fg="Highlight-Text"/>
-	<element id="Menu.DropDown.Default" bg="43,43,43" fg="TextDefault" bdr="86,86,86" />
+	<element id="Menu.ParentItem.Pressed" bg="CatppuccinBackgroundDarker" fg="Highlight-Text"/>
+	<element id="Menu.DropDown.Default" bg="CatppuccinBackgroundDarker" fg="TextDefault" bdr="86,86,86" />
 	<element id="Menu.DropDown.Highlight" bg="Accent2" bdr="Accent1" />
 	<element id="Menu.DropDown.HighlightText" fg="Highlight-Text" />
 	<element id="Menu.DropDown.Disabled" fg="140,140,140" />
-	<element id="Menu.DropDownMargin" bg="50,50,50" />
+	<element id="Menu.DropDownMargin" bg="CatppuccinBackground" />
 	<element id="Menu.DropDownSeparator" bg="100,100,100" />
 	<element id="Menu.DropDownCheckBox.Default" bg="Accent2" />
 	<element id="Menu.DropDownCheckBox.Highlight" bg="Accent2" />
@@ -113,7 +113,7 @@
 	<element id="Menu.Header" bg="120,120,120" fg="245,245,245" />
 	<element id="InlineMenuBar.Default" bg="0,100,0,0" fg="120,120,120" />
 	<element id="InlineMenu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
-	<element id="InlineMenu.ParentItem.Pressed" bg="43,43,43" fg="Highlight-Text" />
+	<element id="InlineMenu.ParentItem.Pressed" bg="CatppuccinBackgroundDarker" fg="Highlight-Text" />
 
 \\ TOOLBAR  
 \\ Tabs (in Toolbar)
@@ -156,14 +156,14 @@
 \\ SearchBox (in ToolBar)
 	<element id="Controls.SearchBoxSplitter" bg="ToolbarBG" />
 	<element id="Panel.SearchBox" bdr="55,55,55" />
-	<element id="Controls.SearchBox.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
+	<element id="Controls.SearchBox.Default" bg="CatppuccinBackground" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
 	<element id="Controls.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
 	<element id="Panel.SearchBox.NotActivated" bg="42,42,42" bg2="42,42,42" bdr="55,55,55" /> <!-- inactive searchbox -->
 \\ SearchBox (in Toolbar with Player on Top)
-	<element id="Controls.SearchBoxPTop.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" />
+	<element id="Controls.SearchBoxPTop.Default" bg="CatppuccinBackground" fg="220,220,220" bdr="55,55,55" />
 	<element id="Controls.SearchBoxPTop.NotActivated" bg="42,42,42" bg2="42,42,42" bdr="55,55,55" />
 \\ SearchBox (in CaptionBar)
-	<element id="CaptionBar.SearchBox.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
+	<element id="CaptionBar.SearchBox.Default" bg="CatppuccinBackground" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
 	<element id="CaptionBar.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
 	<element id="CaptionBar.SearchBox.NotActivated" bg="42,42,42" bdr="55,55,55" /> <!-- inactive searchbox -->
 	
