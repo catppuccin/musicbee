@@ -13,7 +13,7 @@
 
 An unofficial WIP [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
 
-Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), which itself on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
+Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), which itself is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
 ## Usage
 
