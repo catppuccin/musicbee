@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg988"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="C:\Users\James\Desktop\Catppuccin-MusicBee\Images\Others\UnknownArtist.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview990"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="false"
+     inkscape:object-paths="false"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-page="false"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="474.8222"
+     inkscape:cy="670.33723"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:object-nodes="false"
+     inkscape:snap-others="false" />
+  <defs
+     id="defs985" />
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1e1e2e;fill-opacity:1;stroke-width:2.16444"
+       id="rect1071"
+       width="210"
+       height="210"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Body">
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Body Outer">
+      <path
+         style="mix-blend-mode:normal;fill:#575268;fill-opacity:1;stroke:none;stroke-width:0.2625px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 23.625,210 v -23.625 c 0,-0.58697 0,-64.3084 81.375,-64.3125 81.36625,-0.004 81.375,64.3125 81.375,64.3125 V 210 Z"
+         id="path2593"
+         sodipodi:nodetypes="cszccc" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="Body Inner">
+      <path
+         style="fill:#ddb6f2;fill-opacity:1;stroke:none;stroke-width:0.2625px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 28.35,210 v -23.625 c 0,-0.58697 0.0016,-59.85113 76.65,-59.85 76.64843,10e-4 76.65,59.85 76.65,59.85 V 210 Z"
+         id="path1722"
+         sodipodi:nodetypes="cszccc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Head">
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Head Outer">
+      <circle
+         style="fill:#575268;stroke-width:0.0721995"
+         id="path1176"
+         cx="105"
+         cy="68.775002"
+         r="44.099998" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="Head Inner">
+      <circle
+         style="fill:#ddb6f2;fill-opacity:1;stroke-width:0.0631171"
+         id="path1302"
+         cx="105"
+         cy="68.775002"
+         r="39.375" />
+    </g>
+  </g>
+</svg>

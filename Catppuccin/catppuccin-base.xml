@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+
+	<variables>
+        \\ Black 2
+		CatppuccinBackground="30,30,46"
+        \\ Black 1
+		CatppuccinBackgroundDarker="26,24,38"
+        \\ Black 4
+		CatppuccinSelection="87,82,104"
+        \\ White
+		CatppuccinForeground="217,224,238"
+        \\ TODO: What is this
+		CatppuccinComment="98,114,164"
+        \\ Sky
+		CatppuccinSky="137,220,235"
+        \\ Green
+		CatppuccinGreen="171,233,179"
+        \\ Peach
+		CatppuccinPeach="248,189,150"
+        \\ Pink
+		CatppuccinPink="245,194,231"
+        \\ Mauve
+		CatppuccinMauve="221,182,242"
+        \\ Red
+		CatppuccinRed="242,143,173"
+        \\ Yellow
+		CatppuccinYellow="250,227,176"
+
+        Background="CatppuccinBackground"
+        BackgroundDarker="CatppuccinBackgroundDarker"
+
+		ToolbarBG="CatppuccinBackground"
+		HeaderBG="CatppuccinBackground"
+		PanelBG="CatppuccinBackground"
+		MainBG="CatppuccinBackground"
+
+		ScrollbarBG="CatppuccinBackground"
+		ScrollbarButton="CatppuccinSelection"
+		ScrollbarButtonHighlight="CatppuccinComment"
+		
+		TextHighlight="CatppuccinPink"
+		TextHeader="CatppuccinMauve"
+		TextDefault="CatppuccinForeground"
+		TextLowLight="CatppuccinSelection"
+		TextMin="CatppuccinComment"
+		
+		Highlight="CatppuccinSelection"
+		Highlight-Bdr="CatppuccinComment"
+		Highlight-Disabled="CatppuccinBackground"
+		Highlight-Text="CatppuccinForeground"
+		Highlight-Text-Menus="CatppuccinMauve"
+
+		\\ EpisodeNotPlayed, menu item border, panel spectrum
+		Accent="CatppuccinMauve"
+
+		\\ spectrum bg, menu highlight, counter, button highlight
+		AccentDarker="CatppuccinPink" 
+
+		SelectedPlayingPanel="CatppuccinSelection"
+		SelectedPlayingPanelLow="CatppuccinSelection"
+		SelectedFilterPanel="CatppuccinSelection"
+		SelectedFilterPanelLow="CatppuccinSelection"
+		SelectedMainPanel="CatppuccinSelection"
+		SelectedMainPanelLow="CatppuccinSelection"
+        Selected="CatppuccinSelection"
+	</variables>
+
+<colours id="Default">
+\\ Windows
+	<element id="ApplicationBackColour" bg="ToolbarBG" /> <!-- Main Window -->
+	<element id="WindowBackColour" bg="MainBG" /> <!-- Secondary Floating Windows -->
+\\ CaptionBar
+	<element id="TitlebarActiveForeColour" bg="Highlight-Text" />
+	<element id="TitlebarInactiveForeColour" bg="TextLowLight" /> 
+	<element id="MenuBar.Default" bg="ToolbarBG" fg="TextLowLight" /> <!-- When Menubar is below Captionbar -->
+	<element id="MenuBarSeparator" bg="ToolbarBG" /> <!-- line below menubar -->
+	<element id="MenuButton.Default" bg="175,40,40,40" bg2="175,40,40,40" fg="220,220,220" bdr="75,75,75" /> <!-- MusicBee header button --> 
+	<element id="MenuButton.Border" bg="ToolbarBG" />
+	<element id="MenuIcon" fg="220,220,220" />
+\\ Menus
+	<element id="Menu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
+	<element id="Menu.ParentItem.Pressed" bg="43,43,43" fg="Highlight-Text"/>
+	<element id="Menu.DropDown.Default" bg="43,43,43" fg="Highlight-Text" bdr="86,86,86" />
+	<element id="Menu.DropDown.Highlight" bg="AccentDarker" bdr="Accent" />
+	<element id="Menu.DropDown.HighlightText" fg="Highlight-Text-Menus" />
+	<element id="Menu.DropDown.Disabled" fg="140,140,140" />
+	<element id="Menu.DropDownMargin" bg="50,50,50" />
+	<element id="Menu.DropDownSeparator" bg="100,100,100" />
+	<element id="Menu.DropDownCheckBox.Default" bg="AccentDarker" />
+	<element id="Menu.DropDownCheckBox.Highlight" bg="AccentDarker" />
+	<element id="Menu.DropDownCheckBoxBorder.Default" bg="51,51,51" />
+	<element id="Menu.DropDownCheckBoxBorder.Highlight" bg="70,0,0,0" />
+	<element id="Menu.DropDownCheckBoxImage" fg="255,255,255" />
+	<element id="Menu.Header" bg="120,120,120" fg="245,245,245" />
+	<element id="InlineMenuBar.Default" bg="0,100,0,0" fg="120,120,120" />
+	<element id="InlineMenu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
+	<element id="InlineMenu.ParentItem.Pressed" bg="43,43,43" fg="Highlight-Text" />
+
+\\ TOOLBAR  
+\\ Tabs (in Toolbar)
+	<element id="TabsBar.Background" bg="ToolbarBG" bdr="ToolbarBG" /> 
+	<element id="TabsBar.Tab.Default" bg="ToolbarBG" fg="125,125,125" bdr="ToolbarBG" /> 
+	<element id="TabsBar.Tab.Highlight" bg="ToolbarBG" bg2="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
+	<element id="TabsBar.BorderLine" bdr="ToolbarBG" />
+	<element id="TabsBar.Tab.Separator" bg="ToolbarBG" />
+	<element id="TabsBar.InactiveTabIconMask" bg="193,27,27,27" />
+	<element id="TabsBar.DropCursor" bg="Highlight" />
+\\ Tabs (in Toolbar with Player on Top)
+	<element id="TabsBarPTop.Background" bg="ToolbarBG" />
+	<element id="TabsBarPTop.Tab.Default" bg="ToolbarBG" fg="125,125,125" bdr="ToolbarBG" />
+	<element id="TabsBarPTop.Tab.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
+	<element id="TabsBarPTop.BorderLine" bg="ToolbarBG" />		
+	<element id="TabsBarPTop.Tab.Separator" bg="ToolbarBG" /> 
+	<element id="TabsBarPTop.InactiveTabIconMask" bg="193,27,27,27" />	
+\\ Tabs (in CaptionBar)
+	<element id="TabsBar.TabInCaptionBar.Default" bg="ToolbarBG" fg="120,120,120" bdr="ToolbarBG" />
+	<element id="TabsBar.TabInCaptionBar.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
+	<element id="TabsBar.TabInCaptionBar.BorderLine" bdr="ToolbarBG" />
+	<element id="TabsBar.TabInCaptionBar.Separator" bg="ToolbarBG" />
+	<element id="TabsBar.InactiveTabInCaptionIconMask" bg="193,27,27,27" />
+	<element id="TabsBar.TabInCaptionBarBlended.InactiveTabIconMask" bg="193,27,27,27" />
+\\ Tabs (in CaptionBar with Player on Top)
+	<element id="TabsBar.TabInCaptionBarTop.Default" bg="ToolbarBG" fg="120,120,120" bdr="ToolbarBG" />
+	<element id="TabsBar.TabInCaptionBarTop.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
+
+\\ Command Buttons (in ToolBar)
+	<element id="Panel.HeaderButtonOverride.Default" fg="TextDefault" /> <!-- Button color -->
+	<element id="Panel.HeaderButtonOverride.Disabled" fg="TextLowLight" /> <!-- Button disabled -->
+	<element id="Panel.HeaderButtonOverride.Highlight" bg="MainBG" /> <!-- bg of highlighted button -->
+	<element id="Panel.CommandButtonOverride" bg="ToolbarBG" fg="TextDefault" /> <!-- Custom text buttons -->
+\\ Command Buttons (in CaptionBar)
+	<element id="CaptionBar.HeaderControl.Default" fg="TextDefault" /> <!-- Clickable Toolbar buttons -->
+	<element id="CaptionBar.HeaderControl.Disabled" fg="TextLowLight"  /> <!-- Disabled Toolbar buttons -->
+	<element id="CaptionBar.CommandIconOverride" fg="TextDefault" /> <!-- Custom icon Toolbar buttons override -->  
+	<element id="CaptionBar.CommandButtonOverride" bg="ToolbarBG" fg="TextDefault" /> <!-- Custom text buttons -->
+	
+\\ SearchBox (in ToolBar)
+	<element id="Controls.SearchBoxSplitter" bg="ToolbarBG" />
+	<element id="Panel.SearchBox" bdr="55,55,55" />
+	<element id="Controls.SearchBox.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
+	<element id="Controls.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
+	<element id="Panel.SearchBox.NotActivated" bg="42,42,42" bg2="42,42,42" bdr="55,55,55" /> <!-- inactive searchbox -->
+\\ SearchBox (in Toolbar with Player on Top)
+	<element id="Controls.SearchBoxPTop.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" />
+	<element id="Controls.SearchBoxPTop.NotActivated" bg="42,42,42" bg2="42,42,42" bdr="55,55,55" />
+\\ SearchBox (in CaptionBar)
+	<element id="CaptionBar.SearchBox.Default" bg="50,50,50" fg="220,220,220" bdr="55,55,55" /> <!-- active searchbox -->
+	<element id="CaptionBar.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
+	<element id="CaptionBar.SearchBox.NotActivated" bg="42,42,42" bdr="55,55,55" /> <!-- inactive searchbox -->
+	
+\\ COMMON ELEMENTS  
+\\ ScrollBars
+	<element id="Panel.ScrollBar.Default" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" /> <!-- Scroll Bar Body -->
+	<element id="Panel.ScrollBarThumb.Default" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" /> <!-- Scroll Bar Buttons -->
+	<element id="Panel.ScrollBarBackground.Default" bg="ScrollbarBG" bg2="ScrollbarBG" /> <!-- Scroll Bar Background -->	
+	<element id="Panel.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
+\\ Ratings  
+	<element id="Panel.StarRating.Default" fg="TextDefault" fg2="38,38,38" />
+	<element id="Panel.StarRating.Highlight" fg="Highlight-Text" fg2="115,115,115" />
+	<element id="Panel.StarRating.Lowlight" fg="Highlight-Text" fg2="115,115,115" />
+	<element id="Panel.NotLovedIcon.Highlight" fg="Highlight-Text" fg2="Highlight-Text" />
+	<element id="Panel.NotLovedIcon.Lowlight" fg2="Highlight-Text" />
+
+\\ PANELS
+\\ Panel Headers
+	<element id="HeaderBar" bg="HeaderBG" fg="TextHeader" bdr="HeaderBG" /> <!-- Override top row headers, fg also for A-Z jumpbar -->
+	<element id="Panel.ChildHeader.Default" bg="HeaderBG" fg="TextHeader" bdr="HeaderBG" /> <!-- panel headers -->
+	<element id="Panel.SubHeader.Default" bg="MainBG" fg="TextLowLight" /> <!-- A-Z jumpbar vertical -->
+	<element id="AzBar.Default" fg="145,145,145" />
+	<element id="AzBar.AzBar.Lowlight" fg="120,120,120" />
+	
+\\ Left Panel
+	<element id="Panel.SectionHeader.Default" bg="PanelBG" bg2="PanelBG" fg="120,120,120" /> <!-- Section Titles -->
+	<element id="Panel.Body.Default" bg="PanelBG" fg="TextDefault" bdr="MainBG" /> <!-- ATTENTION: bdr around ALL panels -->
+	<element id="Panel.Body.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" />
+	<element id="Panel.Body.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" />
+	<element id="Controls.Counter" bg="AccentDarker" fg="Highlight-Text" /> <!-- Inbox Indicator -->
+	<element id="LeftNavigator.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
+
+\\ Generic Panels (Library Explorer Panel, Track Information Panel, Lyrics Panel, Bio Panel)
+	<element id="Panel.ChildBody.Default" bg="PanelBG" fg="TextDefault" />
+	<element id="Panel.ChildBody.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" />
+	<element id="Panel.ChildBody.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" />
+	<element id="Panel.ChildBody.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" /> 
+
+\\ Column Browser Panel
+	<element id="ColumnBrowser.ListHeader" bg="PanelBG" bg2="PanelBG" fg="TextMin" bdr="PanelBG" />
+	<element id="ColumnBrowser.Default" bg="MainBG" fg="TextDefault" />
+	<element id="ColumnBrowser.ListAlternating.Default" bg="BackgroundDarker" fg="TextDefault" />
+	<element id="ColumnBrowser.Highlight" bg="SelectedMainPanel" bdr="SelectedMainPanel" fg="Highlight-Text" />
+	<element id="ColumnBrowser.Lowlight" bg="SelectedMainPanelLow" bdr="SelectedMainPanelLow" fg="Highlight-Text" />
+	<element id="ColumnBrowser.ScrollBar" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" />
+	<element id="ColumnBrowser.ScrollBarBackground" bg="ScrollbarBG" />   
+	<element id="ColumnBrowser.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />  
+	<element id="ColumnBrowser.BottomBorderLine" bdr="50,50,50" /> 
+
+\\ Playing Tracks Panel
+	<element id="NowPlayingList[TrackDetail].ListHeader" bg="PanelBG" bg2="PanelBG" fg="TextMin" bdr="PanelBG" />
+	<element id="NowPlayingList[TrackDetail].Default" bg="PanelBG" fg="TextDefault" bdr="PanelBG" />
+	<element id="NowPlayingList[TrackDetail].ListAlternating.Default" bg="PanelBG" fg="TextDefault" />
+	<element id="NowPlayingList[TrackDetail].ListAlternating.Disabled" bg="PanelBG" fg="TextLowLight" />
+	<element id="NowPlayingList[TrackDetail].Highlight" bg="SelectedPlayingPanel" bdr="SelectedPlayingPanel" fg="Highlight-Text" />
+	<element id="NowPlayingList[TrackDetail].Lowlight" bg="SelectedPlayingPanelLow" bdr="SelectedPlayingPanelLow" fg="Highlight-Text" />
+	<element id="NowPlayingList[TrackDetail].Disabled" fg="TextLowLight" />
+	<element id="NowPlayingList.ScrollBar" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" />
+	<element id="NowPlayingList.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" />
+	<element id="NowPlayingList.ScrollBarBackground" bg="PanelBG" bg2="PanelBG" />
+	<element id="NowPlayingList.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
+
+\\ Filter Panel (Thumbnail Browser Panel)  
+	<element id="FilterPanel.ListHeader" bg="40,40,40" bg2="40,40,40" fg="100,100,100" bdr="40,40,40" /> <!-- deprecated? -->
+	<element id="FilterPanel.Default" bg="PanelBG" fg="TextDefault" fg2="TextMin" bdr="PanelBG" />
+	<element id="FilterPanel.ListAlternating.Default" bg="PanelBG" fg="TextDefault" fg2="TextMin" />
+	<element id="FilterPanel.ListAlternating.Disabled" fg="TextLowLight" />
+	<element id="FilterPanel.Highlight" bg="SelectedFilterPanel" bdr="SelectedFilterPanel" fg="Highlight-Text" fg2="TextMin"  />
+	<element id="FilterPanel.Lowlight" bg="SelectedFilterPanelLow" bdr="SelectedFilterPanelLow" fg="Highlight-Text" fg2="TextMin" />
+	<element id="FilterPanel.Disabled" fg="TextLowLight" />
+	<element id="FilterPanel.ScrollBar" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" />
+	<element id="FilterPanel.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" />
+	<element id="FilterPanel.ScrollBarBackground" bg="ScrollbarBG" bg2="ScrollbarBG" /> 
+	<element id="FilterPanel.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
+
+\\ Main Panel (Views: Tracks, Album and Tracks, Playing Tracks)
+	<element id="Content[TrackDetail].Header" fg="TextLowLight" />
+	<element id="Content[TrackDetail].HeaderLine" fg="TextDefault" />
+	<element id="Content[TrackDetail].Body.ListHeader" bg="PanelBG" bg2="PanelBG" fg="TextMin" bdr="PanelBG" />
+	<element id="Content[TrackDetail].Body.Default" bg="MainBG" fg="TextDefault" bdr="50,50,50" /> <!-- bg album from album&tracks view, fg speaker icon too -->
+	<element id="Content[TrackDetail].Body.Disabled" bg="MainBG" fg="115,115,115" />
+	<element id="Content[TrackDetail].Body.Highlight" bg="SelectedMainPanel" fg="Highlight-Text" />
+	<element id="Content[TrackDetail].Body.Lowlight" bg="SelectedMainPanelLow" fg="Highlight-Text" />
+	<element id="Content[TrackDetail].ListAlternating.Default" bg="BackgroundDarker" fg="TextDefault" />
+	<element id="Content[TrackDetail].ListAlternating.Disabled" bg="MainBG" fg="115,115,115" />
+	<element id="NowPlaying[AlbumAndTracks].AlbumSeparatorLine" bg="PanelBG" />
+\\ Main Panel (Views: Albums, Artists)
+	<element id="Content[AlbumAndTracks]" />
+	<element id="Content[AlbumAndTracks].Header" fg="TextHeader" /> <!-- Title color -->
+	<element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="55,55,55" /> <!-- Line below Title -->
+	<element id="Content[Artwork]" />
+	<element id="Content[Artwork].Header" bg="MainBG" fg="TextMin" bdr="MainBG" />
+	<element id="Content[Artwork].HeaderControl.Default" bg="Highlight-Text" bg2="Highlight-Text" fg="140,140,140" bdr="Highlight-Text"/> <!-- slider cover size -->
+	<element id="Content[Artwork].Body.Default" bg="MainBG" fg="TextHeader" /> <!-- Main Body -->
+	<element id="Content[Artwork].Body.Highlight" bg="70,70,70" />
+	<element id="Content[Artwork].Body.Lowlight" bg="60,60,60" />
+	<element id="Content[Artwork].ArtworkText" bg="MainBG" fg="TextHeader" />
+	<element id="Content[Artwork].GroupingHeader" fg="TextDefault" />
+	<element id="Content[Artwork].SplitterLine" bg="70,70,70" />
+	<element id="Content[NowPlaying].Body.Default" bg="PanelBG" fg="TextDefault" />
+	<element id="Controls.ArtworkFrame" bdr="55,55,55" />
+	<element id="Content[Artwork].ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
+	<element id="Content[ArtistProfile]" />
+	<element id="LyricsPanel" />
+	<element id="TrackInfoPanel" />
+	<element id="ArtworkPanel" />
+
+\\ Status Bar Panel
+	<element id="Panel.StatusBar.Default" bg="HeaderBG" fg="TextMin" bdr="HeaderBG" />
+	<element id="Panel.StatusBarControl.Default" fg="TextMin" /> <!-- Status Bar Buttons -->
+	
+\\ PLAYERS
+\\ Flat Player
+	<element id="PlayerFlat.Background" bg="Accent" bg2="Accent" />
+	<element id="PlayerFlat.DisplayPanel" bg="Accent" fg="0,0,0" fg2="10,10,10" />
+	<element id="PlayerFlat.ProgressBar" bg="Accent" fg="0,0,0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
+	<element id="PlayerFlat.ProgressButton" fg="Highlight" />
+	<element id="PlayerFlat.Control.Default" fg="230,230,230" />
+	<element id="PlayerFlat.Control.Disabled" fg="95,95,95" />
+	<element id="PlayerFlat.Control.Highlight" fg="Highlight" />
+	<element id="PlayerFlat.StarRating.Default" fg="0,0,0" />
+	<element id="PlayerFlat.StarRating.Lowlight" fg="145,0,0,0" />
+	<element id="PlayerFlat.NotLovedIcon" fg="80,80,80" />
+	<element id="PlayerFlat.SpectrumDefault" bg="Accent" />
+	<element id="PlayerFlat.SpectrumDead" bg="0,0,0" />
+	<element id="PlayerFlat.SpectrumLow" bg="0,0,0" />
+	<element id="PlayerFlat.SpectrumMedium" bg="0,0,0" />
+	<element id="PlayerFlat.SpectrumHigh" bg="0,0,0" />
+	<element id="PlayerFlat.Wavebar" fg="15,15,15" fg2="AccentDarker" />
+	<element id="PlayerFlat.Wavebar.Inner" fg="15,15,15" fg2="AccentDarker" />
+	<element id="PlayerFlat.MetroButton.Default" bg="20,20,20" bdr="20,20,20" />
+	<element id="PlayerFlat.MetroButton.Highlight" bg="20,20,20" bdr="20,20,20" />
+\\ Flat Player (on Top)
+	<element id="PlayerTopFlat.Background" bg="Accent" bg2="Accent" fg="0,0,0" bdr="Accent" />
+	<element id="PlayerTopFlat.DisplayPanel" bg="Accent" fg="0,0,0" fg2="10,10,10" />
+	<element id="PlayerTopFlat.ProgressBar" bg="Accent" fg="0,0,0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
+	<element id="PlayerTopFlat.ProgressButton" fg="Highlight" />
+	<element id="PlayerTopFlat.Control.Default" fg="230,230,230" />
+	<element id="PlayerTopFlat.Control.Disabled" fg="95,95,95" />
+	<element id="PlayerTopFlat.Control.Highlight" fg="Highlight" />
+	<element id="PlayerTopFlat.StarRating.Default" fg="0,0,0" />
+	<element id="PlayerTopFlat.StarRating.Lowlight" fg="145,0,0,0" />
+	<element id="PlayerTopFlat.NotLovedIcon" fg="80,80,80" />
+	<element id="PlayerTopFlat.SpectrumDefault" bg="Accent" />
+	<element id="PlayerTopFlat.SpectrumDead" bg="0,0,0" />
+	<element id="PlayerTopFlat.SpectrumLow" bg="0,0,0" />
+	<element id="PlayerTopFlat.SpectrumMedium" bg="0,0,0" />
+	<element id="PlayerTopFlat.SpectrumHigh" bg="0,0,0" />
+	<element id="PlayerTopFlat.Wavebar" fg="15,15,15" fg2="AccentDarker" />
+	<element id="PlayerTopFlat.Wavebar.Inner" fg="15,15,15" fg2="AccentDarker" />
+	<element id="PlayerTopFlat.MetroButton.Default" bg="20,20,20" bdr="20,20,20" />
+	<element id="PlayerTopFlat.MetroButton.Highlight" bg="20,20,20" bdr="20,20,20" />
+
+\\ SideBar Player
+	<element id="PlayerSidebar.Background" bg="PanelBG" fg="225,225,225" />
+	<element id="PlayerSidebar.Control.Default" bg="215,215,215" fg="135,135,135" /> 
+	<element id="PlayerSidebar.Control.Disabled" fg="100,100,100" /> 
+	<element id="PlayerSidebar.Control.Highlight" fg="255,255,255" /> 
+	<element id="PlayerSidebar.ProgressBar" bg="70,70,70" bdr="190,190,190" />
+	<element id="PlayerSidebar.ProgressButton" fg="250,250,250" />
+\\ Compact Player
+	<element id="Compact.LeftPanel" bg="20,20,20" />
+	<element id="Compact.RightPanel.Default" bg="40,40,40" fg="225,225,225" />
+	<element id="Compact.RightPanel.Disabled" bg="40,40,40" fg="120,120,120" />
+	<element id="Compact.RightPanel.Highlight" bg="Highlight" fg="235,235,235" />
+	<element id="Compact.RightPanel.Lowlight" bg="40,40,40" fg="235,235,235" />
+	<element id="Compact.RightPanel.ScrollBar" fg="50,50,50" />
+	<element id="Compact.Player.Background" bg="Accent" fg="0,0,0" />
+	<element id="Compact.Player.ProgressBar" bg="AccentDarker" fg="0,0,0" bdr="AccentDarker"/>
+	<element id="Compact.Player.ProgressButton" fg="255,255,255" />
+	<element id="Compact.Player.Control.Default" fg="0,0,0" />
+	<element id="Compact.Player.Control.Disabled" fg="66,0,0,0" />
+	<element id="Compact.Player.Control.Highlight" fg="0,0,0" />
+	<element id="Compact.Player.Wavebar" fg="15,15,15" fg2="AccentDarker" />
+	<element id="Compact.Player.Wavebar.Inner" fg="15,15,15" fg2="AccentDarker" />
+	<element id="Compact.Player.MetroButton.Default" bdr="0,0,0,0" />
+	<element id="Compact.Player.MetroButton.Highlight" bdr="0,0,0,0" />
+\\ Mini Player
+	<element id="PlayerMini.Background" bg="Background" bg2="Background" fg="TextDefault" />
+	<element id="PlayerMini.ProgressBar" bg="BackgroundDarker" fg="Accent" />
+	<element id="PlayerMini.ProgressButton" fg="255,255,255" />
+	<element id="PlayerMini.Control.Default" fg="TextDefault" />
+	<element id="PlayerMini.Control.Disabled" fg="66,0,0,0" />
+	<element id="PlayerMini.Control.Highlight" fg="Accent" />
+	<element id="PlayerMini.Spectrum" fg="Accent" />
+
+
+\\ PREFERENCES WINDOW
+\\ Main Settings
+	<element id="InputPanel.Default" bg="49,49,49" fg="195,195,195" bdr="HeaderBG" /> <!-- Main Settings Content -->
+	<element id="InputPanel.Highlight" fg="235,235,235"/>
+	<element id="Controls.FaintLine" bg="60,60,60" /> <!-- Section Line Divider -->
+	<element id="Controls.VerticalMenu.Default" bg="MainBG" fg="200,200,200" bdr="MainBG" /> <!-- Left Menu Unselected -->
+	<element id="Controls.VerticalMenu.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" /> <!-- Left Menu Selected -->
+	<element id="Controls.VerticalMenu.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" /> <!-- Left Menu Lowlight -->
+\\ Dropdown Menus and Editboxes 
+	<element id="Controls.DropdownButton.Default" bg="40,40,40" bg2="40,40,40" fg="180,180,180" bdr="40,40,40" />
+	<element id="Controls.DropdownButton.Disabled" bg="45,45,45" bg2="45,45,45" fg="70,70,70" bdr="45,45,45" />
+	<element id="Controls.DropdownButton.Highlight" bg="AccentDarker" bg2="AccentDarker" fg="Highlight-Text" bdr="45,45,45" />
+	<element id="Controls.InputControl.Default" bg="40,40,40" fg="180,180,180" bdr="90,90,90" />
+	<element id="Controls.InputControl.Disabled" bg="47,47,47" fg="110,110,110" bdr="60,60,60" />
+	<element id="Controls.InputControl.Highlight" bg="AccentDarker" fg="Highlight-Text" />
+	<element id="Controls.InputControl.Lowlight" bg="60,60,60" fg="180,180,180" />
+	<element id="Controls.ListHeader" bg="45,45,45" bg2="45,45,45" fg="100,100,100" />
+\\ Buttons and Sliders
+	<element id="Controls.Button.Default" bg="69,69,69" fg="210,210,210" bdr="45,45,45" />
+	<element id="Controls.Button.Highlight" bg="AccentDarker" fg="Highlight-Text" bdr="45,45,45" />
+	<element id="Controls.Button.Disabled" bg="60,60,60" fg="90,90,90" bdr="49,49,49" />
+	<element id="Controls.RadioButton.Default" bg="Accent" />
+	<element id="Controls.RadioButton.Disabled" bg="55,55,55" />
+	<element id="Controls.SliderLine.Default" fg="160,160,160" /> <!-- sliders -->
+	<element id="Controls.SliderLine.Disabled" fg="70,70,70" />
+	<element id="Controls.SliderButton.Default" bg="190,190,190" fg="190,190,190" />
+	<element id="Controls.SliderButton.Disabled" bg="80,80,80" fg="80,80,80" />
+\\ Scrollbars
+	<element id="Controls.ScrollBar.Default" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" /> 
+	<element id="Controls.ScrollBarThumb.Default" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" /> 
+	<element id="Controls.ScrollBarBackground.Default" bg="ScrollbarBG" bg2="ScrollbarBG" />
+	<element id="Controls.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" />
+\\ Misc  
+	<element id="Controls.DropAreaIndicator" fg="AccentDarker" />
+	<element id="Controls.DropRowIndicator" fg="Highlight-Text" />
+	<element id="Controls.AlbumThumb" fg="110,255,255,255" />
+	<element id="Controls.GenreThumb" fg="140,140,140" />
+	<element id="Controls.EpisodeDownloading" fg="TextHeader" />
+	<element id="Controls.SubscriptionCounter" bg="AccentDarker" fg="Highlight-Text" />
+	<element id="Controls.EpisodeNotPlayed" bg="Accent" />
+	<element id="Controls.LargeTickBoxFill" bg="40,40,40" />
+	<element id="Controls.PanelLayoutArea" bg="54,54,54" />
+	<element id="Controls.PanelLayoutIcon.Fill" bg="AccentDarker" bg2="AccentDarker"/>
+
+	<element id="Player.SpectrumVisualiser" fg="Accent" fg2="Accent" bdr="Highlight-Text" />
+	<element id="VolumeVisualiser" bg="PanelBG" fg="Accent" fg2="AccentDarker" />
+	<element id="VolumeVisualiserText" fg="TextDefault" />
+
+\\ OTHER SCREENS	
+\\ AutoDJ Screen
+	<element id="AutoDjPanel.SectionHeader.Default" bg="BackgroundDarker" fg="TextDefault" />  
+\\ Downloads Screen
+	<element id="Controls.ProgressBar" bg="35,35,35" fg="Highlight" bdr="60,60,60" />
+	<element id="Controls.ProgressBarButton" bg="70,70,70" fg="200,200,200" bdr="70,70,70" />
+	<element id="Controls.ProgressBarContainer" bg="40,40,40" />
+\\ Tags Editor Screen 
+	<element id="EditPanel.Default" bg="50,50,50" fg="200,200,200" bdr="85,85,85" />
+	<element id="EditPanel.Highlight"  /> 
+	<element id="Menu.CommandButton.Default" fg="TextLowLight" /> 
+	<element id="Menu.CommandButton.Selected" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+	<element id="Controls.TabHeader.Default" bg="39,39,39" fg="150,150,150" bdr="80,80,80" /> 
+	<element id="Controls.TabHeader.Highlight" bg="49,49,49" fg="220,220,220" /> 
+	<element id="Controls.TabHeader.Lowlight" bg="60,60,60" fg="110,110,110" />
+	<element id="Toolbar.Background" bg="40,40,40"  fg="235,235,235" />
+	<element id="Toolbar.Body" bg="34,34,34"  fg="180,180,180" />
+	<element id="Toolbar.Counter" bg="40,40,40" fg="235,235,235" />
+	<element id="TagEditorPanel.Header" bg="HeaderBG" fg="180,180,180" />
+	<element id="Controls.StarRating.Default" bg="50,50,50" fg="215,215,215" bdr="50,50,50" />
+	<element id="Controls.Arrow.Default" fg="TextDefault" />
+\\ Radio Screen (For old tabs compatibility)
+	<element id="Panel.TabSelector.Default" bg="Selected" fg="120,120,120" /> <!-- bg: separator, fg: unselected tab text -->
+	<element id="Panel.TabSelector.Highlight" bg="Selected" fg="200,200,200" bdr="0,110,110,110" /> <!-- active tab -->
+	<element id="Panel.TabSelector.Lowlight" bg="BackgroundDarker" bg2="BackgroundDarker" /> <!-- Mouseover tab -->
+\\ Now Playing Screen  
+	<element id="NowPlayingTrackInfo" bg="HeaderBG" fg="TextHeader" />
+	<element id="NowPlayingLargeAlbumTrackInfo" bg="HeaderBG" fg="TextHeader"  />
+\\ Now Playing Popup
+	<element id="NowPlayingPopup.Border" bdr="40,40,40"/>
+	<element id="NowPlayingPopup.Body" bg="30,30,30" bg2="30,30,30" fg="200,200,200" fg2="80,80,80" bdr="30,30,30" />
+	<element id="NavigatorPanel.Body.Default" />
+
+\\ Music Explorer
+	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="Accent" fg2="TextDefault" />
+ 	<element id="MusicExplorerHeaderBar.Default" bg="BackgroundDarker" fg="AccentDarker" />
+ 	<element id="MusicExplorerHeaderBar.Lowlight" fg="TextDefault" />
+ 	<element id="MusicExplorerHeaderBar.Highlight" fg="Accent" />
+ 	<element id="MusicExplorerTopTracks" bg="Selected" fg="TextDefault" />
+</colours>
+
+<settings>
+  <element id="AllowCenteredTabInCaptionBar">true</element>
+  <element id="AlwaysUseColumnBrowserColors">false</element>
+  <!-- <element id="ArtworkDimFactor">0.1</element> -->
+  <element id="Content[NowPlaying].Body.Default.DisableAdjustment">true</element>
+  <element id="DisableSinglePxBorder">false</element>
+  <element id="DisableWindowBorders">false</element>
+  <element id="MainPanelMargin.Left">0</element>
+  <element id="MainPanelMargin.Right">0</element>
+  <element id="MainPanelMargin.Top">0</element>
+  <element id="MainPanelMargin.Bottom">0</element>
+  <element id="MenuButtonSharp">true</element>
+  <element id="PlayerAutoColor">false</element>
+  <element id="PlayerAutoColorUsingStandardSkinRules">false</element>
+  <element id="PlayerInfoCentered">false</element>
+  <element id="PlayerMultilineSupported">true</element>
+  <!-- <element id="PlayerMultilineYAdjustment">-4</element> -->
+  <element id="PlayerProgressFractions">false</element>
+  <element id="PlayerSplitProgressTextFarAlign">true</element>
+  <!-- <element id="PlayerSplitProgressXAdj">xxx</element> -->
+  <!-- <element id="PlayerSplitProgressYAdj">xxx</element> -->
+  <!-- <element id="PlayerSplitProgressYOffset">0</element> -->
+  <!-- <element id="PlayerSplitProgressYOffset">Above</element> -->
+  <!-- <element id="PlayerSplitProgressYOffset">Below</element> -->
+  <!-- <element id="PlayerSplitProgressYOffset">Center</element> -->
+  <element id="PlayerWaveBarHideMultiLine">false</element>  
+  <element id="ScrollBarHighlightMouseOverPanel">true</element>
+  <element id="ScrollBarLowlightNarrowOnly">false</element>
+  <element id="ScrollBarMargin">3</element>
+  <element id="ScrollPanelMargin">5</element>
+  <element id="ScrollbarNoArrows">true</element>
+  <element id="ScrollBarSliderSquare">true</element>
+  <element id="UseArtworkBorders">true</element>
+  <element id="UseModernMenuButton">true</element>
+  <element id="UseNativeButtonTheme">false</element>
+  <element id="UseNativeWindow">false</element>
+  <element id="SlimIcons">false</element>
+  <element id="UseSquareTabCorners">false</element>
+  <element id="WindowBorderWidth">0</element>
+  <element id="PlayerAlignElementToDuration">TrackRating</element>
+  <element id="PlayerAlignElementToDuration">TrackLove</element>
+</settings>
+
+<images id="Default">
+
+<element id="LargeTick">Images\Icons\LargeTick.png</element>
+<element id="CheckTick">Images\Icons\CheckTick.png</element>
+<element id="CheckTickDisabled">Images\Icons\CheckTickDisabled.png</element>
+<element id="CheckUnknown">Images\Icons\CheckUnknown.png</element>
+<element id="PlayingIcon.Default">Images\Icons\PlayingIcon.png</element>
+<element id="PlayingIcon.Highlight">Images\Icons\PlayingIcon.png</element>
+<element id="PausedIcon.Default">Images\Icons\PausedIcon.png</element>
+<element id="PausedIcon.Highlight">Images\Icons\PausedIcon.png</element>
+
+<element id="PanelBack">Images\Icons\PanelBack.png</element>
+<element id="PanelForward">Images\Icons\PanelForward.png</element>
+<element id="MusicLibrary">Images\Icons\MusicLibrary.png</element>
+<element id="BookmarksIcon">Images\Icons\BookmarksIcon.png</element>
+<element id="PodcastsIcon">Images\Icons\PodcastsIcon.png</element>
+<element id="AudiobooksIcon">Images\Icons\AudiobooksIcon.png</element>
+<element id="VideoIcon">Images\Icons\VideoIcon.png</element>
+<element id="RadioIcon">Images\Icons\RadioIcon.png</element>
+<element id="InboxIcon">Images\Icons\InboxIcon.png</element>
+<element id="PlayHistoryIcon">Images\Icons\PlayHistoryIcon.png</element>
+<element id="NowPlayingIcon">Images\Icons\NowPlayingIcon.png</element>
+<element id="PlaylistAutoIcon">Images\Icons\PlaylistAutoIcon.png</element>
+<element id="MusicExplorerIcon">Images\Icons\MusicExplorerIcon.png</element>
+<element id="PlaylistDirectoryIcon">Images\Icons\PlaylistDirectoryIcon.png</element>
+<element id="PlaylistAutoDjIcon">Images\Icons\PlaylistAutoDjIcon.png</element>
+<element id="TrackSearchIcon">Images\Icons\TrackSearchIcon.png</element>
+<element id="UpcomingReleasesIcon">Images\Icons\UpcomingReleasesIcon.png</element>
+<element id="UpcomingConcertsIcon">Images\Icons\UpcomingConcertsIcon.png</element>
+<element id="FolderIcon">Images\Icons\FolderIcon.png</element>
+<element id="PlaylistIcon">Images\Icons\PlaylistIcon.png</element>
+<element id="PlaylistMixerIcon">Images\Icons\PlaylistMixerIcon.png</element>
+<element id="Visualiser">Images\Icons\Visualiser.png</element>
+<element id="LastFmPluginIcon">Images\Icons\LastFmPluginIcon.png</element>
+<element id="SearchMenuButton">Images\Icons\SearchMenuButton.png</element>
+<element id="SearchResultsIcon">Images\Icons\SearchResultsIcon.png</element>
+<element id="AddTabIcon">Images\Icons\AddTabIcon.png</element>
+<element id="AddTabIconInCaptionBar">Images\Icons\AddTabIconInCaptionBar.png</element>
+<element id="Controls.WebLinkIcon">Images\Icons\ControlsWebLinkIcon.png</element>
+<element id="ConsolidateButtonsIcon">Images\Icons\ConsolidateButtonsIcon.png</element>
+<element id="NotificationIcon">Images\Icons\NotificationIcon.png</element>
+<element id="DownloadIndicatorIcon">Images\Icons\DownloadIndicatorIcon.png</element>
+<element id="ZeroRating">Images\Icons\ZeroRating.png</element>
+<element id="EditSave">Images\Icons\EditSave.png</element>
+<element id="WebBrowserIcon">Images\Icons\WebBrowserIcon.png</element>
+<element id="SearchMenuButton">Images\Icons\SearchMenuButton.png</element>
+
+<element id="DeviceReadyIcon">Images\Icons\DeviceReadyIcon.png</element>
+<element id="NetworkDriveIcon">Images\Icons\NetworkDriveIcon.png</element>
+<element id="OpticalDriveIcon">Images\Icons\OpticalDriveIcon.png</element>
+<element id="StorageIcon">Images\Icons\StorageIcon.png</element>
+<element id="UsbDeviceIcon">Images\Icons\UsbDeviceIcon.png</element>
+<element id="WpdDeviceIcon">Images\Icons\WpdDeviceIcon.png</element>
+
+<element id="PanelLayout">Images\Icons\PanelLayout.png</element>
+<element id="AlertIcon">Images\Icons\AlertIcon.png</element>
+
+<element id="LastFmLove">Images\Icons\LastFmLove.png</element>
+<element id="LastFmNotLove">Images\Icons\LastFmNotLove.png</element>
+<element id="LastFmLoveSelected">Images\Icons\LastFmLove.png</element>
+
+<element id="PlayerLastFmLove">Images\Controls\CompactPlayerLastFmLove.png</element>
+
+<element id="MiniPlayerLastFmLove">  
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xh
+BQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACw8AAAsPAZL5A6UAAABFUExURUdwTAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAANmjrYIAAAAXdFJOUwBtIwWhRgammg1YAZFThEiHoICi
+hVtc7TdYtwAAAFNJREFUGNOdjkcKwDAQA9e915T/PzXsYuIEfPIcBJqLBLBDKLVF
+73xstQQUySAHZUJhzcQuxfURNwpxvj0LmnF99O7GsGbUmZ5flDRS/d7xzGGXByHc
+A3sOTxX0AAAAAElFTkSuQmCC
+</element>
+<element id="MiniPlayerLastFmLoveBright">
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xh
+BQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAA/UExURUdwTAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAALoT4l0AAAAVdFJOUwA8JkhVBxNbA1hQSjAuAUYoSTJZMx29Bg8A
+AABUSURBVBjTnY5JDsAgDAPZAgk7bf//1ioRKq3UE3Ow5LnYSu1Qe6KYIUdKvbIo
+gTklCwsXFu5XHC9xscDxdIsyA232BnMYtXSN64uhQObzzluvdrkB/EIDQ9qXf6kA
+AAAASUVORK5CYII=
+</element>
+ <element id="MiniPlayerLastFmNotLove">
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xh
+BQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAA2UExURQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+APdTTXAAAAASdFJOUzIECxUbMSgAAi8hLCknMBYZHACT2L4AAABVSURBVBjTlY9L
+DsAgCERBRfFv73/ZBmJqbbpo34Jk3mYGCA/gk+ilZYcut9JVDBBI7xARYRFfhbuJ
+QwT7K3vWFqwzV5w7OGlOvIZZArLbUuPNn182Tt84BW6Rx4VaAAAAAElFTkSuQmCC
+</element>
+
+<!-- Window Borders -->
+<element id="FormBorderBottom">Images\Window\Placeholder.png</element>
+<element id="FormBorderBottomLeft">Images\Window\Placeholder.png</element>
+<element id="FormBorderBottomRight">Images\Window\Placeholder.png</element>
+<element id="FormBorderLeft">Images\Window\Placeholder.png</element>
+<element id="FormBorderRight">Images\Window\Placeholder.png</element>
+<element id="FormBorderTop">Images\Window\FormBorderTop.png</element>
+<element id="FormBorderTopLeft">Images\Window\Placeholder.png</element>
+<element id="FormBorderTopRight">Images\Window\Placeholder.png</element>
+
+<!-- Window Buttons -->
+<element id="FormMinimiseButton">Images\Window\FormMinimiseButton.png</element>
+<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton.png</element>
+<element id="FormMaximiseButton">Images\Window\FormMaximiseButton.png</element>
+<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton.png</element>
+<element id="FormRestoreButton">Images\Window\FormRestoreButton.png</element>
+<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton.png</element>
+<element id="FormCloseButton">Images\Window\FormCloseButton.png</element>
+<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton.png</element>
+
+<element id="NoArtwork">Images\Others\NoArtwork.png</element>
+<element id="SplashScreen">Images\Others\SplashScreen.png</element>
+<element id="UnknownArtist">Images\Others\UnknownArtist.png</element>
+<element id="DragIcon">Images\Others\DragIcon.png</element>
+<element id="UnknownAlbumIcon">Images\Others\NoArtwork.png</element>
+
+</images>
+</root>
