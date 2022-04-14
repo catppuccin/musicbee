@@ -3,45 +3,45 @@
 <root>
 
 	<variables>
-        \\ Note: It seems that variables can reference another variable, but not a variable that references a variable.
+		\\ Note: It seems that variables can reference another variable, but not a variable that references a variable.
 
-        \\ Black 2
+		\\ Black 2
 		CatppuccinBackground="30,30,46"
-        \\ Black 1
+		\\ Black 1
 		CatppuccinBackgroundDarker="26,24,38"
-        \\ Black 0
-        CatppuccinBlack0="22,19,32"
-        \\ Black 4
+		\\ Black 0
+		CatppuccinBlack0="22,19,32"
+		\\ Black 4
 		CatppuccinBlack4="87,82,104"
-        \\ Black 3
-        CatppuccinBlack3="48,45,65"
-        \\ Black 4
-        CatppuccinBlack4="87,82,104"
-        \\ Gray 1
-        CatppuccinGray1="152,139,162"
-        \\ White
+		\\ Black 3
+		CatppuccinBlack3="48,45,65"
+		\\ Black 4
+		CatppuccinBlack4="87,82,104"
+		\\ Gray 1
+		CatppuccinGray1="152,139,162"
+		\\ White
 		CatppuccinForeground="217,224,238"
-        \\ TODO: What is this
+		\\ TODO: What is this
 		CatppuccinComment="98,114,164"
-        \\ Sky
+		\\ Sky
 		CatppuccinSky="137,220,235"
-        \\ Green
+		\\ Green
 		CatppuccinGreen="171,233,179"
-        \\ Peach
+		\\ Peach
 		CatppuccinPeach="248,189,150"
-        \\ Pink
+		\\ Pink
 		CatppuccinPink="245,194,231"
-        \\ Mauve
+		\\ Mauve
 		CatppuccinMauve="221,182,242"
-        \\ Red
+		\\ Red
 		CatppuccinRed="242,143,173"
-        \\ Yellow
+		\\ Yellow
 		CatppuccinYellow="250,227,176"
-        \\ Maroon
-        CatppuccinMaroon="232,162,175"
+		\\ Maroon
+		CatppuccinMaroon="232,162,175"
 
-        Background="CatppuccinBackground"
-        BackgroundDarker="CatppuccinBackgroundDarker"
+		Background="CatppuccinBackground"
+		BackgroundDarker="CatppuccinBackgroundDarker"
 
 		\\ Accent theme (Currently red)
 		Accent="242,143,173" 
@@ -72,13 +72,13 @@
 		SelectedFilterPanelLow="Accent"
 		SelectedMainPanel="Accent"
 		SelectedMainPanelLow="Accent"
-        Selected="Accent"
+		Selected="Accent"
 
-        Button="CatppuccinBlack4"
-        Button-Bdr="CatppuccinGray1"
-        Button-Disabled="CatppuccinBlack3"
-        Button-Disabled-Bdr="CatppuccinBlack3"
-        Button-Disabled-Fg="CatppuccinBlack4"
+		Button="CatppuccinBlack4"
+		Button-Bdr="CatppuccinGray1"
+		Button-Disabled="CatppuccinBlack3"
+		Button-Disabled-Bdr="CatppuccinBlack3"
+		Button-Disabled-Fg="CatppuccinBlack4"
 	</variables>
 
 <colours id="Default">
@@ -285,7 +285,7 @@
 	<element id="PlayerFlat.StarRating.Lowlight" fg="145,0,0,0" />
 	<element id="PlayerFlat.NotLovedIcon" fg="80,80,80" />
 	<element id="PlayerFlat.SpectrumDefault" bg="Accent" />
-    \\ TODO: Do something with this?
+	\\ TODO: Do something with this?
 	<element id="PlayerFlat.SpectrumDead" bg="CatppuccinBlack0" />
 	<element id="PlayerFlat.SpectrumLow" bg="CatppuccinBlack0" />
 	<element id="PlayerFlat.SpectrumMedium" bg="CatppuccinBlack0" />
