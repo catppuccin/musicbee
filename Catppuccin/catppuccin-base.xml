@@ -431,11 +431,11 @@
 	<element id="NavigatorPanel.Body.Default" />
 
 \\ Music Explorer
-	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="Accent" fg2="TextDefault" />
+	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="BackgroundDarker" fg2="BackgroundDarker" />
  	<element id="MusicExplorerHeaderBar.Default" bg="BackgroundDarker" fg="Accent" />
- 	<element id="MusicExplorerHeaderBar.Lowlight" fg="TextDefault" />
+ 	<element id="MusicExplorerHeaderBar.Lowlight" fg="BackgroundDarker" />
  	<element id="MusicExplorerHeaderBar.Highlight" fg="Accent" />
- 	<element id="MusicExplorerTopTracks" bg="Selected" fg="TextDefault" />
+ 	<element id="MusicExplorerTopTracks" bg="BackgroundDarker" fg="TextDefault" />
 </colours>
 
 <settings>
