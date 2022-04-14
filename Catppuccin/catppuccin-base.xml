@@ -228,8 +228,8 @@
 	<element id="FilterPanel.Default" bg="PanelBG" fg="TextDefault" fg2="TextMin" bdr="PanelBG" />
 	<element id="FilterPanel.ListAlternating.Default" bg="PanelBG" fg="TextDefault" fg2="TextMin" />
 	<element id="FilterPanel.ListAlternating.Disabled" fg="TextLowLight" />
-	<element id="FilterPanel.Highlight" bg="SelectedFilterPanel" bdr="SelectedFilterPanel" fg="Highlight-Text" fg2="TextMin"  />
-	<element id="FilterPanel.Lowlight" bg="SelectedFilterPanelLow" bdr="SelectedFilterPanelLow" fg="Highlight-Text" fg2="TextMin" />
+	<element id="FilterPanel.Highlight" bg="SelectedFilterPanel" bdr="SelectedFilterPanel" fg="Highlight-Text" fg2="CatppuccinBackground"  />
+	<element id="FilterPanel.Lowlight" bg="SelectedFilterPanelLow" bdr="SelectedFilterPanelLow" fg="Highlight-Text" fg2="CatppuccinBackground" />
 	<element id="FilterPanel.Disabled" fg="TextLowLight" />
 	<element id="FilterPanel.ScrollBar" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" />
 	<element id="FilterPanel.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" />
@@ -433,7 +433,7 @@
 \\ Music Explorer
 	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="BackgroundDarker" fg2="BackgroundDarker" />
  	<element id="MusicExplorerHeaderBar.Default" bg="BackgroundDarker" fg="Accent" />
- 	<element id="MusicExplorerHeaderBar.Lowlight" fg="BackgroundDarker" />
+ 	<element id="MusicExplorerHeaderBar.Lowlight" fg="TextDefault" />
  	<element id="MusicExplorerHeaderBar.Highlight" fg="Accent" />
  	<element id="MusicExplorerTopTracks" bg="BackgroundDarker" fg="TextDefault" />
 </colours>
