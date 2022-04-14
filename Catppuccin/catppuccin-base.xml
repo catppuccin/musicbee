@@ -43,11 +43,8 @@
         Background="CatppuccinBackground"
         BackgroundDarker="CatppuccinBackgroundDarker"
 
-        \\ EpisodeNotPlayed, menu item border, panel spectrum
-		Accent1="232,162,175"
-
-		\\ spectrum bg, menu highlight, counter, button highlight
-		Accent2="242,143,173" 
+		\\ Accent theme (Currently red)
+		Accent="242,143,173" 
 
 		ToolbarBG="CatppuccinBlack3"
 		HeaderBG="CatppuccinBackground"
@@ -56,26 +53,26 @@
 
 		ScrollbarBG="CatppuccinBackground"
 		ScrollbarButton="CatppuccinGray1"
-		ScrollbarButtonHighlight="CatppuccinMaroon"
+		ScrollbarButtonHighlight="Accent"
 		
-		TextHighlight="CatppuccinPink"
-		TextHeader="CatppuccinPink"
+		TextHighlight="Accent"
+		TextHeader="Accent"
 		TextDefault="CatppuccinForeground"
 		TextLowLight="CatppuccinGray1"
 		TextMin="CatppuccinGray1"
 		
-		Highlight="CatppuccinMaroon"
-		Highlight-Bdr="Accent1"
+		Highlight="Accent"
+		Highlight-Bdr="Accent"
 		Highlight-Disabled="CatppuccinBackground"
 		Highlight-Text="CatppuccinBlack0"
 
-		SelectedPlayingPanel="CatppuccinMaroon"
-		SelectedPlayingPanelLow="CatppuccinMaroon"
-		SelectedFilterPanel="CatppuccinMaroon"
-		SelectedFilterPanelLow="CatppuccinMaroon"
-		SelectedMainPanel="CatppuccinMaroon"
-		SelectedMainPanelLow="CatppuccinMaroon"
-        Selected="CatppuccinMaroon"
+		SelectedPlayingPanel="Accent"
+		SelectedPlayingPanelLow="Accent"
+		SelectedFilterPanel="Accent"
+		SelectedFilterPanelLow="Accent"
+		SelectedMainPanel="Accent"
+		SelectedMainPanelLow="Accent"
+        Selected="Accent"
 
         Button="CatppuccinBlack4"
         Button-Bdr="CatppuccinGray1"
@@ -100,13 +97,13 @@
 	<element id="Menu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
 	<element id="Menu.ParentItem.Pressed" bg="CatppuccinBackgroundDarker" fg="Highlight-Text"/>
 	<element id="Menu.DropDown.Default" bg="CatppuccinBackgroundDarker" fg="TextDefault" bdr="86,86,86" />
-	<element id="Menu.DropDown.Highlight" bg="Accent2" bdr="Accent1" />
+	<element id="Menu.DropDown.Highlight" bg="Accent" bdr="Accent" />
 	<element id="Menu.DropDown.HighlightText" fg="Highlight-Text" />
 	<element id="Menu.DropDown.Disabled" fg="140,140,140" />
 	<element id="Menu.DropDownMargin" bg="CatppuccinBackground" />
 	<element id="Menu.DropDownSeparator" bg="100,100,100" />
-	<element id="Menu.DropDownCheckBox.Default" bg="Accent2" />
-	<element id="Menu.DropDownCheckBox.Highlight" bg="Accent2" />
+	<element id="Menu.DropDownCheckBox.Default" bg="Accent" />
+	<element id="Menu.DropDownCheckBox.Highlight" bg="Accent" />
 	<element id="Menu.DropDownCheckBoxBorder.Default" bg="51,51,51" />
 	<element id="Menu.DropDownCheckBoxBorder.Highlight" bg="70,0,0,0" />
 	<element id="Menu.DropDownCheckBoxImage" fg="255,255,255" />
@@ -193,7 +190,7 @@
 	<element id="Panel.Body.Default" bg="PanelBG" fg="TextDefault" bdr="MainBG" /> <!-- ATTENTION: bdr around ALL panels -->
 	<element id="Panel.Body.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" />
 	<element id="Panel.Body.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" />
-	<element id="Controls.Counter" bg="Accent2" fg="Highlight-Text" /> <!-- Inbox Indicator -->
+	<element id="Controls.Counter" bg="Accent" fg="Highlight-Text" /> <!-- Inbox Indicator -->
 	<element id="LeftNavigator.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
 
 \\ Generic Panels (Library Explorer Panel, Track Information Panel, Lyrics Panel, Bio Panel)
@@ -277,9 +274,9 @@
 	
 \\ PLAYERS
 \\ Flat Player
-	<element id="PlayerFlat.Background" bg="Accent1" bg2="Accent1" />
-	<element id="PlayerFlat.DisplayPanel" bg="Accent1" fg="CatppuccinBlack0" fg2="10,10,10" />
-	<element id="PlayerFlat.ProgressBar" bg="Accent1" fg="CatppuccinBlack0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
+	<element id="PlayerFlat.Background" bg="Accent" bg2="Accent" />
+	<element id="PlayerFlat.DisplayPanel" bg="Accent" fg="CatppuccinBlack0" fg2="10,10,10" />
+	<element id="PlayerFlat.ProgressBar" bg="Accent" fg="CatppuccinBlack0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
 	<element id="PlayerFlat.ProgressButton" fg="Highlight" />
 	<element id="PlayerFlat.Control.Default" fg="230,230,230" />
 	<element id="PlayerFlat.Control.Disabled" fg="95,95,95" />
@@ -287,20 +284,20 @@
 	<element id="PlayerFlat.StarRating.Default" fg="CatppuccinBlack0" />
 	<element id="PlayerFlat.StarRating.Lowlight" fg="145,0,0,0" />
 	<element id="PlayerFlat.NotLovedIcon" fg="80,80,80" />
-	<element id="PlayerFlat.SpectrumDefault" bg="Accent2" />
+	<element id="PlayerFlat.SpectrumDefault" bg="Accent" />
     \\ TODO: Do something with this?
 	<element id="PlayerFlat.SpectrumDead" bg="CatppuccinBlack0" />
 	<element id="PlayerFlat.SpectrumLow" bg="CatppuccinBlack0" />
 	<element id="PlayerFlat.SpectrumMedium" bg="CatppuccinBlack0" />
 	<element id="PlayerFlat.SpectrumHigh" bg="CatppuccinBlack0" />
-	<element id="PlayerFlat.Wavebar" fg="15,15,15" fg2="Accent2" />
-	<element id="PlayerFlat.Wavebar.Inner" fg="15,15,15" fg2="Accent2" />
+	<element id="PlayerFlat.Wavebar" fg="15,15,15" fg2="Accent" />
+	<element id="PlayerFlat.Wavebar.Inner" fg="15,15,15" fg2="Accent" />
 	<element id="PlayerFlat.MetroButton.Default" bg="20,20,20" bdr="20,20,20" />
 	<element id="PlayerFlat.MetroButton.Highlight" bg="20,20,20" bdr="20,20,20" />
 \\ Flat Player (on Top)
-	<element id="PlayerTopFlat.Background" bg="Accent1" bg2="Accent1" fg="CatppuccinBlack0" bdr="Accent1" />
-	<element id="PlayerTopFlat.DisplayPanel" bg="Accent1" fg="CatppuccinBlack0" fg2="10,10,10" />
-	<element id="PlayerTopFlat.ProgressBar" bg="Accent1" fg="CatppuccinBlack0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
+	<element id="PlayerTopFlat.Background" bg="Accent" bg2="Accent" fg="CatppuccinBlack0" bdr="Accent" />
+	<element id="PlayerTopFlat.DisplayPanel" bg="Accent" fg="CatppuccinBlack0" fg2="10,10,10" />
+	<element id="PlayerTopFlat.ProgressBar" bg="Accent" fg="CatppuccinBlack0" bdr="20,20,20" /> <!-- fg is used for the fill colour -->
 	<element id="PlayerTopFlat.ProgressButton" fg="Highlight" />
 	<element id="PlayerTopFlat.Control.Default" fg="230,230,230" />
 	<element id="PlayerTopFlat.Control.Disabled" fg="95,95,95" />
@@ -308,13 +305,13 @@
 	<element id="PlayerTopFlat.StarRating.Default" fg="CatppuccinBlack0" />
 	<element id="PlayerTopFlat.StarRating.Lowlight" fg="145,0,0,0" />
 	<element id="PlayerTopFlat.NotLovedIcon" fg="80,80,80" />
-	<element id="PlayerTopFlat.SpectrumDefault" bg="Accent2" />
+	<element id="PlayerTopFlat.SpectrumDefault" bg="Accent" />
 	<element id="PlayerTopFlat.SpectrumDead" bg="CatppuccinBlack0" />
 	<element id="PlayerTopFlat.SpectrumLow" bg="CatppuccinBlack0" />
 	<element id="PlayerTopFlat.SpectrumMedium" bg="CatppuccinBlack0" />
 	<element id="PlayerTopFlat.SpectrumHigh" bg="CatppuccinBlack0" />
-	<element id="PlayerTopFlat.Wavebar" fg="15,15,15" fg2="Accent2" />
-	<element id="PlayerTopFlat.Wavebar.Inner" fg="15,15,15" fg2="Accent2" />
+	<element id="PlayerTopFlat.Wavebar" fg="15,15,15" fg2="Accent" />
+	<element id="PlayerTopFlat.Wavebar.Inner" fg="15,15,15" fg2="Accent" />
 	<element id="PlayerTopFlat.MetroButton.Default" bg="20,20,20" bdr="20,20,20" />
 	<element id="PlayerTopFlat.MetroButton.Highlight" bg="20,20,20" bdr="20,20,20" />
 
@@ -332,24 +329,24 @@
 	<element id="Compact.RightPanel.Highlight" bg="Highlight" fg="235,235,235" />
 	<element id="Compact.RightPanel.Lowlight" bg="CatppuccinBackground" fg="235,235,235" />
 	<element id="Compact.RightPanel.ScrollBar" fg="50,50,50" />
-	<element id="Compact.Player.Background" bg="Accent1" fg="CatppuccinBlack0" />
-	<element id="Compact.Player.ProgressBar" bg="Accent2" fg="CatppuccinBlack0" bdr="Accent2"/>
+	<element id="Compact.Player.Background" bg="Accent" fg="CatppuccinBlack0" />
+	<element id="Compact.Player.ProgressBar" bg="Accent" fg="CatppuccinBlack0" bdr="Accent"/>
 	<element id="Compact.Player.ProgressButton" fg="255,255,255" />
 	<element id="Compact.Player.Control.Default" fg="CatppuccinBlack0" />
 	<element id="Compact.Player.Control.Disabled" fg="66,0,0,0" />
 	<element id="Compact.Player.Control.Highlight" fg="CatppuccinBlack0" />
-	<element id="Compact.Player.Wavebar" fg="15,15,15" fg2="Accent2" />
-	<element id="Compact.Player.Wavebar.Inner" fg="15,15,15" fg2="Accent2" />
+	<element id="Compact.Player.Wavebar" fg="15,15,15" fg2="Accent" />
+	<element id="Compact.Player.Wavebar.Inner" fg="15,15,15" fg2="Accent" />
 	<element id="Compact.Player.MetroButton.Default" bdr="0,0,0,0" />
 	<element id="Compact.Player.MetroButton.Highlight" bdr="0,0,0,0" />
 \\ Mini Player
 	<element id="PlayerMini.Background" bg="Background" bg2="Background" fg="TextDefault" />
-	<element id="PlayerMini.ProgressBar" bg="CatppuccinBlack0" fg="Accent1" />
+	<element id="PlayerMini.ProgressBar" bg="CatppuccinBlack0" fg="Accent" />
 	<element id="PlayerMini.ProgressButton" fg="255,255,255" />
 	<element id="PlayerMini.Control.Default" fg="TextDefault" />
 	<element id="PlayerMini.Control.Disabled" fg="66,0,0,0" />
-	<element id="PlayerMini.Control.Highlight" fg="Accent1" />
-	<element id="PlayerMini.Spectrum" fg="Accent1" />
+	<element id="PlayerMini.Control.Highlight" fg="Accent" />
+	<element id="PlayerMini.Spectrum" fg="Accent" />
 
 
 \\ PREFERENCES WINDOW
@@ -363,17 +360,17 @@
 \\ Dropdown Menus and Editboxes 
 	<element id="Controls.DropdownButton.Default" bg="CatppuccinBackground" bg2="CatppuccinBackground" fg="180,180,180" bdr="CatppuccinBackground" />
 	<element id="Controls.DropdownButton.Disabled" bg="CatppuccinBlack3" bg2="CatppuccinBlack3" fg="70,70,70" bdr="CatppuccinBlack3" />
-	<element id="Controls.DropdownButton.Highlight" bg="Accent2" bg2="Accent2" fg="Highlight-Text" bdr="CatppuccinBlack3" />
+	<element id="Controls.DropdownButton.Highlight" bg="Accent" bg2="Accent" fg="Highlight-Text" bdr="CatppuccinBlack3" />
 	<element id="Controls.InputControl.Default" bg="CatppuccinBackground" fg="180,180,180" bdr="CatppuccinBlack4" />
 	<element id="Controls.InputControl.Disabled" bg="Button-Disabled" fg="Button-Disabled-Fg" bdr="Button-Disabled-Bdr" />
-	<element id="Controls.InputControl.Highlight" bg="Accent2" fg="Highlight-Text" />
+	<element id="Controls.InputControl.Highlight" bg="Accent" fg="Highlight-Text" />
 	<element id="Controls.InputControl.Lowlight" bg="CatppuccinBlack4" fg="180,180,180" />
 	<element id="Controls.ListHeader" bg="CatppuccinBlack3" bg2="CatppuccinBlack3" fg="100,100,100" />
 \\ Buttons and Sliders
 	<element id="Controls.Button.Default" bg="Button" fg="210,210,210" bdr="Button-Bdr" />
-	<element id="Controls.Button.Highlight" bg="Accent2" fg="Highlight-Text" bdr="Button-Bdr" />
+	<element id="Controls.Button.Highlight" bg="Accent" fg="Highlight-Text" bdr="Button-Bdr" />
 	<element id="Controls.Button.Disabled" bg="Button-Disabled" fg="Button-Disabled-Fg" bdr="Button-Disabled-Bdr" />
-	<element id="Controls.RadioButton.Default" bg="Accent1" />
+	<element id="Controls.RadioButton.Default" bg="Accent" />
 	<element id="Controls.RadioButton.Disabled" bg="CatppuccinBlack3" />
 	<element id="Controls.SliderLine.Default" fg="160,160,160" /> <!-- sliders -->
 	<element id="Controls.SliderLine.Disabled" fg="70,70,70" />
@@ -385,19 +382,19 @@
 	<element id="Controls.ScrollBarBackground.Default" bg="ScrollbarBG" bg2="ScrollbarBG" />
 	<element id="Controls.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" />
 \\ Misc  
-	<element id="Controls.DropAreaIndicator" fg="Accent2" />
+	<element id="Controls.DropAreaIndicator" fg="Accent" />
 	<element id="Controls.DropRowIndicator" fg="Highlight-Text" />
 	<element id="Controls.AlbumThumb" fg="110,255,255,255" />
 	<element id="Controls.GenreThumb" fg="140,140,140" />
 	<element id="Controls.EpisodeDownloading" fg="TextHeader" />
-	<element id="Controls.SubscriptionCounter" bg="Accent2" fg="Highlight-Text" />
-	<element id="Controls.EpisodeNotPlayed" bg="Accent1" />
+	<element id="Controls.SubscriptionCounter" bg="Accent" fg="Highlight-Text" />
+	<element id="Controls.EpisodeNotPlayed" bg="Accent" />
 	<element id="Controls.LargeTickBoxFill" bg="CatppuccinBackground" />
 	<element id="Controls.PanelLayoutArea" bg="54,54,54" />
-	<element id="Controls.PanelLayoutIcon.Fill" bg="Accent2" bg2="Accent2"/>
+	<element id="Controls.PanelLayoutIcon.Fill" bg="Accent" bg2="Accent"/>
 
-	<element id="Player.SpectrumVisualiser" fg="Accent1" fg2="Accent1" bdr="Highlight-Text" />
-	<element id="VolumeVisualiser" bg="PanelBG" fg="Accent1" fg2="Accent2" />
+	<element id="Player.SpectrumVisualiser" fg="Accent" fg2="Accent" bdr="Highlight-Text" />
+	<element id="VolumeVisualiser" bg="PanelBG" fg="Accent" fg2="Accent" />
 	<element id="VolumeVisualiserText" fg="TextDefault" />
 
 \\ OTHER SCREENS	
@@ -434,10 +431,10 @@
 	<element id="NavigatorPanel.Body.Default" />
 
 \\ Music Explorer
-	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="Accent1" fg2="TextDefault" />
- 	<element id="MusicExplorerHeaderBar.Default" bg="BackgroundDarker" fg="Accent2" />
+	<element id="MusicExplorerHeader" bg="Selected" bg2="Selected" fg="Accent" fg2="TextDefault" />
+ 	<element id="MusicExplorerHeaderBar.Default" bg="BackgroundDarker" fg="Accent" />
  	<element id="MusicExplorerHeaderBar.Lowlight" fg="TextDefault" />
- 	<element id="MusicExplorerHeaderBar.Highlight" fg="Accent1" />
+ 	<element id="MusicExplorerHeaderBar.Highlight" fg="Accent" />
  	<element id="MusicExplorerTopTracks" bg="Selected" fg="TextDefault" />
 </colours>
 
