@@ -172,8 +172,8 @@
 	<element id="Panel.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
 \\ Ratings  
 	<element id="Panel.StarRating.Default" fg="TextDefault" fg2="38,38,38" />
-	<element id="Panel.StarRating.Highlight" fg="Highlight-Text" fg2="115,115,115" />
-	<element id="Panel.StarRating.Lowlight" fg="Highlight-Text" fg2="115,115,115" />
+	<element id="Panel.StarRating.Highlight" fg="Highlight-Text" fg2="TextMin" />
+	<element id="Panel.StarRating.Lowlight" fg="Highlight-Text" fg2="TextMin" />
 	<element id="Panel.NotLovedIcon.Highlight" fg="Highlight-Text" fg2="Highlight-Text" />
 	<element id="Panel.NotLovedIcon.Lowlight" fg2="Highlight-Text" />
 
@@ -241,11 +241,11 @@
 	<element id="Content[TrackDetail].HeaderLine" fg="TextDefault" />
 	<element id="Content[TrackDetail].Body.ListHeader" bg="PanelBG" bg2="PanelBG" fg="TextMin" bdr="PanelBG" />
 	<element id="Content[TrackDetail].Body.Default" bg="MainBG" fg="TextDefault" bdr="50,50,50" /> <!-- bg album from album&tracks view, fg speaker icon too -->
-	<element id="Content[TrackDetail].Body.Disabled" bg="MainBG" fg="115,115,115" />
+	<element id="Content[TrackDetail].Body.Disabled" bg="MainBG" fg="TextMin" />
 	<element id="Content[TrackDetail].Body.Highlight" bg="SelectedMainPanel" fg="Highlight-Text" />
 	<element id="Content[TrackDetail].Body.Lowlight" bg="SelectedMainPanelLow" fg="Highlight-Text" />
 	<element id="Content[TrackDetail].ListAlternating.Default" bg="BackgroundDarker" fg="TextDefault" />
-	<element id="Content[TrackDetail].ListAlternating.Disabled" bg="MainBG" fg="115,115,115" />
+	<element id="Content[TrackDetail].ListAlternating.Disabled" bg="MainBG" fg="TextMin" />
 	<element id="NowPlaying[AlbumAndTracks].AlbumSeparatorLine" bg="PanelBG" />
 \\ Main Panel (Views: Albums, Artists)
 	<element id="Content[AlbumAndTracks]" />
@@ -260,7 +260,7 @@
 	<element id="Content[Artwork].ArtworkText" bg="MainBG" fg="TextHeader" />
 	<element id="Content[Artwork].GroupingHeader" fg="TextDefault" />
 	<element id="Content[Artwork].SplitterLine" bg="70,70,70" />
-	<element id="Content[NowPlaying].Body.Default" bg="PanelBG" fg="TextDefault" />
+	<element id="Content[NowPlaying].Body.Default" bg="CatppuccinBackgroundDarker" fg="TextDefault" />
 	<element id="Controls.ArtworkFrame" bdr="CatppuccinBlack3" />
 	<element id="Content[Artwork].ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
 	<element id="Content[ArtistProfile]" />
