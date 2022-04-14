@@ -6,6 +6,12 @@
 </h3>
 
 <p align="center">
+    <a href="https://github.com/James-McK/Catppuccin-MusicBee/stargazers"><img src="https://img.shields.io/github/stars/James-McK/Catppuccin-MusicBee?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
+    <a href="https://github.com/James-McK/Catppuccin-MusicBee/issues"><img src="https://img.shields.io/github/issues/James-McK/Catppuccin-MusicBee?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/James-McK/Catppuccin-MusicBee/contributors"><img src="https://img.shields.io/github/contributors/James-McK/Catppuccin-MusicBee?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+</p>
+
+<p align="center">
   <img src="https://github.com/James-McK/catppuccin-musicbee/blob/main/assets/screenshot.png"/>
 </p>
 
@@ -18,3 +24,26 @@ Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), whic
 ## Usage
 
 (TODO installation instructions)
+
+## Development
+
+This is my first attempt at using inkscape, so It'll take some time before I fully figure it out.
+
+### Things to do
+
+- [x] Basic theme
+- [ ] Create a themed icon
+- [ ] Clean up the XML
+- [ ] Bring icons into theme palette
+- [ ] Themes for different colours from the palette
+- [ ] Any other general improvements
+
+## 💝 Thanks to
+
+- [James](https://github.com/James-McK)
+
+&nbsp;
+
+<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
+<p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=302d41&colorB=c9cbff"/></a></p>
