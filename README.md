@@ -43,7 +43,7 @@ This is my first attempt at using inkscape, so It'll take some time before I ful
 
 ## 💝 Thanks to
 
-- [James](https://github.com/James-McK)
+- [James-McK](https://github.com/James-McK)
 
 &nbsp;
 
