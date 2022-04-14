@@ -35,7 +35,7 @@ This is my first attempt at using inkscape, so it'll take some time before I ful
 ### Things to do
 
 - [x] Basic theme
-- [ ] Create a themed icon
+- [x] Create a themed icon
 - [ ] Clean up the XML
 - [ ] Bring icons into theme palette
 - [ ] Themes for different colours from the palette
