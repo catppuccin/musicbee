@@ -23,7 +23,10 @@ Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), whic
 
 ## Usage
 
-(TODO installation instructions)
+1. Download the [catppuccin.xmlc](https://github.com/James-McK/Catppuccin-MusicBee/blob/main/Catppuccin/catppuccin.xmlc) file
+2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
+3. Browse and select the downloaded catppuccin.xmlc file
+4. MusicBee should restart with the selected theme applied
 
 ## Development
 
