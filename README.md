@@ -17,9 +17,9 @@
 
 ## About
 
-An unofficial WIP [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
+A still very WIP [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
 
-Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), which itself is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
+Based on [this](https://github.com/dracula/musicbee) Dracula MusicBee theme, which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
 ## Usage
 
@@ -30,7 +30,7 @@ Based on the [dracula musicbee theme](https://github.com/dracula/musicbee), whic
 
 ## Development
 
-This is my first attempt at using inkscape, so It'll take some time before I fully figure it out.
+This is my first attempt at using inkscape, so it'll take some time before I fully figure it out.
 
 ### Things to do
 
