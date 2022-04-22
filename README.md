@@ -34,16 +34,16 @@ This is my first attempt at using inkscape, so it'll take some time before I ful
 
 ### Things to do
 
-- [x] Basic theme
-- [x] Create a themed icon
-- [ ] Clean up the XML
-- [ ] Bring icons into theme palette
-- [ ] Themes for different colours from the palette
-- [ ] Any other general improvements
+-   [x] Basic theme
+-   [x] Create a themed icon
+-   [ ] Clean up the XML (In progress)
+-   [ ] Bring icons into theme palette (In progress)
+-   [ ] Themes for different colours from the palette
+-   [ ] Any other general improvements
 
 ## 💝 Thanks to
 
-- [James-McK](https://github.com/James-McK)
+-   [James-McK](https://github.com/James-McK)
 
 &nbsp;
 
