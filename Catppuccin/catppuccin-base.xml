@@ -78,13 +78,13 @@
 		ScrollbarBG="CatppuccinBlack2"
 		ScrollbarButton="CatppuccinGray3"
 		ScrollbarButtonHighlight="Accent"
-		
+
 		TextHighlight="Accent"
 		TextHeader="Accent"
 		TextDefault="CatppuccinForeground"
 		TextLowLight="CatppuccinGray3"
 		TextMin="CatppuccinGray3"
-		
+
 		Highlight="Accent"
 		Highlight-Bdr="Accent"
 		Highlight-Disabled="CatppuccinBlack2"
@@ -173,7 +173,7 @@
 		<element id="CaptionBar.HeaderControl.Disabled" fg="TextLowLight" /> <!-- Disabled Toolbar buttons -->
 		<element id="CaptionBar.CommandIconOverride" fg="TextDefault" /> <!-- Custom icon Toolbar buttons override -->
 		<element id="CaptionBar.CommandButtonOverride" bg="ToolbarBG" fg="TextDefault" /> <!-- Custom text buttons -->
-		
+
 	\\ SearchBox (in ToolBar)
 		<element id="Controls.SearchBoxSplitter" bg="ToolbarBG" />
 		<element id="Panel.SearchBox" bdr="CatppuccinBlack3" />
@@ -187,7 +187,7 @@
 		<element id="CaptionBar.SearchBox.Default" bg="CatppuccinBlack2" fg="CatppuccinForeground" bdr="CatppuccinBlack3" /> <!-- active searchbox -->
 		<element id="CaptionBar.SearchBox.Lowlight" fg="CatppuccinForeground" /> <!-- default search text & icon -->
 		<element id="CaptionBar.SearchBox.NotActivated" bg="CatppuccinBlack2" bdr="CatppuccinBlack3" /> <!-- inactive searchbox -->
-		
+
 	\\ COMMON ELEMENTS
 	\\ ScrollBars
 		<element id="Panel.ScrollBar.Default" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" /> <!-- Scroll Bar Body -->
@@ -295,7 +295,7 @@
 	\\ Status Bar Panel
 		<element id="Panel.StatusBar.Default" bg="HeaderBG" fg="TextMin" bdr="HeaderBG" />
 		<element id="Panel.StatusBarControl.Default" fg="TextMin" /> <!-- Status Bar Buttons -->
-		
+
 	\\ PLAYERS
 	\\ Flat Player
 		<element id="PlayerFlat.Background" bg="Accent" bg2="Accent" />
