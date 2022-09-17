@@ -34,6 +34,8 @@ Currently only working on this whenever I feel like it, so progress has been ver
 
 The theme is currently very flat - this is an issue I'm aware of and plan to get around to (hopefully soon)
 
+It's also possible the base colours are slightly too bright and should be shifted down by 1 - if you have any suggestions on either, let me know!
+
 ### Things to do
 
 -   [x] Basic theme
