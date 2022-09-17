@@ -1,0 +1,64 @@
+		\\ Crust
+		CatppuccinBlack0="17,17,27"
+		\\ Mantle
+		CatppuccinBlack1="24,24,37"
+		\\ Base
+		CatppuccinBlack2="30,30,46"
+		\\ Surface 0
+		CatppuccinBlack3="49,50,68"
+		\\ Surface 1
+		CatppuccinBlack4="69,71,90"
+
+		\\ Surface 2
+		CatppuccinGray0="88,91,112"
+		\\ Overlay 0
+		CatppuccinGray1="108,112,134"
+		\\ Overlay 1
+		CatppuccinGray2="127,132,156"
+		\\ Overlay 2
+		CatppuccinGray3="147,153,178"
+
+		\\ Subtext 0
+		CatppuccinGray4="166,173,200"
+		\\ Subtext 1
+		CatppuccinGray5="186,194,222"
+
+		\\ Text
+		CatppuccinForeground="205,214,244"
+
+		\\ Rosewater
+		CatppuccinRosewater="245,224,220"
+		\\ Flamingo
+		CatppuccinFlamingo="242,205,205"
+		\\ Pink
+		CatppuccinPink="245,194,231"
+		\\ Mauve
+		CatppuccinMauve="203,166,247"
+		\\ Red
+		CatppuccinRed="243,139,168"
+		\\ Maroon
+		CatppuccinMaroon="235,160,172"
+		\\ Peach
+		CatppuccinPeach="250,179,135"
+		\\ Yellow
+		CatppuccinYellow="249,226,175"
+		\\ Green
+		CatppuccinGreen="166,227,161"
+		\\ Teal
+		CatppuccinTeal="148,226,213"
+		\\ Sky
+		CatppuccinSky="137,220,235"
+		\\ Sapphire
+		CatppuccinSapphire="116,199,236"
+		\\ Blue
+		CatppuccinBlue="137,180,250"
+		\\ Lavender
+		CatppuccinLavender="180,190,254"
+
+
+		Background="CatppuccinBlack2"
+		BackgroundDarker="CatppuccinBlack1"
+
+		\\ Accent theme (Currently mauve)
+		\\ Note: For this to be fully applied, some images have to be manually updated
+		Accent="203,166,247"
