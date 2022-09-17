@@ -6,61 +6,61 @@
 		\\ https://github.com/catppuccin/catppuccin
 
 		\\ Crust
-		CatppuccinBlack0="17,17,27"
+		CatppuccinBlack0="220,224,232"
 		\\ Mantle
-		CatppuccinBlack1="24,24,37"
+		CatppuccinBlack1="230,233,239"
 		\\ Base
-		CatppuccinBlack2="30,30,46"
+		CatppuccinBlack2="239,241,245"
 		\\ Surface 0
-		CatppuccinBlack3="49,50,68"
+		CatppuccinBlack3="204,208,218"
 		\\ Surface 1
-		CatppuccinBlack4="69,71,90"
+		CatppuccinBlack4="188,192,204"
 
 		\\ Surface 2
-		CatppuccinGray0="88,91,112"
+		CatppuccinGray0="172,176,190"
 		\\ Overlay 0
-		CatppuccinGray1="108,112,134"
+		CatppuccinGray1="156,160,176"
 		\\ Overlay 1
-		CatppuccinGray2="127,132,156"
+		CatppuccinGray2="140,143,161"
 		\\ Overlay 2
-		CatppuccinGray3="147,153,178"
+		CatppuccinGray3="124,127,147"
 
 		\\ Subtext 0
-		CatppuccinGray4="166,173,200"
+		CatppuccinGray4="108,111,133"
 		\\ Subtext 1
-		CatppuccinGray5="186,194,222"
+		CatppuccinGray5="92,95,119"
 
 		\\ Text
-		CatppuccinForeground="205,214,244"
+		CatppuccinForeground="76,79,105"
 
 		\\ Rosewater
-		CatppuccinRosewater="245,224,220"
+		CatppuccinRosewater="220,138,120"
 		\\ Flamingo
-		CatppuccinFlamingo="242,205,205"
+		CatppuccinFlamingo="221,120,120"
 		\\ Pink
-		CatppuccinPink="245,194,231"
+		CatppuccinPink="234,118,203"
 		\\ Mauve
-		CatppuccinMauve="203,166,247"
+		CatppuccinMauve="136,57,239"
 		\\ Red
-		CatppuccinRed="243,139,168"
+		CatppuccinRed="210,15,57"
 		\\ Maroon
-		CatppuccinMaroon="235,160,172"
+		CatppuccinMaroon="230,69,83"
 		\\ Peach
-		CatppuccinPeach="250,179,135"
+		CatppuccinPeach="254,100,11"
 		\\ Yellow
-		CatppuccinYellow="249,226,175"
+		CatppuccinYellow="223,142,29"
 		\\ Green
-		CatppuccinGreen="166,227,161"
+		CatppuccinGreen="64,160,43"
 		\\ Teal
-		CatppuccinTeal="148,226,213"
+		CatppuccinTeal="23,146,153"
 		\\ Sky
-		CatppuccinSky="137,220,235"
+		CatppuccinSky="4,165,229"
 		\\ Sapphire
-		CatppuccinSapphire="116,199,236"
+		CatppuccinSapphire="32,159,181"
 		\\ Blue
-		CatppuccinBlue="137,180,250"
+		CatppuccinBlue="30,102,245"
 		\\ Lavender
-		CatppuccinLavender="180,190,254"
+		CatppuccinLavender="114,135,253"
 
 
 		Background="CatppuccinBlack2"
@@ -68,7 +68,7 @@
 
 		\\ Accent theme (Currently mauve)
 		\\ Note: For this to be fully applied, some images have to be manually updated
-		Accent="203,166,247"
+		Accent="136, 57, 239"
 
 		ToolbarBG="CatppuccinBlack3"
 		HeaderBG="CatppuccinBlack0"
