@@ -9,7 +9,7 @@
 
 <element id="Panel">
   <images stretchY1="1" stretchY2="1"
-    default="Images\Controls\Background-latte.png"
+    default="Images\Controls\Background-latte-hl-mauve.png"
   />
 </element>
 
