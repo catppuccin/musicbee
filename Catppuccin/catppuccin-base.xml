@@ -414,7 +414,7 @@
 		<element id="Controls.SubscriptionCounter" bg="Accent" fg="Highlight-Text" />
 		<element id="Controls.EpisodeNotPlayed" bg="Accent" />
 		<element id="Controls.LargeTickBoxFill" bg="CatppuccinBlack2" />
-		<element id="Controls.PanelLayoutArea" bg="54,54,54" />
+		<element id="Controls.PanelLayoutArea" bg="CatppuccinBlack0" />
 		<element id="Controls.PanelLayoutIcon.Fill" bg="Accent" bg2="Accent"/>
 
 		<element id="Player.SpectrumVisualiser" fg="Accent" fg2="Accent" bdr="Highlight-Text" />
