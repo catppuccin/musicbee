@@ -17,15 +17,19 @@
 
 ## About
 
-A still very WIP (Although now mostly usable) [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
+A WIP (Although now mostly usable) [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
 
 Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee theme, which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
 ## Usage
 
-1. Download the [catppuccin.xmlc](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.0.0/catppuccin.xmlc) file
+1. Download the `.xmlc` file for the palette you want
+  - [Latte](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-latte.xmlc)
+  - [Frappé](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-frappe.xmlc)
+  - [Macchiato](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-macchiato.xmlc)
+  - [Mocha](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-mocha.xmlc)
 2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
-3. Browse and select the downloaded catppuccin.xmlc file
+3. Browse and select the downloaded `catppuccin-palette.xmlc` file
 4. MusicBee should restart with the selected theme applied
 
 ## Development
@@ -41,9 +45,10 @@ It's also possible the base colours are slightly too bright and should be shifte
 -   [x] Basic theme
 -   [x] Create a themed icon
 -   [x] Find all the still unthemed bits
+-   [x] Theme for each palette
+-   [ ] Themes for different colours in each palette
 -   [ ] See if I can get the XML to make any sense
 -   [ ] Icons?
--   [ ] Themes for different colours in each pallette
 -   [ ] Any other general improvements
 
 ## 💝 Thanks to
