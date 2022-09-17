@@ -114,9 +114,9 @@
 		<element id="TitlebarInactiveForeColour" bg="TextLowLight" />
 		<element id="MenuBar.Default" bg="ToolbarBG" fg="TextLowLight" /> <!-- When Menubar is below Captionbar -->
 		<element id="MenuBarSeparator" bg="ToolbarBG" /> <!-- line below menubar -->
-		<element id="MenuButton.Default" bg="175,40,40,40" bg2="175,40,40,40" fg="220,220,220" bdr="75,75,75" /> <!-- MusicBee header button -->
+		<element id="MenuButton.Default" bg="175,40,40,40" bg2="175,40,40,40" fg="CatppuccinForeground" bdr="75,75,75" /> <!-- MusicBee header button -->
 		<element id="MenuButton.Border" bg="ToolbarBG" />
-		<element id="MenuIcon" fg="220,220,220" />
+		<element id="MenuIcon" fg="CatppuccinForeground" />
 	\\ Menus
 		<element id="Menu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight-Bdr" />
 		<element id="Menu.ParentItem.Pressed" bg="CatppuccinBlack1" fg="Highlight-Text"/>
@@ -177,15 +177,15 @@
 	\\ SearchBox (in ToolBar)
 		<element id="Controls.SearchBoxSplitter" bg="ToolbarBG" />
 		<element id="Panel.SearchBox" bdr="CatppuccinBlack3" />
-		<element id="Controls.SearchBox.Default" bg="CatppuccinBlack2" fg="220,220,220" bdr="CatppuccinBlack3" /> <!-- active searchbox -->
-		<element id="Controls.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
+		<element id="Controls.SearchBox.Default" bg="CatppuccinBlack2" fg="CatppuccinForeground" bdr="CatppuccinBlack3" /> <!-- active searchbox -->
+		<element id="Controls.SearchBox.Lowlight" fg="CatppuccinForeground" /> <!-- default search text & icon -->
 		<element id="Panel.SearchBox.NotActivated" bg="CatppuccinBlack2" bg2="CatppuccinBlack2" bdr="CatppuccinBlack3" /> <!-- inactive searchbox -->
 	\\ SearchBox (in Toolbar with Player on Top)
-		<element id="Controls.SearchBoxPTop.Default" bg="CatppuccinBlack2" fg="220,220,220" bdr="CatppuccinBlack3" />
+		<element id="Controls.SearchBoxPTop.Default" bg="CatppuccinBlack2" fg="CatppuccinForeground" bdr="CatppuccinBlack3" />
 		<element id="Controls.SearchBoxPTop.NotActivated" bg="CatppuccinBlack2" bg2="CatppuccinBlack2" bdr="CatppuccinBlack3" />
 	\\ SearchBox (in CaptionBar)
-		<element id="CaptionBar.SearchBox.Default" bg="CatppuccinBlack2" fg="220,220,220" bdr="CatppuccinBlack3" /> <!-- active searchbox -->
-		<element id="CaptionBar.SearchBox.Lowlight" fg="220,220,220" /> <!-- default search text & icon -->
+		<element id="CaptionBar.SearchBox.Default" bg="CatppuccinBlack2" fg="CatppuccinForeground" bdr="CatppuccinBlack3" /> <!-- active searchbox -->
+		<element id="CaptionBar.SearchBox.Lowlight" fg="CatppuccinForeground" /> <!-- default search text & icon -->
 		<element id="CaptionBar.SearchBox.NotActivated" bg="CatppuccinBlack2" bdr="CatppuccinBlack3" /> <!-- inactive searchbox -->
 		
 	\\ COMMON ELEMENTS
@@ -378,7 +378,7 @@
 		<element id="InputPanel.Default" bg="BackgroundDarker" fg="TextDefault" bdr="HeaderBG" /> <!-- Main Settings Content -->
 		<element id="InputPanel.Highlight" fg="235,235,235"/>
 		<element id="Controls.FaintLine" bg="CatppuccinBlack4" /> <!-- Section Line Divider -->
-		<element id="Controls.VerticalMenu.Default" bg="MainBG" fg="200,200,200" bdr="MainBG" /> <!-- Left Menu Unselected -->
+		<element id="Controls.VerticalMenu.Default" bg="MainBG" fg="CatppuccinForeground" bdr="MainBG" /> <!-- Left Menu Unselected -->
 		<element id="Controls.VerticalMenu.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" /> <!-- Left Menu Selected -->
 		<element id="Controls.VerticalMenu.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" /> <!-- Left Menu Lowlight -->
 	\\ Dropdown Menus and Editboxes
@@ -426,15 +426,15 @@
 		<element id="AutoDjPanel.SectionHeader.Default" bg="BackgroundDarker" fg="TextDefault" />
 	\\ Downloads Screen
 		<element id="Controls.ProgressBar" bg="35,35,35" fg="Highlight" bdr="CatppuccinBlack4" />
-		<element id="Controls.ProgressBarButton" bg="70,70,70" fg="200,200,200" bdr="70,70,70" />
+		<element id="Controls.ProgressBarButton" bg="70,70,70" fg="CatppuccinForeground" bdr="70,70,70" />
 		<element id="Controls.ProgressBarContainer" bg="CatppuccinBlack2" />
 	\\ Tags Editor Screen
-		<element id="EditPanel.Default" bg="50,50,50" fg="200,200,200" bdr="85,85,85" />
+		<element id="EditPanel.Default" bg="50,50,50" fg="CatppuccinForeground" bdr="85,85,85" />
 		<element id="EditPanel.Highlight" />
 		<element id="Menu.CommandButton.Default" fg="TextLowLight" />
 		<element id="Menu.CommandButton.Selected" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
 		<element id="Controls.TabHeader.Default" bg="39,39,39" fg="150,150,150" bdr="80,80,80" />
-		<element id="Controls.TabHeader.Highlight" bg="49,49,49" fg="220,220,220" />
+		<element id="Controls.TabHeader.Highlight" bg="49,49,49" fg="CatppuccinForeground" />
 		<element id="Controls.TabHeader.Lowlight" bg="CatppuccinBlack4" fg="110,110,110" />
 		<element id="Toolbar.Background" bg="CatppuccinBlack2" fg="235,235,235" />
 		<element id="Toolbar.Body" bg="34,34,34" fg="CatppuccinGray5" />
@@ -444,14 +444,14 @@
 		<element id="Controls.Arrow.Default" fg="TextDefault" />
 	\\ Radio Screen (For old tabs compatibility)
 		<element id="Panel.TabSelector.Default" bg="Selected" fg="CatppuccinGray2" /> <!-- bg: separator, fg: unselected tab text -->
-		<element id="Panel.TabSelector.Highlight" bg="Selected" fg="200,200,200" bdr="0,110,110,110" /> <!-- active tab -->
+		<element id="Panel.TabSelector.Highlight" bg="Selected" fg="CatppuccinForeground" bdr="0,110,110,110" /> <!-- active tab -->
 		<element id="Panel.TabSelector.Lowlight" bg="BackgroundDarker" bg2="BackgroundDarker" /> <!-- Mouseover tab -->
 	\\ Now Playing Screen
 		<element id="NowPlayingTrackInfo" bg="HeaderBG" fg="TextHeader" />
 		<element id="NowPlayingLargeAlbumTrackInfo" bg="HeaderBG" fg="TextHeader" />
 	\\ Now Playing Popup
 		<element id="NowPlayingPopup.Border" bdr="CatppuccinBlack2"/>
-		<element id="NowPlayingPopup.Body" bg="30,30,30" bg2="30,30,30" fg="200,200,200" fg2="80,80,80" bdr="30,30,30" />
+		<element id="NowPlayingPopup.Body" bg="30,30,30" bg2="30,30,30" fg="CatppuccinForeground" fg2="80,80,80" bdr="30,30,30" />
 		<element id="NavigatorPanel.Body.Default" />
 
 	\\ Music Explorer
