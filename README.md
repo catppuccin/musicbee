@@ -34,12 +34,7 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 
 ## Development
 
-Currently only working on this whenever I feel like it, so progress has been very slow.
-
-The theme is currently very flat - this is an issue I'm aware of and plan to get around to (hopefully soon)
-
-It's also possible the base colours are slightly too bright and should be shifted down by 1 - if you have any suggestions on either, let me know!
-
+Currently only working on this whenever I feel like it, so progress has been fairly sporadic
 ### Things to do
 
 -   [x] Basic theme
