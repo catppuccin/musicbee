@@ -40,9 +40,9 @@ It's also possible the base colours are slightly too bright and should be shifte
 
 -   [x] Basic theme
 -   [x] Create a themed icon
--   [ ] Find all the still unthemed bits
--   [ ] Clean up the XML (In progress)
--   [ ] Bring icons into theme palette (This may be too much work for me to ever do)
+-   [x] Find all the still unthemed bits
+-   [ ] See if I can get the XML to make any sense
+-   [ ] Icons?
 -   [ ] Themes for different colours in each pallette
 -   [ ] Any other general improvements
 
