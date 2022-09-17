@@ -595,14 +595,14 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop-latte.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder-latte.png</element>
 
 		<!-- Window Buttons -->
 		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton.png</element>
