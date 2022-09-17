@@ -76,7 +76,7 @@
 		MainBG="CatppuccinBlack2"
 
 		ScrollbarBG="CatppuccinBlack2"
-		ScrollbarButton="CatppuccinGray1"
+		ScrollbarButton="CatppuccinBlack4"
 		ScrollbarButtonHighlight="Accent"
 
 		TextHighlight="Accent"
