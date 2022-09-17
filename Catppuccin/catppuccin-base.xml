@@ -68,7 +68,7 @@
 
 		\\ Accent theme (Currently pink)
 		\\ Note: For this to be fully applied, some images have to be manually updated
-		Accent="245,189,230"
+		Accent="198,160,246"
 
 		ToolbarBG="CatppuccinBlack3"
 		HeaderBG="CatppuccinBlack2"
