@@ -382,13 +382,13 @@
 		<element id="Controls.VerticalMenu.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" /> <!-- Left Menu Selected -->
 		<element id="Controls.VerticalMenu.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" /> <!-- Left Menu Lowlight -->
 	\\ Dropdown Menus and Editboxes
-		<element id="Controls.DropdownButton.Default" bg="CatppuccinBlack2" bg2="CatppuccinBlack2" fg="180,180,180" bdr="CatppuccinBlack2" />
+		<element id="Controls.DropdownButton.Default" bg="CatppuccinBlack2" bg2="CatppuccinBlack2" fg="CatppuccinGray5" bdr="CatppuccinBlack2" />
 		<element id="Controls.DropdownButton.Disabled" bg="CatppuccinBlack3" bg2="CatppuccinBlack3" fg="70,70,70" bdr="CatppuccinBlack3" />
 		<element id="Controls.DropdownButton.Highlight" bg="Accent" bg2="Accent" fg="Highlight-Text" bdr="CatppuccinBlack3" />
-		<element id="Controls.InputControl.Default" bg="CatppuccinBlack2" fg="180,180,180" bdr="CatppuccinBlack4" />
+		<element id="Controls.InputControl.Default" bg="CatppuccinBlack2" fg="CatppuccinGray5" bdr="CatppuccinBlack4" />
 		<element id="Controls.InputControl.Disabled" bg="Button-Disabled" fg="Button-Disabled-Fg" bdr="Button-Disabled-Bdr" />
 		<element id="Controls.InputControl.Highlight" bg="Accent" fg="Highlight-Text" />
-		<element id="Controls.InputControl.Lowlight" bg="CatppuccinBlack4" fg="180,180,180" />
+		<element id="Controls.InputControl.Lowlight" bg="CatppuccinBlack4" fg="CatppuccinGray5" />
 		<element id="Controls.ListHeader" bg="CatppuccinBlack3" bg2="CatppuccinBlack3" fg="100,100,100" />
 	\\ Buttons and Sliders
 		<element id="Controls.Button.Default" bg="Button" fg="210,210,210" bdr="Button-Bdr" />
@@ -437,9 +437,9 @@
 		<element id="Controls.TabHeader.Highlight" bg="49,49,49" fg="220,220,220" />
 		<element id="Controls.TabHeader.Lowlight" bg="CatppuccinBlack4" fg="110,110,110" />
 		<element id="Toolbar.Background" bg="CatppuccinBlack2" fg="235,235,235" />
-		<element id="Toolbar.Body" bg="34,34,34" fg="180,180,180" />
+		<element id="Toolbar.Body" bg="34,34,34" fg="CatppuccinGray5" />
 		<element id="Toolbar.Counter" bg="CatppuccinBlack2" fg="235,235,235" />
-		<element id="TagEditorPanel.Header" bg="HeaderBG" fg="180,180,180" />
+		<element id="TagEditorPanel.Header" bg="HeaderBG" fg="CatppuccinGray5" />
 		<element id="Controls.StarRating.Default" bg="50,50,50" fg="215,215,215" bdr="50,50,50" />
 		<element id="Controls.Arrow.Default" fg="TextDefault" />
 	\\ Radio Screen (For old tabs compatibility)
