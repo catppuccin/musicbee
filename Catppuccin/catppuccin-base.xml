@@ -110,7 +110,7 @@
 		<element id="ApplicationBackColour" bg="ToolbarBG" /> <!-- Main Window -->
 		<element id="WindowBackColour" bg="MainBG" /> <!-- Secondary Floating Windows -->
 	\\ CaptionBar
-		<element id="TitlebarActiveForeColour" bg="Highlight-Text" />
+		<element id="TitlebarActiveForeColour" bg="CatppuccinForeground" />
 		<element id="TitlebarInactiveForeColour" bg="TextLowLight" />
 		<element id="MenuBar.Default" bg="ToolbarBG" fg="TextLowLight" /> <!-- When Menubar is below Captionbar -->
 		<element id="MenuBarSeparator" bg="ToolbarBG" /> <!-- line below menubar -->
