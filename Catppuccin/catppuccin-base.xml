@@ -71,8 +71,8 @@
 		Accent="203,166,247"
 
 		ToolbarBG="CatppuccinBlack3"
-		HeaderBG="CatppuccinBlack2"
-		PanelBG="CatppuccinBlack2"
+		HeaderBG="CatppuccinBlack0"
+		PanelBG="CatppuccinBlack1"
 		MainBG="CatppuccinBlack2"
 
 		ScrollbarBG="CatppuccinBlack2"
@@ -378,7 +378,7 @@
 		<element id="InputPanel.Default" bg="BackgroundDarker" fg="TextDefault" bdr="HeaderBG" /> <!-- Main Settings Content -->
 		<element id="InputPanel.Highlight" fg="CatppuccinForeground"/>
 		<element id="Controls.FaintLine" bg="CatppuccinBlack4" /> <!-- Section Line Divider -->
-		<element id="Controls.VerticalMenu.Default" bg="MainBG" fg="CatppuccinForeground" bdr="MainBG" /> <!-- Left Menu Unselected -->
+		<element id="Controls.VerticalMenu.Default" bg="PanelBG" fg="CatppuccinForeground" bdr="PanelBG" /> <!-- Left Menu Unselected -->
 		<element id="Controls.VerticalMenu.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" /> <!-- Left Menu Selected -->
 		<element id="Controls.VerticalMenu.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" /> <!-- Left Menu Lowlight -->
 	\\ Dropdown Menus and Editboxes
