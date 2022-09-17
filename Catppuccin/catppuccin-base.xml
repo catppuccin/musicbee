@@ -6,61 +6,61 @@
 		\\ https://github.com/catppuccin/catppuccin
 
 		\\ Crust
-		CatppuccinBlack0="220,224,232"
+		CatppuccinBlack0="35,38,52"
 		\\ Mantle
-		CatppuccinBlack1="230,233,239"
+		CatppuccinBlack1="41,44,60"
 		\\ Base
-		CatppuccinBlack2="239,241,245"
+		CatppuccinBlack2="48,52,70"
 		\\ Surface 0
-		CatppuccinBlack3="204,208,218"
+		CatppuccinBlack3="65,69,89"
 		\\ Surface 1
-		CatppuccinBlack4="188,192,204"
+		CatppuccinBlack4="81,87,109"
 
 		\\ Surface 2
-		CatppuccinGray0="172,176,190"
+		CatppuccinGray0="98,104,128"
 		\\ Overlay 0
-		CatppuccinGray1="156,160,176"
+		CatppuccinGray1="115,121,148"
 		\\ Overlay 1
-		CatppuccinGray2="140,143,161"
+		CatppuccinGray2="131,139,167"
 		\\ Overlay 2
-		CatppuccinGray3="124,127,147"
+		CatppuccinGray3="148,156,187"
 
 		\\ Subtext 0
-		CatppuccinGray4="108,111,133"
+		CatppuccinGray4="165,173,206"
 		\\ Subtext 1
-		CatppuccinGray5="92,95,119"
+		CatppuccinGray5="181,191,226"
 
 		\\ Text
-		CatppuccinForeground="76,79,105"
+		CatppuccinForeground="198,208,245"
 
 		\\ Rosewater
-		CatppuccinRosewater="220,138,120"
+		CatppuccinRosewater="242,213,207"
 		\\ Flamingo
-		CatppuccinFlamingo="221,120,120"
+		CatppuccinFlamingo="238,190,190"
 		\\ Pink
-		CatppuccinPink="234,118,203"
+		CatppuccinPink="244,184,228"
 		\\ Mauve
-		CatppuccinMauve="136,57,239"
+		CatppuccinMauve="202,158,230"
 		\\ Red
-		CatppuccinRed="210,15,57"
+		CatppuccinRed="231,130,132"
 		\\ Maroon
-		CatppuccinMaroon="230,69,83"
+		CatppuccinMaroon="234,153,156"
 		\\ Peach
-		CatppuccinPeach="254,100,11"
+		CatppuccinPeach="239,159,118"
 		\\ Yellow
-		CatppuccinYellow="223,142,29"
+		CatppuccinYellow="229,200,144"
 		\\ Green
-		CatppuccinGreen="64,160,43"
+		CatppuccinGreen="166,209,137"
 		\\ Teal
-		CatppuccinTeal="23,146,153"
+		CatppuccinTeal="129,200,190"
 		\\ Sky
-		CatppuccinSky="4,165,229"
+		CatppuccinSky="153,209,219"
 		\\ Sapphire
-		CatppuccinSapphire="32,159,181"
+		CatppuccinSapphire="133,193,220"
 		\\ Blue
-		CatppuccinBlue="30,102,245"
+		CatppuccinBlue="140,170,238"
 		\\ Lavender
-		CatppuccinLavender="114,135,253"
+		CatppuccinLavender="186,187,241"
 
 
 		Background="CatppuccinBlack2"
@@ -68,7 +68,7 @@
 
 		\\ Accent theme (Currently mauve)
 		\\ Note: For this to be fully applied, some images have to be manually updated
-		Accent="136, 57, 239"
+		Accent="202,158,230"
 
 		ToolbarBG="CatppuccinBlack3"
 		HeaderBG="CatppuccinBlack0"
@@ -595,14 +595,14 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop-latte.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder-latte.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop-frappe.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder-frappe.png</element>
 
 		<!-- Window Buttons -->
 		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton.png</element>
