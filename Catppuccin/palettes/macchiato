@@ -55,10 +55,6 @@
 		\\ Lavender
 		CatppuccinLavender="183,189,248"
 
-
-		Background="CatppuccinBlack2"
-		BackgroundDarker="CatppuccinBlack1"
-
 		\\ Accent theme (Currently mauve)
 		\\ Note: For this to be fully applied, some images have to be manually updated
 		Accent="198,160,246"
