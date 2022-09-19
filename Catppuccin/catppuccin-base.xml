@@ -6,65 +6,65 @@
 		\\ https://github.com/catppuccin/catppuccin
 
 		\\ Crust
-		CatppuccinBlack0="35,38,52"
+		CatppuccinBlack0="220,224,232"
 		\\ Mantle
-		CatppuccinBlack1="41,44,60"
+		CatppuccinBlack1="230,233,239"
 		\\ Base
-		CatppuccinBlack2="48,52,70"
+		CatppuccinBlack2="239,241,245"
 		\\ Surface 0
-		CatppuccinBlack3="65,69,89"
+		CatppuccinBlack3="204,208,218"
 		\\ Surface 1
-		CatppuccinBlack4="81,87,109"
+		CatppuccinBlack4="188,192,204"
 
 		\\ Surface 2
-		CatppuccinGray0="98,104,128"
+		CatppuccinGray0="172,176,190"
 		\\ Overlay 0
-		CatppuccinGray1="115,121,148"
+		CatppuccinGray1="156,160,176"
 		\\ Overlay 1
-		CatppuccinGray2="131,139,167"
+		CatppuccinGray2="140,143,161"
 		\\ Overlay 2
-		CatppuccinGray3="148,156,187"
+		CatppuccinGray3="124,127,147"
 
 		\\ Subtext 0
-		CatppuccinGray4="165,173,206"
+		CatppuccinGray4="108,111,133"
 		\\ Subtext 1
-		CatppuccinGray5="181,191,226"
+		CatppuccinGray5="92,95,119"
 
 		\\ Text
-		CatppuccinForeground="198,208,245"
+		CatppuccinForeground="76,79,105"
 
 		\\ Rosewater
-		CatppuccinRosewater="242,213,207"
+		CatppuccinRosewater="220,138,120"
 		\\ Flamingo
-		CatppuccinFlamingo="238,190,190"
+		CatppuccinFlamingo="221,120,120"
 		\\ Pink
-		CatppuccinPink="244,184,228"
+		CatppuccinPink="234,118,203"
 		\\ Mauve
-		CatppuccinMauve="202,158,230"
+		CatppuccinMauve="136,57,239"
 		\\ Red
-		CatppuccinRed="231,130,132"
+		CatppuccinRed="210,15,57"
 		\\ Maroon
-		CatppuccinMaroon="234,153,156"
+		CatppuccinMaroon="230,69,83"
 		\\ Peach
-		CatppuccinPeach="239,159,118"
+		CatppuccinPeach="254,100,11"
 		\\ Yellow
-		CatppuccinYellow="229,200,144"
+		CatppuccinYellow="223,142,29"
 		\\ Green
-		CatppuccinGreen="166,209,137"
+		CatppuccinGreen="64,160,43"
 		\\ Teal
-		CatppuccinTeal="129,200,190"
+		CatppuccinTeal="23,146,153"
 		\\ Sky
-		CatppuccinSky="153,209,219"
+		CatppuccinSky="4,165,229"
 		\\ Sapphire
-		CatppuccinSapphire="133,193,220"
+		CatppuccinSapphire="32,159,181"
 		\\ Blue
-		CatppuccinBlue="140,170,238"
+		CatppuccinBlue="30,102,245"
 		\\ Lavender
-		CatppuccinLavender="186,187,241"
+		CatppuccinLavender="114,135,253"
 
 		\\ Accent theme (Currently mauve)
 		\\ Note: For this to be fully applied, some images have to be manually updated
-		Accent="202,158,230"
+		Accent="136, 57, 239"
 
 
 		Background="CatppuccinBlack2"
@@ -595,24 +595,24 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop-frappe.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder-frappe.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder-frappe.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop-latte.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder-latte.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder-latte.png</element>
 
 		<!-- Window Buttons -->
-		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-frappe.png</element>
-		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-frappe.png</element>
-		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-frappe.png</element>
-		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-frappe.png</element>
-		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-frappe.png</element>
-		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-frappe.png</element>
-		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-frappe.png</element>
-		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-frappe.png</element>
+		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-latte.png</element>
+		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-latte.png</element>
+		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-latte.png</element>
+		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-latte.png</element>
+		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-latte.png</element>
+		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-latte.png</element>
+		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-latte.png</element>
+		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-latte.png</element>
 
 		<element id="NoArtwork">Images\Others\NoArtwork.png</element>
 		<element id="SplashScreen">Images\Others\SplashScreen.png</element>

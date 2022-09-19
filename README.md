@@ -24,8 +24,8 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 ## Usage
 
 1. Download the `.xmlc` file for the palette you want
-  - [Latte](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-frappe.xmlc)
-  - [Frappé](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-frappe.xmlc)
+  - [Latte](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-latte.xmlc)
+  - [Frappé](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-latte.xmlc)
   - [Macchiato](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-macchiato.xmlc)
   - [Mocha](https://github.com/James-McK/Catppuccin-MusicBee/releases/download/v2.1.0/catppuccin-mocha.xmlc)
 2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
