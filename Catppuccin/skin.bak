@@ -200,13 +200,13 @@
   <left relativeTo="Panel.Right" offset="-104" />
   <top relativeTo="Speaker.VerticalCenter" offset="0" />
   <images category="Slidebar" 
-    default="Images\Controls\VolumeSlidebar.png"
+    default="Images\Controls\volumeslidebar_theme-latte_bar-mono.png"
   />
   <images category="Button"
     default="Images\Controls\BarButton.png"
   />
   <images category="Filler"
-    default="Images\Controls\VolumeSlidebarFill.png"
+    default="Images\Controls\volumeslidebarfill_theme-latte_bar-mono.png"
   /> 
 </element>
 
