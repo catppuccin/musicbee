@@ -9,7 +9,7 @@
 
 <element id="Panel">
   <images stretchY1="1" stretchY2="1"
-    default="Images\Controls\Background-macchiato-hl-blue.png"
+    default="Images\Controls\Background_theme-macchiato_bar-mono-blue.png"
   />
 </element>
 
