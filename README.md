@@ -23,7 +23,7 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 
 ## Usage
 
-1. Download the `.xmlc` file for the palette and accent colour you want from [the released](https://github.com/James-McK/Catppuccin-MusicBee/releases/tag/v2.2.0)
+1. Download the `.xmlc` file for the palette and accent colour you want from [the releases](https://github.com/James-McK/Catppuccin-MusicBee/releases/tag/v2.2.0)
 2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
 3. Browse and select the downloaded `catppuccin-palette.xmlc` file
 4. MusicBee should restart with the selected theme applied
