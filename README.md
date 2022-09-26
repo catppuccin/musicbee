@@ -41,9 +41,10 @@ Currently only working on this whenever I feel like it, so progress has been fai
 -   [x] Create a themed icon
 -   [x] Find all the still unthemed bits
 -   [x] Theme for each palette
--   [ ] Themes for different colours in each palette
+-   [x] Themes for different colours in each palette
+-   [ ] Bring icons into theme - in progress
+-   [ ] Version without accented main bar
 -   [ ] See if I can get the XML to make any sense
--   [ ] Icons?
 -   [ ] Any other general improvements
 
 ## 💝 Thanks to
