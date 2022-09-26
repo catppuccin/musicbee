@@ -596,14 +596,14 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop-palette-placeholder.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder-palette-placeholder.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop_theme-palette-placeholder.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
 
 		<!-- Window Buttons -->
 		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-palette-placeholder.png</element>
