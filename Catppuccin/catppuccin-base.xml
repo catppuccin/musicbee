@@ -596,24 +596,24 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop-macchiato.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder-macchiato.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder-macchiato.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop-palette-placeholder.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder-palette-placeholder.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder-palette-placeholder.png</element>
 
 		<!-- Window Buttons -->
-		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-macchiato.png</element>
-		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-macchiato.png</element>
-		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-macchiato.png</element>
-		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-macchiato.png</element>
-		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-macchiato.png</element>
-		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-macchiato.png</element>
-		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-macchiato.png</element>
-		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-macchiato.png</element>
+		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-palette-placeholder.png</element>
+		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-palette-placeholder.png</element>
+		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-palette-placeholder.png</element>
+		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-palette-placeholder.png</element>
+		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-palette-placeholder.png</element>
+		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-palette-placeholder.png</element>
+		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-palette-placeholder.png</element>
+		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-palette-placeholder.png</element>
 
 		<element id="NoArtwork">Images\Others\NoArtwork.png</element>
 		<element id="SplashScreen">Images\Others\SplashScreen.png</element>

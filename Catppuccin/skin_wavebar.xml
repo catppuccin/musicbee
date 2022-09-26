@@ -9,7 +9,7 @@
 
 <element id="Panel">
   <images stretchY1="1" stretchY2="1"
-    default="Images\Controls\Background_theme-macchiato_bar-mono-blue.png"
+    default="Images\Controls\Background_theme-palette-placeholder_bar-mono-accent-placeholder.png"
   />
 </element>
 
@@ -18,9 +18,9 @@
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <!-- musicbee draws the |<< icon in the centre of this image. The colours for the musicbee drawn icon are determined from the skin file -->
   <images drawPlayButton="false"
-    default="Images\Controls\ButtonPrev_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\ButtonPrevHighlight_theme-macchiato_bar-mono.png"
-    disabled="Images\Controls\ButtonPrevDisabled_theme-macchiato_bar-mono.png"
+    default="Images\Controls\ButtonPrev_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\ButtonPrevHighlight_theme-palette-placeholder_bar-mono.png"
+    disabled="Images\Controls\ButtonPrevDisabled_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -48,9 +48,9 @@
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <!-- musicbee draws the >>| icon in the centre of this image if drawPlayButton="True" -->
   <images drawPlayButton="false"
-    default="Images\Controls\ButtonNext_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\ButtonNextHighlight_theme-macchiato_bar-mono.png"
-    disabled="Images\Controls\ButtonNextDisabled_theme-macchiato_bar-mono.png"
+    default="Images\Controls\ButtonNext_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\ButtonNextHighlight_theme-palette-placeholder_bar-mono.png"
+    disabled="Images\Controls\ButtonNextDisabled_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -81,16 +81,16 @@
   <left relativeTo="Panel.Right" offset="-344" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="NotLoved"
-    default="Images\Controls\LastFmNotLove_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\LastFmNotLoveHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\LastFmNotLove_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\LastFmNotLoveHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Loved"
-    default="Images\Controls\LastFmLove_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\LastFmLoveHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\LastFmLove_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\LastFmLoveHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Banned"
-    default="Images\Controls\Banned_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\BannedHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\Banned_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\BannedHighlight_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -98,16 +98,16 @@
   <left relativeTo="Panel.Right" offset="-304" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="Off"
-    default="Images\Controls\LastFmOff_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\LastFmOffHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\LastFmOff_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\LastFmOffHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="On"
-    default="Images\Controls\LastFmOn_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\LastFmOnHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\LastFmOn_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\LastFmOnHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Error"
-    default="Images\Controls\LastFmError_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\LastFmErrorHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\LastFmError_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\LastFmErrorHighlight_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -115,12 +115,12 @@
   <left relativeTo="Panel.Right" offset="-266" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="Off"
-    default="Images\Controls\EqualiserOff_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\EqualiserOffHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\EqualiserOff_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\EqualiserOffHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="On"
-    default="Images\Controls\EqualiserOn_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\EqualiserOnHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\EqualiserOn_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\EqualiserOnHighlight_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -128,16 +128,16 @@
   <left relativeTo="Panel.Right" offset="-228" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="Off"
-    default="Images\Controls\ShuffleOff_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\ShuffleOffHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\ShuffleOff_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\ShuffleOffHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="On"
-    default="Images\Controls\ShuffleOn_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\ShuffleOnHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\ShuffleOn_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\ShuffleOnHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="AutoDJ"
-    default="Images\Controls\ShuffleAutoDj_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\ShuffleAutoDjHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\ShuffleAutoDj_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\ShuffleAutoDjHighlight_theme-palette-placeholder_bar-mono.png"
   />  
 </element>
 
@@ -145,16 +145,16 @@
   <left relativeTo="Panel.Right" offset="-189" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="Off"
-    default="Images\Controls\RepeatOff_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\RepeatOffHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\RepeatOff_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\RepeatOffHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="On"
-    default="Images\Controls\RepeatOn_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\RepeatOnHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\RepeatOn_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\RepeatOnHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="One"
-    default="Images\Controls\RepeatOne_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\RepeatOneHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\RepeatOne_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\RepeatOneHighlight_theme-palette-placeholder_bar-mono.png"
   />  
 </element>
 
@@ -162,12 +162,12 @@
   <left relativeTo="Panel.Right" offset="-150" />
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <images category="MuteOff"
-    default="Images\Controls\VolumeOn_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\VolumeOnHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\VolumeOn_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\VolumeOnHighlight_theme-palette-placeholder_bar-mono.png"
   />
   <images category="MuteOn"
-    default="Images\Controls\VolumeOff_theme-macchiato_bar-mono.png"
-    highlight="Images\Controls\VolumeOffHighlight_theme-macchiato_bar-mono.png"
+    default="Images\Controls\VolumeOff_theme-palette-placeholder_bar-mono.png"
+    highlight="Images\Controls\VolumeOffHighlight_theme-palette-placeholder_bar-mono.png"
   />
 </element>
 
@@ -175,13 +175,13 @@
   <left relativeTo="Panel.Right" offset="-104" />
   <top relativeTo="Speaker.VerticalCenter" offset="0" />
   <images category="Slidebar" 
-    default="Images\Controls\volumeslidebar_theme-macchiato_bar-mono.png"
+    default="Images\Controls\volumeslidebar_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Button"
     default="Images\Controls\BarButton.png"
   />
   <images category="Filler"
-    default="Images\Controls\volumeslidebarfill_theme-macchiato_bar-mono.png"
+    default="Images\Controls\volumeslidebarfill_theme-palette-placeholder_bar-mono.png"
   /> 
 </element>
 
