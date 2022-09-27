@@ -209,7 +209,7 @@
 		<element id="Panel.SubHeader.Default" bg="MainBG" fg="TextLowLight" /> <!-- A-Z jumpbar vertical -->
 		<element id="AzBar.Default" fg="CatppuccinGray2" />
 		<element id="AzBar.AzBar.Lowlight" fg="CatppuccinGray2" />
-		
+
 	\\ Left Panel
 		<element id="Panel.SectionHeader.Default" bg="PanelBG" bg2="PanelBG" fg="CatppuccinGray2" /> <!-- Section Titles -->
 		<element id="Panel.Body.Default" bg="PanelBG" fg="TextDefault" bdr="MainBG" /> <!-- ATTENTION: bdr around ALL panels -->
@@ -222,7 +222,7 @@
 		<element id="Panel.ChildBody.Default" bg="PanelBG" fg="TextDefault" />
 		<element id="Panel.ChildBody.Highlight" bg="SelectedFilterPanel" fg="Highlight-Text" />
 		<element id="Panel.ChildBody.Lowlight" bg="SelectedFilterPanelLow" fg="Highlight-Text" />
-		<element id="Panel.ChildBody.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" /> 
+		<element id="Panel.ChildBody.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
 
 	\\ Column Browser Panel
 		<element id="ColumnBrowser.ListHeader" bg="PanelBG" bg2="PanelBG" fg="TextMin" bdr="PanelBG" />
@@ -258,7 +258,7 @@
 		<element id="FilterPanel.Disabled" fg="TextLowLight" />
 		<element id="FilterPanel.ScrollBar" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" bdr="ScrollbarButtonHighlight" />
 		<element id="FilterPanel.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" />
-		<element id="FilterPanel.ScrollBarBackground" bg="ScrollbarBG" bg2="ScrollbarBG" /> 
+		<element id="FilterPanel.ScrollBarBackground" bg="ScrollbarBG" bg2="ScrollbarBG" />
 		<element id="FilterPanel.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" bdr="ScrollbarButton" />
 
 	\\ Main Panel (Views: Tracks, Album and Tracks, Playing Tracks)
@@ -342,9 +342,9 @@
 
 	\\ SideBar Player
 		<element id="PlayerSidebar.Background" bg="PanelBG" fg="CatppuccinForeground" />
-		<element id="PlayerSidebar.Control.Default" bg="CatppuccinForeground" fg="CatppuccinGray2" /> 
-		<element id="PlayerSidebar.Control.Disabled" fg="CatppuccinGray0" /> 
-		<element id="PlayerSidebar.Control.Highlight" fg="255,255,255" /> 
+		<element id="PlayerSidebar.Control.Default" bg="CatppuccinForeground" fg="CatppuccinGray2" />
+		<element id="PlayerSidebar.Control.Disabled" fg="CatppuccinGray0" />
+		<element id="PlayerSidebar.Control.Highlight" fg="255,255,255" />
 		<element id="PlayerSidebar.ProgressBar" bg="CatppuccinBlack4" bdr="CatppuccinGray5" />
 		<element id="PlayerSidebar.ProgressButton" fg="CatppuccinForeground" />
 	\\ Compact Player
@@ -402,7 +402,7 @@
 		<element id="Controls.SliderButton.Default" bg="CatppuccinGray5" fg="CatppuccinGray5" />
 		<element id="Controls.SliderButton.Disabled" bg="CatppuccinBlack4" fg="CatppuccinBlack4" />
 	\\ Scrollbars
-		<element id="Controls.ScrollBar.Default" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" /> 
+		<element id="Controls.ScrollBar.Default" bg="ScrollbarButtonHighlight" bg2="ScrollbarButtonHighlight" />
 		<element id="Controls.ScrollBarThumb.Default" bg="0,40,40,40" bg2="0,40,40,40" fg="ScrollbarButton" bdr="0,40,40,40" />
 		<element id="Controls.ScrollBarBackground.Default" bg="ScrollbarBG" bg2="ScrollbarBG" />
 		<element id="Controls.ScrollBar.Lowlight" bg="ScrollbarButton" bg2="ScrollbarButton" />

@@ -39,7 +39,7 @@
   <images category="Stop" drawPlayButton="false"
     default="Images\Controls\ButtonStop.png"
     highlight="Images\Controls\ButtonStopHighlight.png"
-  /> 
+  />
 
 </element>
 
@@ -163,7 +163,7 @@
   <images category="AutoDJ"
     default="Images\Controls\ShuffleAutoDj_theme-palette-placeholder_bar-mono.png"
     highlight="Images\Controls\ShuffleAutoDjHighlight_theme-palette-placeholder_bar-mono.png"
-  />  
+  />
 </element>
 
 <element id="RepeatButton" parent="TrackInfoPanel">
@@ -180,7 +180,7 @@
   <images category="One"
     default="Images\Controls\RepeatOne_theme-palette-placeholder_bar-mono.png"
     highlight="Images\Controls\RepeatOneHighlight_theme-palette-placeholder_bar-mono.png"
-  />  
+  />
 </element>
 
 <element id="Speaker" parent="TrackInfoPanel">
@@ -199,7 +199,7 @@
 <element id="VolumeSlidebar" parent="TrackInfoPanel">
   <left relativeTo="Panel.Right" offset="-104" />
   <top relativeTo="Speaker.VerticalCenter" offset="0" />
-  <images category="Slidebar" 
+  <images category="Slidebar"
     default="Images\Controls\volumeslidebar_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Button"
@@ -207,7 +207,7 @@
   />
   <images category="Filler"
     default="Images\Controls\volumeslidebarfill_theme-palette-placeholder_bar-mono.png"
-  /> 
+  />
 </element>
 
 <!--HIDDEN-->
