@@ -30,7 +30,7 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 
 ## Development
 
-Currently only working on this whenever I feel like it, so progress has been fairly sporadic
+Currently only working on this whenever I have time for it, so progress has been fairly sporadic
 ### Things to do
 
 -   [x] Basic theme
@@ -38,7 +38,7 @@ Currently only working on this whenever I feel like it, so progress has been fai
 -   [x] Find all the still unthemed bits
 -   [x] Theme for each palette
 -   [x] Themes for different colours in each palette
--   [ ] Bring icons into theme - in progress
+-   [ ] Bring icons into theme - still in progress
 -   [ ] Version without accented main bar
 -   [ ] See if I can get the XML to make any sense
 -   [ ] Any other general improvements
