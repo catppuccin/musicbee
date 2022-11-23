@@ -21,7 +21,7 @@ A WIP (Although now mostly usable) [Catppuccin](https://github.com/catppuccin/ca
 
 Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee theme, which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
-Note that might be useful to somebody: MusicBee can also be run on Linux using Wine! I have it working in a 32-bit wineprefix with dotnet48, gdiplus and xmllite. To play M4A files, you'll need to put a copy of bass_aac.dll from [here](https://www.un4seen.com/download.php?z/2/bass_aac24) in the folder alongside MusicBee.exe
+Note that might be useful to somebody: MusicBee can also be run on Linux using Wine! I have it working in a 32-bit wineprefix with dotnet48, gdiplus and xmllite. To play M4A files, you'll need to put a copy of bass_aac.dll from [here](https://www.un4seen.com/download.php?z/2/bass_aac24) in the folder alongside MusicBee.exe. This doesn't work perfectly, eg crashes on file converters page in preferences, but works well enough for me.
 
 ## Usage
 
