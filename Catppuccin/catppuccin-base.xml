@@ -507,10 +507,10 @@
 	</settings>
 
 	<images id="Default">
-		<element id="LargeTick">Images\Icons\LargeTick.png</element>
-		<element id="CheckTick">Images\Icons\CheckTick.png</element>
-		<element id="CheckTickDisabled">Images\Icons\CheckTickDisabled.png</element>
-		<element id="CheckUnknown">Images\Icons\CheckUnknown.png</element>
+		<element id="LargeTick">Images\Icons\LargeTick_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="CheckTick">Images\Icons\CheckTick_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="CheckTickDisabled">Images\Icons\CheckTickDisabled_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="CheckUnknown">Images\Icons\CheckUnknown_theme-palette-placeholder_accent-placeholder.png</element>
 		<element id="PlayingIcon.Default">Images\Icons\PlayingIcon.png</element>
 		<element id="PlayingIcon.Highlight">Images\Icons\PlayingIcon.png</element>
 		<element id="PausedIcon.Default">Images\Icons\PausedIcon.png</element>
@@ -562,7 +562,7 @@
 		<element id="PanelLayout">Images\Icons\PanelLayout.png</element>
 		<element id="AlertIcon">Images\Icons\AlertIcon.png</element>
 
-		<element id="LastFmLove">Images\Icons\LastFmLove.png</element>
+		<element id="LastFmLove">Images\Icons\LastFmLove_theme-palette-placeholder_accent-placeholder.png</element>
 		<element id="LastFmNotLove">Images\Icons\LastFmNotLove.png</element>
 		<element id="LastFmLoveSelected">Images\Icons\LastFmLove.png</element>
 
