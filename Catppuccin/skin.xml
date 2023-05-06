@@ -9,7 +9,7 @@
 
 <element id="Panel">
   <images stretchY1="1" stretchY2="1"
-    default="Images\Controls\Background_theme-palette-placeholder_bar-mono-accent-placeholder.png"
+    default="Images\Controls\Background_theme-palette-placeholder_bar-mono-accent-bar-placeholder.png"
   />
 </element>
 
