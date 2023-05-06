@@ -164,7 +164,7 @@ for i in {0..6}; do
     xdotool key Tab
 done
 
-for theme_index in {0..3}; do
+for theme_index in {3..3}; do
     current_accents_name=${theme_names[$theme_index]}_accents
     current_palette_name=${theme_names[$theme_index]}_palette
     declare -n current_theme_accents="$current_accents_name"
@@ -198,7 +198,7 @@ for theme_index in {0..3}; do
         xdotool key Tab
         xdotool key Enter
 
-        sleep 0.1
+        sleep 0.15
         xdotool key Shift+Tab
 
         sed -i "s/theme-${theme_names[$theme_index]}/theme-palette-placeholder/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
