@@ -170,7 +170,7 @@ for theme_index in {0..3}; do
     declare -n current_theme_accents="$current_accents_name"
     declare -n current_palette="$current_palette_name"
 
-    perl -p -i -e "s/\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
+    perl -p -i -e "s/\\\\\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
 
     for colour_index in {0..13}; do
         check_exit
@@ -205,7 +205,7 @@ for theme_index in {0..3}; do
         sed -i "s/Accent=\"${current_theme_accents[colour_index]}\"/Accent=\"placeholder\"/g"   ./catppuccin-base.xml
     done
 
-    perl -p -i -e "s/${current_palette}/\\\\ Palette placeholder/g" ./catppuccin-base.xml
+    git checkout .
 
 done
 
