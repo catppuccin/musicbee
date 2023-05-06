@@ -185,7 +185,7 @@ for theme_index in {0..3}; do
 
             if [ $bar_state = "bar-unaccented" ]; then
                 bar_state_underscored="bar_unaccented"
-                sed -i "s/bar-mono./bar-unaccented_accent-${palette_names[$colour_index]}./g"   ./skin_wavebar.xml ./skin.xml ./skin.bak
+                sed -i "s/bar-mono\./bar-unaccented_accent-${palette_names[$colour_index]}\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
                 sed -i "s/bar-mono-accent-bar-placeholder/bar-unaccented_accent-none/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
             else
                 bar_state_underscored="bar_accented"
@@ -215,7 +215,7 @@ for theme_index in {0..3}; do
 
             if [ $bar_state = "bar-unaccented" ]; then
                 sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}./bar-mono./g"   ./skin_wavebar.xml ./skin.xml ./skin.bak
+                sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}\./bar-mono\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
             else
                 sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
             fi
