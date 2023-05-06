@@ -178,16 +178,18 @@ for theme_index in {0..3}; do
 
         sed -i "s/theme-palette-placeholder/theme-${theme_names[$theme_index]}/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/accent-placeholder/accent-${palette_names[$colour_index]}/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"          ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/Accent=\"placeholder\"/Accent=\"${current_theme_accents[colour_index]}\"/g"   ./catppuccin-base.xml
 
         for bar_state in "${bar_states[@]}"; do
             check_exit
 
-            if [ $bar_state = "bar-mono" ]; then
-                bar_state_underscored="bar_accented"
-            else
+            if [ $bar_state = "bar-unaccented" ]; then
                 bar_state_underscored="bar_unaccented"
+                sed -i "s/bar-mono./bar-unaccented_accent-${palette_names[$colour_index]}./g"   ./skin_wavebar.xml ./skin.xml ./skin.bak
+                sed -i "s/bar-mono-accent-bar-placeholder/bar-unaccented_accent-none/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
+            else
+                bar_state_underscored="bar_accented"
+                sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
             fi
 
             xdotool key Enter
@@ -211,11 +213,17 @@ for theme_index in {0..3}; do
             sleep 0.15
             xdotool key Shift+Tab
 
+            if [ $bar_state = "bar-unaccented" ]; then
+                sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
+                sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}./bar-mono./g"   ./skin_wavebar.xml ./skin.xml ./skin.bak
+            else
+                sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
+            fi
+
         done
 
         sed -i "s/theme-${theme_names[$theme_index]}/theme-palette-placeholder/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/accent-${palette_names[$colour_index]}/accent-placeholder/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"          ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/Accent=\"${current_theme_accents[colour_index]}\"/Accent=\"placeholder\"/g"   ./catppuccin-base.xml
     done
 
