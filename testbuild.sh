@@ -2,6 +2,7 @@
 
 # TODO: get xdotool to direct key presses towards only correct window?
 
+bar_states=("bar-mono" "bar-unaccented")
 theme_names=("mocha" "macchiato" "frappe" "latte")
 palette_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
 
@@ -164,7 +165,7 @@ for i in {0..6}; do
     xdotool key Tab
 done
 
-for theme_index in {3..3}; do
+for theme_index in {0..3}; do
     current_accents_name=${theme_names[$theme_index]}_accents
     current_palette_name=${theme_names[$theme_index]}_palette
     declare -n current_theme_accents="$current_accents_name"
@@ -180,26 +181,37 @@ for theme_index in {3..3}; do
         sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"          ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/Accent=\"placeholder\"/Accent=\"${current_theme_accents[colour_index]}\"/g"   ./catppuccin-base.xml
 
-        xdotool key Enter
-        xdotool key Tab
-        xdotool key Enter
+        for bar_state in "${bar_states[@]}"; do
+            check_exit
 
-        xdotool keydown ctrl
-        for i in {0..20}; do
-            xdotool key Right
+            if [ $bar_state = "bar-mono" ]; then
+                bar_state_underscored="bar_accented"
+            else
+                bar_state_underscored="bar_unaccented"
+            fi
+
+            xdotool key Enter
+            xdotool key Tab
+            xdotool key Enter
+
+            xdotool keydown ctrl
+            for i in {0..20}; do
+                xdotool key Right
+            done
+            xdotool key shift+Left
+            xdotool key shift+Left
+            xdotool keyup ctrl
+
+            xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
+
+            xdotool key Tab
+            xdotool key Tab
+            xdotool key Enter
+
+            sleep 0.15
+            xdotool key Shift+Tab
+
         done
-        xdotool key shift+Left
-        xdotool key shift+Left
-        xdotool keyup ctrl
-
-        xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}.xmlc
-
-        xdotool key Tab
-        xdotool key Tab
-        xdotool key Enter
-
-        sleep 0.15
-        xdotool key Shift+Tab
 
         sed -i "s/theme-${theme_names[$theme_index]}/theme-palette-placeholder/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/accent-${palette_names[$colour_index]}/accent-placeholder/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
