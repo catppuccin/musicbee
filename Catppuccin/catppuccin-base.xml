@@ -9,7 +9,7 @@
 
 		Accent="placeholder"
 
-
+		\\ Bar text placeholder
 
 		Background="CatppuccinBlack2"
 		BackgroundDarker="CatppuccinBlack1"
@@ -243,7 +243,7 @@
 	\\ PLAYERS
 	\\ Flat Player
 		<element id="PlayerFlat.Background" bg="Accent" bg2="Accent" />
-		<element id="PlayerFlat.DisplayPanel" bg="Accent" fg="CatppuccinBlack0" fg2="CatppuccinBlack0" />
+		<element id="PlayerFlat.DisplayPanel" bg="Accent" fg="MainPlayerText" fg2="MainPlayerText" />
 		<element id="PlayerFlat.ProgressBar" bg="Accent" fg="CatppuccinBlack0" bdr="CatppuccinBlack0" /> <!-- fg is used for the fill colour -->
 		<element id="PlayerFlat.ProgressButton" fg="Highlight" />
 		<element id="PlayerFlat.Control.Default" fg="CatppuccinForeground" />
