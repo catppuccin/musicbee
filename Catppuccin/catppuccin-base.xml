@@ -47,6 +47,9 @@
 		Button-Disabled="CatppuccinBlack3"
 		Button-Disabled-Bdr="CatppuccinBlack3"
 		Button-Disabled-Fg="CatppuccinBlack4"
+
+		SpectrumOff="Accent"
+		SpectrumOn="CatppuccinBlack1"
 	</variables>
 
 	<colours id="Default">
@@ -252,12 +255,12 @@
 		<element id="PlayerFlat.StarRating.Default" fg="CatppuccinBlack0" />
 		<element id="PlayerFlat.StarRating.Lowlight" fg="145,0,0,0" />
 		<element id="PlayerFlat.NotLovedIcon" fg="CatppuccinBlack4" />
-		<element id="PlayerFlat.SpectrumDefault" bg="Accent" />
+		<element id="PlayerFlat.SpectrumDefault" bg="SpectrumOff" />
 		\\ TODO: Do something with this?
-		<element id="PlayerFlat.SpectrumDead" bg="CatppuccinBlack0" />
-		<element id="PlayerFlat.SpectrumLow" bg="CatppuccinBlack0" />
-		<element id="PlayerFlat.SpectrumMedium" bg="CatppuccinBlack0" />
-		<element id="PlayerFlat.SpectrumHigh" bg="CatppuccinBlack0" />
+		<element id="PlayerFlat.SpectrumDead" bg="SpectrumOff" />
+		<element id="PlayerFlat.SpectrumLow" bg="SpectrumOn" />
+		<element id="PlayerFlat.SpectrumMedium" bg="SpectrumOn" />
+		<element id="PlayerFlat.SpectrumHigh" bg="SpectrumOn" />
 		<element id="PlayerFlat.Wavebar" fg="CatppuccinBlack0" fg2="Accent" />
 		<element id="PlayerFlat.Wavebar.Inner" fg="CatppuccinBlack0" fg2="Accent" />
 		<element id="PlayerFlat.MetroButton.Default" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
