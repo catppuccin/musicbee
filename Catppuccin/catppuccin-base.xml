@@ -5,7 +5,38 @@
 
 		\\ https://github.com/catppuccin/catppuccin
 
-		\\ Palette placeholder
+		\
+		CatppuccinBlack0="17,17,27"
+		CatppuccinBlack1="24,24,37"
+		CatppuccinBlack2="30,30,46"
+		CatppuccinBlack3="49,50,68"
+		CatppuccinBlack4="69,71,90"
+
+		CatppuccinGray0="88,91,112"
+		CatppuccinGray1="108,112,134"
+		CatppuccinGray2="127,132,156"
+		CatppuccinGray3="147,153,178"
+
+		CatppuccinGray4="166,173,200"
+		CatppuccinGray5="186,194,222"
+
+		CatppuccinForeground="205,214,244"
+
+		CatppuccinRosewater="245,224,220"
+		CatppuccinFlamingo="242,205,205"
+		CatppuccinPink="245,194,231"
+		CatppuccinMauve="203,166,247"
+		CatppuccinRed="243,139,168"
+		CatppuccinMaroon="235,160,172"
+		CatppuccinPeach="250,179,135"
+		CatppuccinYellow="249,226,175"
+		CatppuccinGreen="166,227,161"
+		CatppuccinTeal="148,226,213"
+		CatppuccinSky="137,220,235"
+		CatppuccinSapphire="116,199,236"
+		CatppuccinBlue="137,180,250"
+		CatppuccinLavender="180,190,254"
+
 
 		Accent="placeholder"
 
