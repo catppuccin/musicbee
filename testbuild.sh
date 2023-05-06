@@ -190,6 +190,8 @@ for theme_index in {0..3}; do # 0..3
                 sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinForeground\"/g" ./catppuccin-base.xml
                 sed -i "s/SpectrumOff=\"Accent\"/SpectrumOff=\"CatppuccinBlack1\"/g"            ./catppuccin-base.xml
                 sed -i "s/SpectrumOn=\"CatppuccinBlack1\"/SpectrumOn=\"Accent\"/g"              ./catppuccin-base.xml
+                sed -i "s/WaveBarOn=\"CatppuccinBlack1\"/WaveBarOn=\"Accent\"/g"                ./catppuccin-base.xml
+                sed -i "s/WaveBarOff=\"Accent\"/WaveBarOff=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
             else
                 bar_state_underscored="bar_accented"
                 sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
@@ -221,8 +223,10 @@ for theme_index in {0..3}; do # 0..3
                 sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
                 sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}\./bar-mono\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
                 sed -i "s/MainPlayerText=\"CatppuccinForeground\"/\\\\\\\\ Bar text placeholder/g" ./catppuccin-base.xml
-                sed -i "s/SpectrumOn=\"Accent\"/SpectrumOn=\"CatppuccinBlack1\"/g"            ./catppuccin-base.xml
-                sed -i "s/SpectrumOff=\"CatppuccinBlack1\"/SpectrumOff=\"Accent\"/g"              ./catppuccin-base.xml
+                sed -i "s/SpectrumOn=\"Accent\"/SpectrumOn=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
+                sed -i "s/SpectrumOff=\"CatppuccinBlack1\"/SpectrumOff=\"Accent\"/g"            ./catppuccin-base.xml
+                sed -i "s/WaveBarOff=\"CatppuccinBlack1\"/WaveBarOff=\"Accent\"/g"              ./catppuccin-base.xml
+                sed -i "s/WaveBarOn=\"Accent\"/WaveBarOn=\"CatppuccinBlack1\"/g"                ./catppuccin-base.xml
             else
                 sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
                 sed -i "s/MainPlayerText=\"CatppuccinBlack0\"/\\\\\\\\ Bar text placeholder/g"  ./catppuccin-base.xml

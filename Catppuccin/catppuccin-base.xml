@@ -50,6 +50,9 @@
 
 		SpectrumOff="Accent"
 		SpectrumOn="CatppuccinBlack1"
+
+		WaveBarOff="Accent"
+		WaveBarOn="CatppuccinBlack1"
 	</variables>
 
 	<colours id="Default">
@@ -261,8 +264,8 @@
 		<element id="PlayerFlat.SpectrumLow" bg="SpectrumOn" />
 		<element id="PlayerFlat.SpectrumMedium" bg="SpectrumOn" />
 		<element id="PlayerFlat.SpectrumHigh" bg="SpectrumOn" />
-		<element id="PlayerFlat.Wavebar" fg="CatppuccinBlack0" fg2="Accent" />
-		<element id="PlayerFlat.Wavebar.Inner" fg="CatppuccinBlack0" fg2="Accent" />
+		<element id="PlayerFlat.Wavebar" fg="WaveBarOn" fg2="WaveBarOff" />
+		<element id="PlayerFlat.Wavebar.Inner" fg="WaveBarOn" fg2="WaveBarOff" />
 		<element id="PlayerFlat.MetroButton.Default" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
 		<element id="PlayerFlat.MetroButton.Highlight" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
 	\\ Flat Player (on Top)
