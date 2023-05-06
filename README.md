@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/James-McK/catppuccin-musicbee/blob/main/assets/test.png"/>
+  <img src="https://github.com/James-McK/catppuccin-musicbee/blob/main/assets/screenshot.webp"/>
 </p>
 
 ## About
