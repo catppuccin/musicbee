@@ -1,7 +1,7 @@
 #!/bin/bash
 
 files=("UnknownArtist" "NoArtwork")
-theme_names=("mocha" "macchiato" "frappe" "latte")
+theme_names=("latte" "frappe" "macchiato" "mocha")
 accent_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
 
 mantles=("e6e9ef" "292c3c" "1e2030" "181825")
@@ -14,8 +14,10 @@ mocha_accents=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f
 
 for file in "${files[@]}"; do
     for i in {0..3}; do
+        echo ${theme_names[$i]}
         current_palette_name=${theme_names[$i]}_accents
         declare -n accents="$current_palette_name"
+
 
         sed -i "s/1e2030/${mantles[i]}/g" ./$file.svg
         sed -i "s/494d64/${surface1s[i]}/g" ./$file.svg
@@ -23,6 +25,7 @@ for file in "${files[@]}"; do
         for j in {0..13}; do
             sed -i "s/c6a0f6/${accents[j]}/g" ./$file.svg
             inkscape ./$file.svg -o ./output/${file}_theme-${theme_names[i]}_accent-${accent_names[j]}.png
+            sed -i "s/${accents[j]}/c6a0f6/g" ./$file.svg
         done
 
         sed -i "s/${mantles[i]}/1e2030/g" ./$file.svg

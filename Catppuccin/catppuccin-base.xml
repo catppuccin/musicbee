@@ -564,10 +564,10 @@
 		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-palette-placeholder.png</element>
 		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-palette-placeholder.png</element>
 
-		<element id="NoArtwork">Images\Others\NoArtwork.png</element>
+		<element id="NoArtwork">Images\Others\NoArtwork_theme-palette-placeholder_accent-placeholder.png</element>
 		<element id="SplashScreen">Images\Others\SplashScreen.png</element>
-		<element id="UnknownArtist">Images\Others\UnknownArtist.png</element>
+		<element id="UnknownArtist">Images\Others\UnknownArtist_theme-palette-placeholder_accent-placeholder.png</element>
 		<element id="DragIcon">Images\Others\DragIcon.png</element>
-		<element id="UnknownAlbumIcon">Images\Others\NoArtwork.png</element>
+		<element id="UnknownAlbumIcon">Images\Others\NoArtwork_theme-palette-placeholder_accent-placeholder.png</element>
 	</images>
 </root>
