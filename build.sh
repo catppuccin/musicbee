@@ -165,7 +165,7 @@ for i in {0..6}; do
     xdotool key Tab
 done
 
-for theme_index in {0..3}; do # 0..3
+for theme_index in "${!theme_names[@]}"; do
     current_accents_name=${theme_names[$theme_index]}_accents
     current_palette_name=${theme_names[$theme_index]}_palette
     declare -n current_theme_accents="$current_accents_name"
@@ -173,7 +173,7 @@ for theme_index in {0..3}; do # 0..3
 
     perl -p -i -e "s/\\\\\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
 
-    for colour_index in {0..13}; do # 0..13
+    for colour_index in "${!palette_names[@]}"; do
         check_exit
 
         sed -i "s/theme-palette-placeholder/theme-${theme_names[$theme_index]}/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
