@@ -9,6 +9,14 @@ frappe_accents=("242,213,207" "238,190,190" "244,184,228" "202,158,230" "231,130
 latte_accents=("220,138,120" "221,120,120" "234,118,203" "136,57,239" "210,15,57" "230,69,83" "254,100,11" "223,142,29" "64,160,43" "23,146,153" "4,165,229" "32,159,181" "30,102,245" "114,135,253")
 crusts=("#11111b" "#181926" "#232634" "#dce0e8")
 
+recolour () {
+    IFS='\_' read -ra file_name_split <<< "${1::-4}"
+    if [ ${#file_name_split[@]} = 2 ]; then
+        file_name_split[1]="_${file_name_split[1]}"
+    fi
+    magick "$1" -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+}
+
 cd ./Catppuccin/Images/ControlsBase/MassConvert/
 rm -r ../output
 mkdir ../output
@@ -18,10 +26,10 @@ for theme_index in "${!theme_names[@]}"; do
     declare -n current_theme_accents="$current_accents_name"
 
     for file in *; do
-        magick $file -alpha extract -background "${crusts[$theme_index]}" -alpha shape "../output/${file::-4}_theme-${theme_names[$theme_index]}_bar-mono.png"
+        recolour $file "${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
 
         for colour_index in "${!palette_names[@]}"; do
-            magick $file -alpha extract -background "rgb(${current_theme_accents[$colour_index]})" -alpha shape "../output/${file::-4}_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}.png"
+            recolour $file "rgb(${current_theme_accents[$colour_index]})" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}" &
         done
     done
 
