@@ -1,6 +1,6 @@
 #!/bin/bash
 
-icons="./Catppuccin/Images/Controls Base/*"
+icons="./Catppuccin/Images/ControlsBase/*"
 
 for i in $icons; do
     echo $i
