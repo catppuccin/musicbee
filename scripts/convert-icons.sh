@@ -22,6 +22,7 @@ rm -r ../output
 mkdir ../output
 
 for theme_index in "${!theme_names[@]}"; do
+    echo ${theme_names[$theme_index]}
     current_accents_name=${theme_names[$theme_index]}_accents
     declare -n current_theme_accents="$current_accents_name"
 
