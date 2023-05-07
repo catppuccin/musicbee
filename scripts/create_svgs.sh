@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd ./Catppuccin/SVGs
+
+rm -r ./output
+mkdir ./output
+
 files=("UnknownArtist" "NoArtwork")
 theme_names=("latte" "frappe" "macchiato" "mocha")
 accent_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
@@ -13,6 +18,7 @@ macchiato_accents=("f4dbd6" "f0c6c6" "f5bde6" "c6a0f6" "ed8796" "ee99a0" "f5a97f
 mocha_accents=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f9e2af" "a6e3a1" "94e2d5" "89dceb" "74c7ec" "89b4fa" "b4befe")
 
 for file in "${files[@]}"; do
+    echo $file
     for i in {0..3}; do
         echo ${theme_names[$i]}
         current_palette_name=${theme_names[$i]}_accents
@@ -32,3 +38,5 @@ for file in "${files[@]}"; do
         sed -i "s/${surface1s[i]}/494d64/g" ./$file.svg
     done
 done
+
+mv ./output/* ../Images/Others/
