@@ -53,7 +53,7 @@ for theme_index in "${!theme_names[@]}"; do
 
     for file in *; do
         for colour_index in "${!palette_names[@]}"; do
-            recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}"
+            recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_accent-${palette_names[$colour_index]}"
         done
     done
 done
