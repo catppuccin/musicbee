@@ -21,26 +21,26 @@ cd ./Catppuccin/Images/ControlsBase/MassConvert/
 rm -r ../output
 mkdir ../output
 
-# for theme_index in "${!theme_names[@]}"; do
-#     echo ${theme_names[$theme_index]}
-#     current_accents_name=${theme_names[$theme_index]}_accents
-#     declare -n current_theme_accents="$current_accents_name"
+for theme_index in "${!theme_names[@]}"; do
+    echo ${theme_names[$theme_index]}
+    current_accents_name=${theme_names[$theme_index]}_accents
+    declare -n current_theme_accents="$current_accents_name"
 
-#     for file in *; do
-#         recolour $file "#${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
+    for file in *; do
+        recolour $file "#${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
 
-#         for colour_index in "${!palette_names[@]}"; do
-#             recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}" &
-#         done
-#     done
+        for colour_index in "${!palette_names[@]}"; do
+            recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}" &
+        done
+    done
 
-#     magick ../Background.png -alpha extract -background "#${crusts[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
-#     for colour_index in "${!palette_names[@]}"; do
-#         magick ../Background.png -alpha extract -background "#${current_theme_accents[$colour_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-mono-accent-bar-${palette_names[$colour_index]}.png"
-#     done
-# done
+    magick ../Background.png -alpha extract -background "#${crusts[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
+    for colour_index in "${!palette_names[@]}"; do
+        magick ../Background.png -alpha extract -background "#${current_theme_accents[$colour_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-mono-accent-bar-${palette_names[$colour_index]}.png"
+    done
+done
 
-# mv ../output/* ../../Controls
+mv ../output/* ../../Controls
 
 cd ../../IconsBase/MassConvert/
 rm -r ../output

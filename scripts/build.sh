@@ -2,6 +2,9 @@
 
 # TODO: get xdotool to direct key presses towards only correct window?
 
+rm -r ./output
+mkdir ./output
+
 bar_states=("bar-mono" "bar-unaccented")
 theme_names=("mocha" "macchiato" "frappe" "latte")
 palette_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
@@ -175,7 +178,6 @@ for theme_index in "${!theme_names[@]}"; do
 
     for colour_index in "${!palette_names[@]}"; do
         check_exit
-
         sed -i "s/theme-palette-placeholder/theme-${theme_names[$theme_index]}/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/accent-placeholder/accent-${palette_names[$colour_index]}/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
         sed -i "s/Accent=\"placeholder\"/Accent=\"${current_theme_accents[colour_index]}\"/g"   ./catppuccin-base.xml
@@ -211,6 +213,8 @@ for theme_index in "${!theme_names[@]}"; do
             xdotool keyup ctrl
 
             xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
+
+			sleep 2
 
             xdotool key Tab
             xdotool key Tab
