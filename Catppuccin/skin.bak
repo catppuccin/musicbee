@@ -29,16 +29,16 @@
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <!-- musicbee draws the > or || icon in the centre of this image if drawPlayButton="True" -->
   <images category="Play" drawPlayButton="false"
-    default="Images\Controls\ButtonPlay.png"
-    highlight="Images\Controls\ButtonPlayHighlight.png"
+    default="Images\Controls\ButtonPlay_theme-palette-placeholder.png"
+    highlight="Images\Controls\ButtonPlayHighlight_theme-palette-placeholder.png"
   />
   <images category="Pause" drawPlayButton="false"
-    default="Images\Controls\ButtonPause.png"
-    highlight="Images\Controls\ButtonPauseHighlight.png"
+    default="Images\Controls\ButtonPause_theme-palette-placeholder.png"
+    highlight="Images\Controls\ButtonPauseHighlight_theme-palette-placeholder.png"
   />
   <images category="Stop" drawPlayButton="false"
-    default="Images\Controls\ButtonStop.png"
-    highlight="Images\Controls\ButtonStopHighlight.png"
+    default="Images\Controls\ButtonStop_theme-palette-placeholder.png"
+    highlight="Images\Controls\ButtonStopHighlight_theme-palette-placeholder.png"
   />
 
 </element>
@@ -88,7 +88,7 @@
   />
   <!-- remove this node if the progress bar will not have a button -->
   <images category="Button"
-    default="Images\Controls\BarButton.png"
+    default="Images\Controls\BarButton_theme-palette-placeholder.png"
   />
 </element>
 
@@ -203,7 +203,7 @@
     default="Images\Controls\volumeslidebar_theme-palette-placeholder_bar-mono.png"
   />
   <images category="Button"
-    default="Images\Controls\BarButton.png"
+    default="Images\Controls\BarButton_theme-palette-placeholder.png"
   />
   <images category="Filler"
     default="Images\Controls\volumeslidebarfill_theme-palette-placeholder_bar-mono.png"
