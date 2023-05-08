@@ -53,6 +53,9 @@
 
 		WaveBarOff="Accent"
 		WaveBarOn="CatppuccinBlack1"
+
+		StarRatingOn="CatppuccinForeground"
+		StarRatingOff="CatppuccinBlack2"
 	</variables>
 
 	<colours id="Default">
@@ -255,8 +258,8 @@
 		<element id="PlayerFlat.Control.Default" fg="CatppuccinForeground" />
 		<element id="PlayerFlat.Control.Disabled" fg="CatppuccinGray0" />
 		<element id="PlayerFlat.Control.Highlight" fg="Highlight" />
-		<element id="PlayerFlat.StarRating.Default" fg="CatppuccinBlack0" />
-		<element id="PlayerFlat.StarRating.Lowlight" fg="145,0,0,0" />
+		<element id="PlayerFlat.StarRating.Default" fg="StarRatingOn" />
+		<element id="PlayerFlat.StarRating.Lowlight" fg="StarRatingOff" />
 		<element id="PlayerFlat.NotLovedIcon" fg="CatppuccinBlack4" />
 		<element id="PlayerFlat.SpectrumDefault" bg="SpectrumOff" />
 		\\ TODO: Do something with this?
@@ -276,8 +279,8 @@
 		<element id="PlayerTopFlat.Control.Default" fg="CatppuccinForeground" />
 		<element id="PlayerTopFlat.Control.Disabled" fg="CatppuccinGray0" />
 		<element id="PlayerTopFlat.Control.Highlight" fg="Highlight" />
-		<element id="PlayerTopFlat.StarRating.Default" fg="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.StarRating.Lowlight" fg="145,0,0,0" />
+		<element id="PlayerTopFlat.StarRating.Default" fg="StarRatingOn" />
+		<element id="PlayerTopFlat.StarRating.Lowlight" fg="StarRatingOff" />
 		<element id="PlayerTopFlat.NotLovedIcon" fg="CatppuccinBlack4" />
 		<element id="PlayerTopFlat.SpectrumDefault" bg="Accent" />
 		<element id="PlayerTopFlat.SpectrumDead" bg="CatppuccinBlack0" />
