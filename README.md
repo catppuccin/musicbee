@@ -17,7 +17,7 @@
 
 ## About
 
-A WIP (Although now mostly usable) [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
+A [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
 
 Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee theme, which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
