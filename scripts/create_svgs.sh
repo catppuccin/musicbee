@@ -62,7 +62,11 @@ for file in *; do
             sed -i "s/a5adcb/${subtext0s[i]}/g" "./$file"
             sed -i "s/cad3f5/${texts[i]}/g" "./$file"
 
-            inkscape "./$file" -o "./output/${file::-4}_theme-${theme_names[i]}.png"
+            IFS='\_' read -ra file_name_split <<< "${file::-4}"
+            if [ ${#file_name_split[@]} = 2 ]; then
+                file_name_split[1]="_${file_name_split[1]}"
+            fi
+            inkscape "./$file" -o "./output/${file_name_split[0]}_theme-${theme_names[i]}${file_name_split[1]}.png"
 
             sed -i "s/${mantles[i]}/1e2030/g" "./$file"
             sed -i "s/${surface1s[i]}/494d64/g" "./$file"
