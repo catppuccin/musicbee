@@ -44,7 +44,7 @@ done
 
 mv ./output/* ../Images/Others/
 
-cd ./Controls
+cd ./Controls/
 rm -r ./output
 mkdir ./output
 
@@ -77,4 +77,4 @@ for file in *; do
     fi
 done
 
-
+mv ./output/* ../../Images/Controls/
