@@ -10,10 +10,10 @@ theme_names=("latte" "frappe" "macchiato" "mocha")
 accent_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
 
 mantles=("e6e9ef" "292c3c" "1e2030" "181825")
-crusts=("dce0e8" "232634" "181926" "11111b")
+crusts=("4c4f69" "232634" "181926" "11111b")
 surface1s=("bcc0cc" "51576d" "494d64" "45475a")
-subtext0s=("6c6f85" "a5adce" "a5adcb" "a6adc8")
-texts=("4c4f69" "c6d0f5" "cad3f5" "cdd6f4")
+subtext0s=("ccd0da" "a5adce" "a5adcb" "a6adc8")
+texts=("dce0e8" "c6d0f5" "cad3f5" "cdd6f4")
 
 latte_accents=("dc8a78" "dd7878" "ea76cb" "8839ef" "d20f39" "e64553" "fe640b" "df8e1d" "40a02b" "179299" "04a5e5" "209fb5" "1e66f5" "7287fd")
 frappe_accents=("f2d5cf" "eebebe" "f4b8e4" "ca9ee6" "e78284" "ea999c" "ef9f76" "e5c890" "a6d189" "81c8be" "99d1db" "85c1dc" "8caaee" "babbf1")
