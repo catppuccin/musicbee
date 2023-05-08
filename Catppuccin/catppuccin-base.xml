@@ -513,7 +513,7 @@
 
 		<element id="LastFmLove">Images\Icons\LastFmLove_theme-palette-placeholder_accent-placeholder.png</element>
 		<element id="LastFmNotLove">Images\Icons\LastFmNotLove.png</element>
-		<element id="LastFmLoveSelected">Images\Icons\LastFmLove.png</element>
+		<element id="LastFmLoveSelected">Images\Icons\LastFmLove_theme-palette-placeholder_accent-placeholder.png</element>
 
 		<element id="PlayerLastFmLove">Images\Controls\CompactPlayerLastFmLove.png</element>
 
