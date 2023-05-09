@@ -16,7 +16,12 @@ recolour () {
     if [ ${#file_name_split[@]} = 2 ]; then
         file_name_split[1]="_${file_name_split[1]}"
     fi
-    magick "$1" -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+
+    if [[ $3 == *"bar-mono"* ]]; then
+        magick "$1" -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+    else
+        magick "$1" -write MPR:orig -alpha extract \( +clone \) -compose multiply -composite MPR:orig +swap -compose copyopacity -composite -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+    fi
 }
 
 cd ./Catppuccin/Images/ControlsBase/MassConvert/
