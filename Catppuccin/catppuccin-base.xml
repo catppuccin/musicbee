@@ -472,7 +472,7 @@
 		<element id="PanelForward">Images\Icons\PanelForward_theme-palette-placeholder.png</element>
 		<element id="MusicLibrary">Images\Icons\MusicLibrary_theme-palette-placeholder.png</element>
 		<element id="BookmarksIcon">Images\Icons\BookmarksIcon_theme-palette-placeholder.png</element>
-		<element id="PodcastsIcon">Images\Icons\PodcastsIcon.png</element>
+		<element id="PodcastsIcon">Images\Icons\PodcastsIcon_theme-palette-placeholder.png</element>
 		<element id="AudiobooksIcon">Images\Icons\AudiobooksIcon_theme-palette-placeholder.png</element>
 		<element id="VideoIcon">Images\Icons\VideoIcon_theme-palette-placeholder.png</element>
 		<element id="RadioIcon">Images\Icons\RadioIcon_theme-palette-placeholder.png</element>
@@ -491,8 +491,8 @@
 		<element id="PlaylistMixerIcon">Images\Icons\PlaylistMixerIcon_theme-palette-placeholder.png</element>
 		<element id="Visualiser">Images\Icons\Visualiser_theme-palette-placeholder.png</element>
 		<element id="LastFmPluginIcon">Images\Icons\LastFmPluginIcon_theme-palette-placeholder.png</element>
-		<element id="SearchMenuButton">Images\Icons\SearchMenuButton.png</element>
-		<element id="SearchResultsIcon">Images\Icons\SearchResultsIcon.png</element>
+		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-palette-placeholder.png</element>
+		<element id="SearchResultsIcon">Images\Icons\SearchResultsIcon_theme-palette-placeholder.png</element>
 		<element id="AddTabIcon">Images\Icons\AddTabIcon_theme-palette-placeholder.png</element>
 		<element id="AddTabIconInCaptionBar">Images\Icons\AddTabIconInCaptionBar_theme-palette-placeholder.png</element>
 		<element id="Controls.WebLinkIcon">Images\Icons\ControlsWebLinkIcon_theme-palette-placeholder.png</element>
@@ -502,7 +502,7 @@
 		<element id="ZeroRating_theme-palette-placeholder">Images\Icons\ZeroRating.png</element>
 		<element id="EditSave">Images\Icons\EditSave_theme-palette-placeholder.png</element>
 		<element id="WebBrowserIcon">Images\Icons\WebBrowserIcon_theme-palette-placeholder.png</element>
-		<element id="SearchMenuButton">Images\Icons\SearchMenuButton.png</element>
+		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-palette-placeholder.png</element>
 
 		<element id="DeviceReadyIcon">Images\Icons\DeviceReadyIcon_theme-palette-placeholder.png</element>
 		<element id="NetworkDriveIcon">Images\Icons\NetworkDriveIcon_theme-palette-placeholder.png</element>
