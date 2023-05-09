@@ -37,8 +37,8 @@
     highlight="Images\Controls\ButtonPauseHighlight_theme-palette-placeholder.png"
   />
   <images category="Stop" drawPlayButton="false"
-    default="Images\Controls\ButtonStop.png"
-    highlight="Images\Controls\ButtonStopHighlight.png"
+    default="Images\Controls\ButtonStop_theme-palette-placeholder.png"
+    highlight="Images\Controls\ButtonStopHighlight_theme-palette-placeholder.png"
   />
 
 </element>
@@ -214,7 +214,7 @@
   <top relativeTo="Panel.VerticalCenter" offset="0" />
   <!-- musicbee draws the [] icon in the centre of this image if drawPlayButton="True" -->
   <images drawPlayButton="false"
-    default="Images\Controls\ButtonStop.png"
+    default="Images\Controls\ButtonStop_theme-palette-placeholder.png"
   />
 </element>
 
