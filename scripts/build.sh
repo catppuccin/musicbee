@@ -215,8 +215,6 @@ for theme_index in "${!theme_names[@]}"; do
 
             xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
 
-			exit
-
             xdotool key Tab
             xdotool key Tab
             xdotool key Enter
