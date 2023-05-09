@@ -96,7 +96,7 @@
 		<element id="TabsBar.Tab.Highlight" bg="ToolbarBG" bg2="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
 		<element id="TabsBar.BorderLine" bdr="ToolbarBG" />
 		<element id="TabsBar.Tab.Separator" bg="ToolbarBG" />
-		<element id="TabsBar.InactiveTabIconMask" bg="193,27,27,27" />
+		<element id="TabsBar.InactiveTabIconMask" bg="InactiveIconMask" />
 		<element id="TabsBar.DropCursor" bg="Highlight" />
 	\\ Tabs (in Toolbar with Player on Top)
 		<element id="TabsBarPTop.Background" bg="ToolbarBG" />
@@ -104,14 +104,14 @@
 		<element id="TabsBarPTop.Tab.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
 		<element id="TabsBarPTop.BorderLine" bg="ToolbarBG" />
 		<element id="TabsBarPTop.Tab.Separator" bg="ToolbarBG" />
-		<element id="TabsBarPTop.InactiveTabIconMask" bg="193,27,27,27" />
+		<element id="TabsBarPTop.InactiveTabIconMask" bg="InactiveIconMask" />
 	\\ Tabs (in CaptionBar)
 		<element id="TabsBar.TabInCaptionBar.Default" bg="ToolbarBG" fg="CatppuccinGray2" bdr="ToolbarBG" />
 		<element id="TabsBar.TabInCaptionBar.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
 		<element id="TabsBar.TabInCaptionBar.BorderLine" bdr="ToolbarBG" />
 		<element id="TabsBar.TabInCaptionBar.Separator" bg="ToolbarBG" />
-		<element id="TabsBar.InactiveTabInCaptionIconMask" bg="193,27,27,27" />
-		<element id="TabsBar.TabInCaptionBarBlended.InactiveTabIconMask" bg="193,27,27,27" />
+		<element id="TabsBar.InactiveTabInCaptionIconMask" bg="InactiveIconMask" />
+		<element id="TabsBar.TabInCaptionBarBlended.InactiveTabIconMask" bg="InactiveIconMask" />
 	\\ Tabs (in CaptionBar with Player on Top)
 		<element id="TabsBar.TabInCaptionBarTop.Default" bg="ToolbarBG" fg="CatppuccinGray2" bdr="ToolbarBG" />
 		<element id="TabsBar.TabInCaptionBarTop.Highlight" bg="ToolbarBG" fg="TextHighlight" bdr="ToolbarBG" />
