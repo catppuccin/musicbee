@@ -499,7 +499,7 @@
 		<element id="ConsolidateButtonsIcon">Images\Icons\ConsolidateButtonsIcon_theme-palette-placeholder.png</element>
 		<element id="NotificationIcon">Images\Icons\NotificationIcon_theme-palette-placeholder.png</element>
 		<element id="DownloadIndicatorIcon">Images\Icons\DownloadIndicatorIcon_theme-palette-placeholder.png</element>
-		<element id="ZeroRating_theme-palette-placeholder">Images\Icons\ZeroRating.png</element>
+		<element id="ZeroRating_theme-palette-placeholder">Images\Icons\ZeroRating_theme-palette-placeholder.png</element>
 		<element id="EditSave">Images\Icons\EditSave_theme-palette-placeholder.png</element>
 		<element id="WebBrowserIcon">Images\Icons\WebBrowserIcon_theme-palette-placeholder.png</element>
 		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-palette-placeholder.png</element>
