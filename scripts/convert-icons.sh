@@ -8,6 +8,8 @@ frappe_accents=("f2d5cf" "eebebe" "f4b8e4" "ca9ee6" "e78284" "ea999c" "ef9f76" "
 macchiato_accents=("f4dbd6" "f0c6c6" "f5bde6" "c6a0f6" "ed8796" "ee99a0" "f5a97f" "eed49f" "a6da95" "8bd5ca" "91d7e3" "7dc4e4" "8aadf4" "b7bdf8")
 mocha_accents=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f9e2af" "a6e3a1" "94e2d5" "89dceb" "74c7ec" "89b4fa" "b4befe")
 crusts=("11111b" "181926" "232634" "dce0e8")
+texts=("cdd6f4" "cad3f5" "c6d0f5" "4c4f69")
+overlay0s=("6c7086" "6e738d" "737994" "9ca0b0")
 
 recolour () {
     IFS='\_' read -ra file_name_split <<< "${1::-4}"
@@ -55,6 +57,24 @@ for theme_index in "${!theme_names[@]}"; do
         for colour_index in "${!palette_names[@]}"; do
             recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_accent-${palette_names[$colour_index]}"
         done
+    done
+done
+
+cd ../MassConvertText
+
+for theme_index in "${!theme_names[@]}"; do
+    echo ${theme_names[$theme_index]}
+    for file in *; do
+        recolour $file "#${texts[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+    done
+done
+
+cd ../MassConvertGray
+
+for theme_index in "${!theme_names[@]}"; do
+    echo ${theme_names[$theme_index]}
+    for file in *; do
+        recolour $file "#${overlay0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 
