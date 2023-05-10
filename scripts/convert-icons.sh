@@ -20,8 +20,11 @@ recolour () {
     if [[ $3 == *"bar-mono"* ]]; then
         magick "$1" -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
     else
-        # TODO: when [[ $3 == *"theme-latte"* ]], there is not enough contrast. Use the dissolve thing?
-        magick "$1" -write MPR:orig -alpha extract \( +clone \) -compose multiply -composite MPR:orig +swap -compose copyopacity -composite -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+        if [[ $3 == *"theme-latte"* ]]; then
+            magick "$1" "$1" -compose dissolve -define compose:args='100,100' -composite -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+        else
+            magick "$1" -write MPR:orig -alpha extract \( +clone \) -compose multiply -composite MPR:orig +swap -compose copyopacity -composite -alpha extract -background "$2" -alpha shape "../output/${file_name_split[0]}${3}${file_name_split[1]}.png"
+        fi
     fi
 }
 
