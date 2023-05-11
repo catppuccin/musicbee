@@ -28,11 +28,11 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="8"
-     inkscape:cx="-3.625"
+     inkscape:cx="16.375"
      inkscape:cy="30.5"
-     inkscape:window-width="1904"
+     inkscape:window-width="948"
      inkscape:window-height="1040"
-     inkscape:window-x="8"
+     inkscape:window-x="964"
      inkscape:window-y="32"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
@@ -69,7 +69,7 @@
        rx="7.0114579"
        ry="7.0114584"
        inkscape:label="Circle" /><path
-       style="opacity:1;fill:#181926;stroke-width:0.526521"
+       style="opacity:1;fill:#1e2030;stroke-width:0.526521;fill-opacity:1"
        d="M 6.6145832,5.8208333 H 7.1437499 L 10.052518,8.5949912 7.1437499,11.377083 H 6.6145832 Z"
        id="path992"
        sodipodi:nodetypes="cccccc" /></g></svg>
