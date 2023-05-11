@@ -1,9 +1,18 @@
 #!/bin/bash
 
-# TODO: get xdotool to direct key presses towards only correct window?
+currend_directory=${PWD##*/}
+if [[ "${currend_directory,,}" != "catppuccin-musicbee" ]]; then
+    echo "This should be run from the root directory of the repository! Exiting to avoid breaking things"
+    exit
+fi
 
 rm -r ./output
 mkdir ./output
+
+cd ./Catppuccin/
+
+# If you're trying to run this yourself, you'll need to change the WINEPREFIX below to one capable of running MusicBee
+WINEPREFIX="/home/autumn/.local/share/wineprefixes/MusicBee/" wine "./SkinCreator.exe" &
 
 bar_states=("bar-mono" "bar-unaccented")
 theme_names=("mocha" "macchiato" "frappe" "latte")
@@ -151,25 +160,35 @@ latte_palette="
 "
 
 check_exit () {
-    evtest --query /dev/input/by-id/usb-04d9_USB-HID_Keyboard-event-kbd EV_KEY 1
+    # evtest --query /dev/input/by-id/usb-04d9_USB-HID_Keyboard-event-kbd EV_KEY 1
+    # if [ $? == 10 ]; then
+    #     echo "Esc key down, exiting!"
+    #     exit
+    # fi
 
-    if [ $? == 10 ]; then
-        echo "Esc key down, exiting!"
+    current_window=$(xdotool getactivewindow)
+    if [ $(xdotool getwindowpid $current_window) != $(xdotool getwindowpid $window_id) ]; then
+        echo "SkinCreator window not focused, exiting!"
         exit
     fi
 }
 
+sleep 0.1
+pid=$(pidof SkinCreator.exe)
 
-cd ./Catppuccin/
+window_id=$(xdotool search --sync --all --onlyvisible --pid $pid --name SkinCreator)
+# Ignore the error message, it's expected
+xdotool key --window $window_id Enter
+xdotool keyup Enter
 
-WINEPREFIX=/home/autumn/.local/share/wineprefixes/MusicBee/ wine /home/autumn/Desktop/Projects/Catppuccin-MusicBee/Catppuccin/SkinCreator.exe &
+sleep 0.1
+# It doesn't seem to accept key presses if it's not the focused window, but this at least prevents key presses being sent to the wrong window
+window_id=$(xdotool search --sync --all --onlyvisible --pid $pid --name Form1)
+sleep 0.1
 
-sleep 1.5
-xdotool key Enter
-sleep 1
-
+# Select the "Reload" button
 for i in {0..6}; do
-    xdotool key Tab
+    xdotool key --window $window_id Tab
 done
 
 for theme_index in "${!theme_names[@]}"; do
@@ -177,6 +196,8 @@ for theme_index in "${!theme_names[@]}"; do
     current_palette_name=${theme_names[$theme_index]}_palette
     declare -n current_theme_accents="$current_accents_name"
     declare -n current_palette="$current_palette_name"
+
+    check_exit
 
     perl -p -i -e "s/\\\\\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
 
@@ -205,26 +226,37 @@ for theme_index in "${!theme_names[@]}"; do
                 sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinBlack0\"/g"  ./catppuccin-base.xml
             fi
 
-            xdotool key Enter
-            xdotool key Tab
-            xdotool key Enter
-
-            xdotool keydown ctrl
-            for i in {0..20}; do
-                xdotool key Right
-            done
-            xdotool key shift+Left
-            xdotool key shift+Left
-            xdotool keyup ctrl
-
-            xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
-
-            xdotool key Tab
-            xdotool key Tab
-            xdotool key Enter
+            # Activate the reload button, then activate the save button
+            xdotool key --window $window_id Enter
+            xdotool key --window $window_id Tab
+            xdotool key --window $window_id Enter
 
             sleep 0.2
-            xdotool key Shift+Tab
+            check_exit
+            # Move the caret to the very end of the text box
+            xdotool keydown --window $window_id ctrl
+            for i in {0..20}; do
+                xdotool key --window $window_id Right
+            done
+            # Select the name of the file and its parent folder so they can be retyped
+            xdotool key --window $window_id shift+Left
+            xdotool key --window $window_id shift+Left
+            xdotool keyup --window $window_id ctrl
+
+            # For some reason, specifying the window id causes it to type a minus instead of an underscore. ??????
+            # So check to make sure it's still the active window before continuing
+            check_exit
+            xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
+
+            # Save
+            xdotool key --window $window_id Tab
+            xdotool key --window $window_id Tab
+            xdotool key --window $window_id Enter
+
+            sleep 0.3
+            check_exit
+            # Move back to the reload button
+            xdotool key --window $window_id Shift+Tab
 
             if [ $bar_state = "bar-unaccented" ]; then
                 sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
@@ -247,8 +279,10 @@ for theme_index in "${!theme_names[@]}"; do
         sed -i "s/Accent=\"${current_theme_accents[colour_index]}\"/Accent=\"placeholder\"/g"   ./catppuccin-base.xml
     done
 
-    git checkout .
+    perl -0777 -p -i -e "s/${current_palette}/\\\\\\\\ Palette placeholder/g" ./catppuccin-base.xml
 
 done
+
+kill $pid
 
 cd ..
