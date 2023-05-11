@@ -28,11 +28,10 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 3. Browse and select the downloaded `catppuccin-palette.xmlc` file
 4. MusicBee should restart with the selected theme applied
 
-Note that might be useful to somebody else: MusicBee can also be run on Linux using Wine! I have it working in a 32-bit wineprefix with dotnet48, gdiplus and xmllite. To play M4A files, you'll need to put a copy of bass_aac.dll from [here](https://www.un4seen.com/download.php?z/2/bass_aac24) in the folder alongside MusicBee.exe. This doesn't work perfectly, eg crashes on file converters page in preferences, but works well enough for me.
-
 ## Development
 
-Currently only working on this whenever I have time for it, so progress has been fairly sporadic
+The theme should now be mostly finished - I'm not aware of any issues with it myself, but further testing from other people is needed to make sure of this.
+
 ### Things to do
 
 -   [x] Basic theme
