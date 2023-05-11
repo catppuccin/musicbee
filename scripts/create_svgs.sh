@@ -12,7 +12,7 @@ accent_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yell
 mantles=("e6e9ef" "292c3c" "1e2030" "181825")
 crusts=("4c4f69" "232634" "181926" "11111b")
 surface1s=("bcc0cc" "51576d" "494d64" "45475a")
-subtext0s=("ccd0da" "a5adce" "a5adcb" "a6adc8")
+subtext0s=("6c6f85" "a5adce" "a5adcb" "a6adc8")
 texts=("4c4f68" "c6d0f5" "cad3f5" "cdd6f4")
 
 latte_accents=("dc8a78" "dd7878" "ea76cb" "8839ef" "d20f39" "e64553" "fe640b" "df8e1d" "40a02b" "179299" "04a5e5" "209fb5" "1e66f5" "7287fd")

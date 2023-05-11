@@ -223,7 +223,7 @@ for theme_index in "${!theme_names[@]}"; do
             xdotool key Tab
             xdotool key Enter
 
-            sleep 0.15
+            sleep 0.2
             xdotool key Shift+Tab
 
             if [ $bar_state = "bar-unaccented" ]; then
