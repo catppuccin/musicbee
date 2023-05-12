@@ -1,5 +1,11 @@
 #!/bin/bash
 
+currend_directory=${PWD##*/}
+if [[ "${currend_directory,,}" != "catppuccin-musicbee" ]]; then
+    echo "This should be run from the root directory of the repository! Exiting to avoid breaking things"
+    exit
+fi
+
 cd ./Catppuccin/SVGs
 
 rm -r ./output
@@ -10,7 +16,7 @@ theme_names=("latte" "frappe" "macchiato" "mocha")
 accent_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
 
 mantles=("e6e9ef" "292c3c" "1e2030" "181825")
-crusts=("4c4f69" "232634" "181926" "11111b")
+crusts=("4c4f69" "232634" "181926" "11111b") # Latte uses the text colour here instead of its crust colour, as a white shadow looks weird
 surface1s=("bcc0cc" "51576d" "494d64" "45475a")
 subtext0s=("6c6f85" "a5adce" "a5adcb" "a6adc8")
 texts=("4c4f68" "c6d0f5" "cad3f5" "cdd6f4")
