@@ -16,6 +16,7 @@ mocha_accents=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f
 crusts=("11111b" "181926" "232634" "dce0e8")
 texts=("cdd6f4" "cad3f5" "c6d0f5" "4c4f69")
 overlay0s=("6c7086" "6e738d" "737994" "9ca0b0")
+surface0s=("313244" "363a4f" "414559" "ccd0da")
 
 recolour () {
     # If the icon is 150% scale or 200% scale, that bit needs to be at the end of the file name
@@ -40,52 +41,86 @@ recolour () {
     fi
 }
 
-cd ./Catppuccin/Images/ControlsBase/MassConvert/
+cd ./Catppuccin/Images/
+
+# cd ./ControlsBase/MassConvert/
+# rm -r ../output
+# mkdir ../output
+
+# for theme_index in "${!theme_names[@]}"; do
+#     echo ${theme_names[$theme_index]}
+#     current_accents_name=${theme_names[$theme_index]}_accents
+#     declare -n current_theme_accents="$current_accents_name"
+
+#     for file in *; do
+#         # For unaccented bar
+#         recolour $file "#${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
+
+#         # For accented bar for each accent colour
+#         for colour_index in "${!palette_names[@]}"; do
+#             recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}" &
+#         done
+#     done
+
+#     # Unaccented bar
+#     magick ../Background.png -alpha extract -background "#${crusts[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
+#     # Accented bar for each accent colour
+#     for colour_index in "${!palette_names[@]}"; do
+#         magick ../Background.png -alpha extract -background "#${current_theme_accents[$colour_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-mono-accent-bar-${palette_names[$colour_index]}.png"
+#     done
+# done
+
+# mv ../output/* ../../Controls
+# cd ../../
+
+
+cd ./IconsBase/
+cd ./MassConvert/
 rm -r ../output
 mkdir ../output
 
-for theme_index in "${!theme_names[@]}"; do
-    echo ${theme_names[$theme_index]}
-    current_accents_name=${theme_names[$theme_index]}_accents
-    declare -n current_theme_accents="$current_accents_name"
+# for theme_index in "${!theme_names[@]}"; do
+#     echo ${theme_names[$theme_index]}
+#     current_accents_name=${theme_names[$theme_index]}_accents
+#     declare -n current_theme_accents="$current_accents_name"
 
-    for file in *; do
-        # For unaccented bar
-        recolour $file "#${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
+#     for file in *; do
+#         for colour_index in "${!palette_names[@]}"; do
+#             recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_accent-${palette_names[$colour_index]}"
+#         done
+#     done
+# done
 
-        # For accented bar for each accent colour
-        for colour_index in "${!palette_names[@]}"; do
-            recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_bar-unaccented_accent-${palette_names[$colour_index]}" &
-        done
-    done
+# cd ../
+# cd ./MassConvertText
 
-    # Unaccented bar
-    magick ../Background.png -alpha extract -background "#${crusts[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
-    # Accented bar for each accent colour
-    for colour_index in "${!palette_names[@]}"; do
-        magick ../Background.png -alpha extract -background "#${current_theme_accents[$colour_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-mono-accent-bar-${palette_names[$colour_index]}.png"
-    done
-done
+# for theme_index in "${!theme_names[@]}"; do
+#     echo ${theme_names[$theme_index]}
+#     for file in *; do
+#         recolour $file "#${texts[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+#     done
+# done
 
-mv ../output/* ../../Controls
+# cd ../
+# cd ./MassConvertGray
 
-cd ../../IconsBase/MassConvert/
+# for theme_index in "${!theme_names[@]}"; do
+#     echo ${theme_names[$theme_index]}
+#     for file in *; do
+#         recolour $file "#${overlay0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+#     done
+# done
+
+mv ../output/* ../../Icons
+
+cd ../../
+
+
+cd ./WindowBase
+cd ./MassConvertText
+
 rm -r ../output
 mkdir ../output
-
-for theme_index in "${!theme_names[@]}"; do
-    echo ${theme_names[$theme_index]}
-    current_accents_name=${theme_names[$theme_index]}_accents
-    declare -n current_theme_accents="$current_accents_name"
-
-    for file in *; do
-        for colour_index in "${!palette_names[@]}"; do
-            recolour $file "#${current_theme_accents[$colour_index]}" "_theme-${theme_names[$theme_index]}_accent-${palette_names[$colour_index]}"
-        done
-    done
-done
-
-cd ../MassConvertText
 
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
@@ -94,13 +129,14 @@ for theme_index in "${!theme_names[@]}"; do
     done
 done
 
-cd ../MassConvertGray
+cd ../
+cd ./MassConvertSurface0s
 
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
     for file in *; do
-        recolour $file "#${overlay0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+        recolour $file "#${surface0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 
-mv ../output/* ../../Icons
+mv ../output/* ../../Window
