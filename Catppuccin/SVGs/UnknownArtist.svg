@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="210mm"
-   viewBox="0 0 210 210"
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
    version="1.1"
    id="svg988"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="UnknownArtist.svg"
    inkscape:export-filename="C:\Users\James\Desktop\Catppuccin-MusicBee\Images\Others\UnknownArtist.png"
    inkscape:export-xdpi="96"
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="false"
      inkscape:object-paths="false"
@@ -34,19 +34,23 @@
      inkscape:snap-intersection-paths="false"
      inkscape:snap-bbox-midpoints="false"
      inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="385"
-     inkscape:cy="560"
-     inkscape:window-width="948"
-     inkscape:window-height="1036"
-     inkscape:window-x="964"
-     inkscape:window-y="36"
+     inkscape:zoom="1"
+     inkscape:cx="-49"
+     inkscape:cy="97"
+     inkscape:window-width="1904"
+     inkscape:window-height="1040"
+     inkscape:window-x="8"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:object-nodes="false"
      inkscape:snap-others="false"
      inkscape:showpageshadow="2"
-     inkscape:deskcolor="#505050" />
+     inkscape:deskcolor="#505050">
+    <inkscape:grid
+       type="xygrid"
+       id="grid244" />
+  </sodipodi:namedview>
   <defs
      id="defs985" />
   <g
@@ -54,10 +58,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#1e2030;fill-opacity:1;stroke-width:2.16444"
+       style="fill:#1e2030;fill-opacity:1;stroke-width:1.09081"
        id="rect1071"
-       width="210"
-       height="210"
+       width="105.83334"
+       height="105.83334"
        x="0"
        y="0" />
   </g>
@@ -70,8 +74,8 @@
        id="layer7"
        inkscape:label="Body Outer">
       <path
-         style="mix-blend-mode:normal;fill:#494d64;fill-opacity:1;stroke:none;stroke-width:0.2625px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 23.625,210 v -23.625 c 0,-0.58697 0,-64.3084 81.375,-64.3125 81.36625,-0.004 81.375,64.3125 81.375,64.3125 V 210 Z"
+         style="mix-blend-mode:normal;fill:#494d64;fill-opacity:1;stroke:none;stroke-width:0.132292px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 11.90625,105.83333 V 93.927083 c 0,-0.295814 0,-32.409392 41.010417,-32.411458 41.006007,-0.002 41.010416,32.411458 41.010416,32.411458 v 11.906247 z"
          id="path2593"
          sodipodi:nodetypes="cszccc" />
     </g>
@@ -80,8 +84,8 @@
        id="layer8"
        inkscape:label="Body Inner">
       <path
-         style="fill:#c6a0f6;fill-opacity:1;stroke:none;stroke-width:0.2625px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 28.35,210 v -23.625 c 0,-0.58697 0.0016,-59.85113 76.65,-59.85 76.64843,10e-4 76.65,59.85 76.65,59.85 V 210 Z"
+         style="fill:#c6a0f6;fill-opacity:1;stroke:none;stroke-width:0.132292px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 14.2875,105.83333 V 93.927083 c 0,-0.295814 8.06e-4,-30.163069 38.629167,-30.1625 38.628375,5.04e-4 38.629166,30.1625 38.629166,30.1625 v 11.906247 z"
          id="path1722"
          sodipodi:nodetypes="cszccc" />
     </g>
@@ -95,22 +99,22 @@
        id="layer2"
        inkscape:label="Head Outer">
       <circle
-         style="fill:#494d64;stroke-width:0.0721995;fill-opacity:1"
+         style="fill:#494d64;fill-opacity:1;stroke-width:0.0363863"
          id="path1176"
-         cx="105"
-         cy="68.775002"
-         r="44.099998" />
+         cx="52.916668"
+         cy="34.660416"
+         r="22.224998" />
     </g>
     <g
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="Head Inner">
       <circle
-         style="fill:#c6a0f6;fill-opacity:1;stroke-width:0.0631171"
+         style="fill:#c6a0f6;fill-opacity:1;stroke-width:0.031809"
          id="path1302"
-         cx="105"
-         cy="68.775002"
-         r="39.375" />
+         cx="52.916668"
+         cy="34.660416"
+         r="19.84375" />
     </g>
   </g>
 </svg>

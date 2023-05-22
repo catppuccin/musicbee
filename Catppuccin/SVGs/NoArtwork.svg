@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="210mm"
-   viewBox="0 0 210 210"
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="NoArtwork.svg"
    inkscape:export-filename="C:\Users\James\Desktop\Catppuccin-MusicBee\Images\Others\NoArtwork.png"
    inkscape:export-xdpi="96"
@@ -24,18 +24,18 @@
      inkscape:pageshadow="0"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
+     inkscape:document-units="px"
+     showgrid="true"
      showguides="true"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="418.99999"
-     inkscape:cy="595.99998"
-     inkscape:window-width="948"
-     inkscape:window-height="1036"
-     inkscape:window-x="964"
-     inkscape:window-y="36"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:zoom="1"
+     inkscape:cx="-13"
+     inkscape:cy="190"
+     inkscape:window-width="1904"
+     inkscape:window-height="1040"
+     inkscape:window-x="8"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#505050" />
   <defs
@@ -46,10 +46,10 @@
      id="layer1"
      style="display:inline;opacity:1">
     <rect
-       style="fill:#1e2030;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+       style="fill:#1e2030;fill-opacity:1;fill-rule:evenodd;stroke-width:0.132291"
        id="rect55"
-       width="211.66667"
-       height="211.66667"
+       width="105.83333"
+       height="105.83333"
        x="0"
        y="0" />
   </g>
@@ -58,11 +58,11 @@
      id="layer2"
      inkscape:label="Circle 1">
     <circle
-       style="fill:#494d64;fill-opacity:1;fill-rule:evenodd;stroke-width:0.132292"
+       style="fill:#494d64;fill-opacity:1;fill-rule:evenodd;stroke-width:0.066146"
        id="path163"
-       cx="105.83334"
-       cy="105.83334"
-       r="76.464584" />
+       cx="52.916668"
+       cy="52.916668"
+       r="38.232292" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -70,43 +70,43 @@
      inkscape:label="Circle 2"
      sodipodi:insensitive="true">
     <circle
-       style="fill:#c6a0f6;fill-opacity:1;stroke-width:0.382084"
+       style="fill:#c6a0f6;fill-opacity:1;stroke-width:0.191042"
        id="path1289"
-       cx="105.83334"
-       cy="105.83334"
-       r="70.379166" />
+       cx="52.916668"
+       cy="52.916668"
+       r="35.189583" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="g1396"
      inkscape:label="Circle 3">
     <circle
-       style="fill:#494d64;fill-opacity:1;fill-rule:evenodd;stroke-width:0.0526421"
+       style="fill:#494d64;fill-opacity:1;fill-rule:evenodd;stroke-width:0.026321"
        id="circle1394"
-       cx="105.83334"
-       cy="105.83334"
-       r="30.427084" />
+       cx="52.916668"
+       cy="52.916668"
+       r="15.213541" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Circle 4">
     <circle
-       style="fill:#1e2030;fill-opacity:1;stroke:none;stroke-width:0.377492;stroke-opacity:1"
+       style="fill:#1e2030;fill-opacity:1;stroke:none;stroke-width:0.188746;stroke-opacity:1"
        id="path4405"
-       cx="105.83334"
-       cy="105.83334"
-       r="24.341667" />
+       cx="52.916668"
+       cy="52.916668"
+       r="12.170834" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Circle 5">
     <circle
-       style="fill:#494d64;fill-opacity:1;stroke:none;stroke-width:0.236748;stroke-opacity:1"
+       style="fill:#494d64;fill-opacity:1;stroke:none;stroke-width:0.118374;stroke-opacity:1"
        id="path4774"
-       cx="105.83334"
-       cy="105.83334"
-       r="5.8208332" />
+       cx="52.916668"
+       cy="52.916668"
+       r="2.9104166" />
   </g>
 </svg>
