@@ -6,13 +6,13 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/James-McK/Catppuccin-MusicBee/stargazers"><img src="https://img.shields.io/github/stars/James-McK/Catppuccin-MusicBee?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/James-McK/Catppuccin-MusicBee/issues"><img src="https://img.shields.io/github/issues/James-McK/Catppuccin-MusicBee?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/James-McK/Catppuccin-MusicBee/contributors"><img src="https://img.shields.io/github/contributors/James-McK/Catppuccin-MusicBee?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/musicbee/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/musicbee?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/musicbee/issues"><img src="https://img.shields.io/github/issues/catppuccin/musicbee?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/musicbee/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/musicbee?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="https://github.com/James-McK/catppuccin-musicbee/blob/main/assets/screenshot.webp"/>
+  <img src="https://github.com/catppuccin/musicbee/blob/main/assets/screenshot.webp"/>
 </p>
 
 ## About
@@ -23,7 +23,7 @@ Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee
 
 ## Usage
 
-1. Download the `.xmlc` file for the palette and accent colour you want, and if you want the player controls panel to be accented or not, from [the releases](https://github.com/James-McK/Catppuccin-MusicBee/releases/latest)
+1. Download the `.xmlc` file for the palette and accent colour you want, and if you want the player controls panel to be accented or not, from [the releases](https://github.com/catppuccin/musicbee/releases/latest)
 2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
 3. Browse and select the downloaded `catppuccin-palette.xmlc` file
 4. MusicBee should restart with the selected theme applied
