@@ -1,7 +1,7 @@
 #!/bin/bash
 
 currend_directory=${PWD##*/}
-if [[ "${currend_directory,,}" != "catppuccin-musicbee" ]]; then
+if [[ "${currend_directory,,}" != "musicbee" ]]; then
     echo "This should be run from the root directory of the repository! Exiting to avoid breaking things"
     exit
 fi
