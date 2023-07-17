@@ -217,8 +217,8 @@ for theme_index in "${!theme_names[@]}"; do
                 sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinForeground\"/g" ./catppuccin-base.xml
                 sed -i "s/SpectrumOff=\"Accent\"/SpectrumOff=\"CatppuccinBlack1\"/g"            ./catppuccin-base.xml
                 sed -i "s/SpectrumOn=\"CatppuccinBlack1\"/SpectrumOn=\"Accent\"/g"              ./catppuccin-base.xml
-                sed -i "s/WaveBarOn=\"CatppuccinBlack1\"/WaveBarOn=\"Accent\"/g"                ./catppuccin-base.xml
-                sed -i "s/WaveBarOff=\"Accent\"/WaveBarOff=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
+                sed -i "s/WaveBarOn=\"CatppuccinBlack2\"/WaveBarOn=\"Accent\"/g"                ./catppuccin-base.xml
+                sed -i "s/WaveBarOff=\"Accent\"/WaveBarOff=\"CatppuccinBlack2\"/g"              ./catppuccin-base.xml
                 sed -i "s/StarRatingOn=\"CatppuccinForeground\"/StarRatingOn=\"Accent\"/g"      ./catppuccin-base.xml
             else
                 bar_state_underscored="bar_accented"
@@ -264,8 +264,8 @@ for theme_index in "${!theme_names[@]}"; do
                 sed -i "s/MainPlayerText=\"CatppuccinForeground\"/\\\\\\\\ Bar text placeholder/g" ./catppuccin-base.xml
                 sed -i "s/SpectrumOn=\"Accent\"/SpectrumOn=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
                 sed -i "s/SpectrumOff=\"CatppuccinBlack1\"/SpectrumOff=\"Accent\"/g"            ./catppuccin-base.xml
-                sed -i "s/WaveBarOff=\"CatppuccinBlack1\"/WaveBarOff=\"Accent\"/g"              ./catppuccin-base.xml
-                sed -i "s/WaveBarOn=\"Accent\"/WaveBarOn=\"CatppuccinBlack1\"/g"                ./catppuccin-base.xml
+                sed -i "s/WaveBarOff=\"CatppuccinBlack2\"/WaveBarOff=\"Accent\"/g"              ./catppuccin-base.xml
+                sed -i "s/WaveBarOn=\"Accent\"/WaveBarOn=\"CatppuccinBlack2\"/g"                ./catppuccin-base.xml
                 sed -i "s/StarRatingOn=\"Accent\"/StarRatingOn=\"CatppuccinForeground\"/g"      ./catppuccin-base.xml
             else
                 sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak

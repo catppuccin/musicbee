@@ -52,7 +52,7 @@
 		SpectrumOn="CatppuccinBlack1"
 
 		WaveBarOff="Accent"
-		WaveBarOn="CatppuccinBlack1"
+		WaveBarOn="CatppuccinBlack2"
 
 		StarRatingOn="CatppuccinForeground"
 		StarRatingOff="CatppuccinBlack2"
@@ -271,26 +271,6 @@
 		<element id="PlayerFlat.Wavebar.Inner" fg="WaveBarOn" fg2="WaveBarOff" />
 		<element id="PlayerFlat.MetroButton.Default" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
 		<element id="PlayerFlat.MetroButton.Highlight" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
-	\\ Flat Player (on Top)
-		<element id="PlayerTopFlat.Background" bg="Accent" bg2="Accent" fg="CatppuccinBlack0" bdr="Accent" />
-		<element id="PlayerTopFlat.DisplayPanel" bg="Accent" fg="CatppuccinBlack0" fg2="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.ProgressBar" bg="Accent" fg="CatppuccinBlack0" bdr="CatppuccinBlack0" /> <!-- fg is used for the fill colour -->
-		<element id="PlayerTopFlat.ProgressButton" fg="Highlight" />
-		<element id="PlayerTopFlat.Control.Default" fg="CatppuccinForeground" />
-		<element id="PlayerTopFlat.Control.Disabled" fg="CatppuccinGray0" />
-		<element id="PlayerTopFlat.Control.Highlight" fg="Highlight" />
-		<element id="PlayerTopFlat.StarRating.Default" fg="StarRatingOn" />
-		<element id="PlayerTopFlat.StarRating.Lowlight" fg="StarRatingOff" />
-		<element id="PlayerTopFlat.NotLovedIcon" fg="CatppuccinBlack4" />
-		<element id="PlayerTopFlat.SpectrumDefault" bg="Accent" />
-		<element id="PlayerTopFlat.SpectrumDead" bg="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.SpectrumLow" bg="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.SpectrumMedium" bg="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.SpectrumHigh" bg="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.Wavebar" fg="CatppuccinBlack0" fg2="Accent" />
-		<element id="PlayerTopFlat.Wavebar.Inner" fg="CatppuccinBlack0" fg2="Accent" />
-		<element id="PlayerTopFlat.MetroButton.Default" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
-		<element id="PlayerTopFlat.MetroButton.Highlight" bg="CatppuccinBlack0" bdr="CatppuccinBlack0" />
 
 	\\ SideBar Player
 		<element id="PlayerSidebar.Background" bg="PanelBG" fg="CatppuccinForeground" />
