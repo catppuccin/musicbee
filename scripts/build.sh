@@ -173,7 +173,7 @@ check_exit () {
     fi
 }
 
-sleep 0.1
+sleep 1
 pid=$(pidof SkinCreator.exe)
 
 window_id=$(xdotool search --sync --all --onlyvisible --pid $pid --name SkinCreator)
@@ -231,7 +231,7 @@ for theme_index in "${!theme_names[@]}"; do
             xdotool key --window $window_id Tab
             xdotool key --window $window_id Enter
 
-            sleep 0.2
+            sleep 0.25
             check_exit
             # Move the caret to the very end of the text box
             xdotool keydown --window $window_id ctrl
@@ -253,7 +253,7 @@ for theme_index in "${!theme_names[@]}"; do
             xdotool key --window $window_id Tab
             xdotool key --window $window_id Enter
 
-            sleep 0.3
+            sleep 0.35
             check_exit
             # Move back to the reload button
             xdotool key --window $window_id Shift+Tab
