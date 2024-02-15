@@ -1,22 +1,6 @@
-#!/bin/bash
+#!/bin/env bash
 
-currend_directory=${PWD##*/}
-if [[ "${currend_directory,,}" != "musicbee" ]]; then
-    echo "This should be run from the root directory of the repository! Exiting to avoid breaking things"
-    exit
-fi
-
-theme_names=("mocha" "macchiato" "frappe" "latte")
-palette_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
-
-latte_accents=("dc8a78" "dd7878" "ea76cb" "8839ef" "d20f39" "e64553" "fe640b" "df8e1d" "40a02b" "179299" "04a5e5" "209fb5" "1e66f5" "7287fd")
-frappe_accents=("f2d5cf" "eebebe" "f4b8e4" "ca9ee6" "e78284" "ea999c" "ef9f76" "e5c890" "a6d189" "81c8be" "99d1db" "85c1dc" "8caaee" "babbf1")
-macchiato_accents=("f4dbd6" "f0c6c6" "f5bde6" "c6a0f6" "ed8796" "ee99a0" "f5a97f" "eed49f" "a6da95" "8bd5ca" "91d7e3" "7dc4e4" "8aadf4" "b7bdf8")
-mocha_accents=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f9e2af" "a6e3a1" "94e2d5" "89dceb" "74c7ec" "89b4fa" "b4befe")
-crusts=("11111b" "181926" "232634" "dce0e8")
-texts=("cdd6f4" "cad3f5" "c6d0f5" "4c4f69")
-overlay0s=("6c7086" "6e738d" "737994" "9ca0b0")
-surface0s=("313244" "363a4f" "414559" "ccd0da")
+source ./scripts/palette.sh # also makes sure we're in the right directory
 
 recolour () {
     # If the icon is 150% scale or 200% scale, that bit needs to be at the end of the file name
@@ -49,12 +33,12 @@ mkdir ../output
 
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
-    current_accents_name=${theme_names[$theme_index]}_accents
+    current_accents_name=${theme_names[$theme_index]}_accents_hex
     declare -n current_theme_accents="$current_accents_name"
 
     for file in *; do
         # For unaccented bar
-        recolour $file "#${crusts[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
+        recolour $file "#${crusts_hex[$theme_index]}" "_theme-${theme_names[$theme_index]}_bar-mono" &
 
         # For accented bar for each accent colour
         for colour_index in "${!palette_names[@]}"; do
@@ -63,7 +47,7 @@ for theme_index in "${!theme_names[@]}"; do
     done
 
     # Unaccented bar
-    magick ../Background.png -alpha extract -background "#${crusts[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
+    magick ../Background.png -alpha extract -background "#${crusts_hex[$theme_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-unaccented_accent-none.png"
     # Accented bar for each accent colour
     for colour_index in "${!palette_names[@]}"; do
         magick ../Background.png -alpha extract -background "#${current_theme_accents[$colour_index]}" -alpha shape "../output/Background_theme-${theme_names[$theme_index]}_bar-mono-accent-bar-${palette_names[$colour_index]}.png"
@@ -81,7 +65,7 @@ mkdir ../output
 
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
-    current_accents_name=${theme_names[$theme_index]}_accents
+    current_accents_name=${theme_names[$theme_index]}_accents_hex
     declare -n current_theme_accents="$current_accents_name"
 
     for file in *; do
@@ -97,7 +81,7 @@ cd ./MassConvertText
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
     for file in *; do
-        recolour $file "#${texts[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+        recolour $file "#${texts_hex[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 
@@ -107,7 +91,7 @@ cd ./MassConvertGray
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
     for file in *; do
-        recolour $file "#${overlay0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+        recolour $file "#${overlay0s_hex[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 
@@ -125,7 +109,7 @@ mkdir ../output
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
     for file in *; do
-        recolour $file "#${texts[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+        recolour $file "#${texts_hex[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 
@@ -135,7 +119,7 @@ cd ./MassConvertSurface0s
 for theme_index in "${!theme_names[@]}"; do
     echo ${theme_names[$theme_index]}
     for file in *; do
-        recolour $file "#${surface0s[$theme_index]}" "_theme-${theme_names[$theme_index]}"
+        recolour $file "#${surface0s_hex[$theme_index]}" "_theme-${theme_names[$theme_index]}"
     done
 done
 

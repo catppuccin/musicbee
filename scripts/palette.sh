@@ -13,10 +13,17 @@ latte_accents_hex=("dc8a78" "dd7878" "ea76cb" "8839ef" "d20f39" "e64553" "fe640b
 frappe_accents_hex=("f2d5cf" "eebebe" "f4b8e4" "ca9ee6" "e78284" "ea999c" "ef9f76" "e5c890" "a6d189" "81c8be" "99d1db" "85c1dc" "8caaee" "babbf1")
 macchiato_accents_hex=("f4dbd6" "f0c6c6" "f5bde6" "c6a0f6" "ed8796" "ee99a0" "f5a97f" "eed49f" "a6da95" "8bd5ca" "91d7e3" "7dc4e4" "8aadf4" "b7bdf8")
 mocha_accents_hex=("f5e0dc" "f2cdcd" "f5c2e7" "cba6f7" "f38ba8" "eba0ac" "fab387" "f9e2af" "a6e3a1" "94e2d5" "89dceb" "74c7ec" "89b4fa" "b4befe")
+
 crusts_hex=("11111b" "181926" "232634" "dce0e8")
+crusts_svgs_hex=("11111b" "181926" "232634" "4c4f68") # Latte uses the text colour here instead of its crust colour, as a white shadow looks weird
+mantles_hex=("181825" "1e2030" "292c3c" "e6e9ef")
 texts_hex=("cdd6f4" "cad3f5" "c6d0f5" "4c4f69")
+subtext0s_hex=("a6adc8" "a5adcb" "a5adce" "6c6f85")
 overlay0s_hex=("6c7086" "6e738d" "737994" "9ca0b0")
 surface0s_hex=("313244" "363a4f" "414559" "ccd0da")
+surface1s_hex=("45475a" "494d64" "51576d" "bcc0cc")
+
+reds_hex=("f38ba8" "ed8796" "e78284" "d20f39")
 
 # TODO find a better solution than this
 
