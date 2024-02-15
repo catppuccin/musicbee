@@ -1,288 +1,139 @@
-#!/bin/bash
+#!/bin/env bash
+set -e
 
-currend_directory=${PWD##*/}
-if [[ "${currend_directory,,}" != "musicbee" ]]; then
-    echo "This should be run from the root directory of the repository! Exiting to avoid breaking things"
-    exit
-fi
+export WINEPREFIX="$HOME/.local/share/wineprefixes/MusicBee/"
+export DISPLAY=":42"
+export WINEDEBUG=-all # don't print any debugging messages for wine
 
+source ./scripts/palette.sh # also makes sure we're in the right directory
+
+# clear any previous output
 rm -r ./output
 mkdir ./output
 
+# create x11 virtual framebuffer
+Xvfb $DISPLAY &
+Xvfb_PID=$!
+
+sleep 0.2
+
 cd ./Catppuccin/
+wine "./SkinCreator.exe" &
+SkinCreator_PID=$!
 
-# If you're trying to run this yourself, you'll need to change the WINEPREFIX below to one capable of running MusicBee
-WINEPREFIX="/home/autumn/.local/share/wineprefixes/MusicBee/" wine "./SkinCreator.exe" &
+# will first pop up an error saying "...Could not find file ..." - we can ignore this, we'll be updating the files to the right paths later
+window_id=$(xdotool search --sync --all --onlyvisible --pid $SkinCreator_PID --name SkinCreator)
+xdotool key --window "$window_id" Enter
 
-bar_states=("bar-mono" "bar-unaccented")
-theme_names=("mocha" "macchiato" "frappe" "latte")
-palette_names=("rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender")
+# wait for window to appear and get its id
+window_id=$(xdotool search --sync --all --onlyvisible --pid $SkinCreator_PID  --name Form1)
 
-mocha_accents=("245,224,220" "242,205,205" "245,194,231" "203,166,247" "243,139,168" "235,160,172" "250,179,135" "249,226,175" "166,227,161" "148,226,213" "137,220,235" "116,199,236" "137,180,250" "180,190,254")
-macchiato_accents=("244,219,214" "240,198,198" "245,189,230" "198,160,246" "237,135,150" "238,153,160" "245,169,127" "238,212,159" "166,218,149" "139,213,202" "145,215,227" "125,196,228" "138,173,244" "183,189,248")
-frappe_accents=("242,213,207" "238,190,190" "244,184,228" "202,158,230" "231,130,132" "234,153,156" "239,159,118" "229,200,144" "166,209,137" "129,200,190" "153,209,219" "133,193,220" "140,170,238" "186,187,241")
-latte_accents=("220,138,120" "221,120,120" "234,118,203" "136,57,239" "210,15,57" "230,69,83" "254,100,11" "223,142,29" "64,160,43" "23,146,153" "4,165,229" "32,159,181" "30,102,245" "114,135,253")
-
-mocha_palette="
-		CatppuccinBlack0=\"17,17,27\"
-		CatppuccinBlack1=\"24,24,37\"
-		CatppuccinBlack2=\"30,30,46\"
-		CatppuccinBlack3=\"49,50,68\"
-		InactiveIconMask=\"193,49,50,68\"
-		CatppuccinBlack4=\"69,71,90\"
-
-		CatppuccinGray0=\"88,91,112\"
-		CatppuccinGray1=\"108,112,134\"
-		CatppuccinGray2=\"127,132,156\"
-		CatppuccinGray3=\"147,153,178\"
-
-		CatppuccinGray4=\"166,173,200\"
-		CatppuccinGray5=\"186,194,222\"
-
-		CatppuccinForeground=\"205,214,244\"
-
-		CatppuccinRosewater=\"245,224,220\"
-		CatppuccinFlamingo=\"242,205,205\"
-		CatppuccinPink=\"245,194,231\"
-		CatppuccinMauve=\"203,166,247\"
-		CatppuccinRed=\"243,139,168\"
-		CatppuccinMaroon=\"235,160,172\"
-		CatppuccinPeach=\"250,179,135\"
-		CatppuccinYellow=\"249,226,175\"
-		CatppuccinGreen=\"166,227,161\"
-		CatppuccinTeal=\"148,226,213\"
-		CatppuccinSky=\"137,220,235\"
-		CatppuccinSapphire=\"116,199,236\"
-		CatppuccinBlue=\"137,180,250\"
-		CatppuccinLavender=\"180,190,254\"
-"
-
-macchiato_palette="
-		CatppuccinBlack0=\"24,25,38\"
-		CatppuccinBlack1=\"30,32,48\"
-		CatppuccinBlack2=\"36,39,58\"
-		CatppuccinBlack3=\"54,58,79\"
-		InactiveIconMask=\"193,54,58,79\"
-		CatppuccinBlack4=\"73,77,100\"
-
-		CatppuccinGray0=\"91,96,120\"
-		CatppuccinGray1=\"110,115,141\"
-		CatppuccinGray2=\"128,135,162\"
-		CatppuccinGray3=\"147,154,183\"
-
-		CatppuccinGray4=\"165,173,203\"
-		CatppuccinGray5=\"184,192,224\"
-
-		CatppuccinForeground=\"202,211,245\"
-
-		CatppuccinRosewater=\"244,219,214\"
-		CatppuccinFlamingo=\"240,198,198\"
-		CatppuccinPink=\"245,189,230\"
-		CatppuccinMauve=\"198,160,246\"
-		CatppuccinRed=\"237,135,150\"
-		CatppuccinMaroon=\"238,153,160\"
-		CatppuccinPeach=\"245,169,127\"
-		CatppuccinYellow=\"238,212,159\"
-		CatppuccinGreen=\"166,218,149\"
-		CatppuccinTeal=\"139,213,202\"
-		CatppuccinSky=\"145,215,227\"
-		CatppuccinSapphire=\"125,196,228\"
-		CatppuccinBlue=\"138,173,244\"
-		CatppuccinLavender=\"183,189,248\"
-"
-
-frappe_palette="
-		CatppuccinBlack0=\"35,38,52\"
-		CatppuccinBlack1=\"41,44,60\"
-		CatppuccinBlack2=\"48,52,70\"
-		CatppuccinBlack3=\"65,69,89\"
-		InactiveIconMask=\"193,65,69,89\"
-		CatppuccinBlack4=\"81,87,109\"
-
-		CatppuccinGray0=\"98,104,128\"
-		CatppuccinGray1=\"115,121,148\"
-		CatppuccinGray2=\"131,139,167\"
-		CatppuccinGray3=\"148,156,187\"
-
-		CatppuccinGray4=\"165,173,206\"
-		CatppuccinGray5=\"181,191,226\"
-
-		CatppuccinForeground=\"198,208,245\"
-
-		CatppuccinRosewater=\"242,213,207\"
-		CatppuccinFlamingo=\"238,190,190\"
-		CatppuccinPink=\"244,184,228\"
-		CatppuccinMauve=\"202,158,230\"
-		CatppuccinRed=\"231,130,132\"
-		CatppuccinMaroon=\"234,153,156\"
-		CatppuccinPeach=\"239,159,118\"
-		CatppuccinYellow=\"229,200,144\"
-		CatppuccinGreen=\"166,209,137\"
-		CatppuccinTeal=\"129,200,190\"
-		CatppuccinSky=\"153,209,219\"
-		CatppuccinSapphire=\"133,193,220\"
-		CatppuccinBlue=\"140,170,238\"
-		CatppuccinLavender=\"186,187,241\"
-"
-
-latte_palette="
-		CatppuccinBlack0=\"220,224,232\"
-		CatppuccinBlack1=\"230,233,239\"
-		CatppuccinBlack2=\"239,241,245\"
-		CatppuccinBlack3=\"204,208,218\"
-		InactiveIconMask=\"123,204,208,218\"
-		CatppuccinBlack4=\"188,192,204\"
-
-		CatppuccinGray0=\"172,176,190\"
-		CatppuccinGray1=\"156,160,176\"
-		CatppuccinGray2=\"140,143,161\"
-		CatppuccinGray3=\"124,127,147\"
-
-		CatppuccinGray4=\"108,111,133\"
-		CatppuccinGray5=\"92,95,119\"
-
-		CatppuccinForeground=\"76,79,105\"
-
-		CatppuccinRosewater=\"220,138,120\"
-		CatppuccinFlamingo=\"221,120,120\"
-		CatppuccinPink=\"234,118,203\"
-		CatppuccinMauve=\"136,57,239\"
-		CatppuccinRed=\"210,15,57\"
-		CatppuccinMaroon=\"230,69,83\"
-		CatppuccinPeach=\"254,100,11\"
-		CatppuccinYellow=\"223,142,29\"
-		CatppuccinGreen=\"64,160,43\"
-		CatppuccinTeal=\"23,146,153\"
-		CatppuccinSky=\"4,165,229\"
-		CatppuccinSapphire=\"32,159,181\"
-		CatppuccinBlue=\"30,102,245\"
-		CatppuccinLavender=\"114,135,253\"
-"
-
-check_exit () {
-    # evtest --query /dev/input/by-id/usb-04d9_USB-HID_Keyboard-event-kbd EV_KEY 1
-    # if [ $? == 10 ]; then
-    #     echo "Esc key down, exiting!"
-    #     exit
-    # fi
-
-    current_window=$(xdotool getactivewindow)
-    if [ $(xdotool getwindowpid $current_window) != $(xdotool getwindowpid $window_id) ]; then
-        echo "SkinCreator window not focused, exiting!"
-        exit
-    fi
+swap_in_theme_and_accent() {
+	sed -i "s/theme-palette-placeholder/theme-${theme_names[$theme_index]}/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
+	sed -i "s/accent-placeholder/accent-${palette_names[$colour_index]}/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
+	sed -i "s/Accent=\"placeholder\"/Accent=\"${current_theme_accents[colour_index]}\"/g"   ./catppuccin-base.xml
 }
 
-sleep 1
-pid=$(pidof SkinCreator.exe)
+swap_out_theme_and_accent() {
+	sed -i "s/theme-${theme_names[$theme_index]}/theme-palette-placeholder/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
+	sed -i "s/accent-${palette_names[$colour_index]}/accent-placeholder/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
+	sed -i "s/Accent=\"${current_theme_accents[colour_index]}\"/Accent=\"placeholder\"/g"   ./catppuccin-base.xml
+}
 
-window_id=$(xdotool search --sync --all --onlyvisible --pid $pid --name SkinCreator)
-# Ignore the error message, it's expected
-xdotool key --window $window_id Enter
-xdotool keyup Enter
+swap_in_bar_state() {
+	if [ "$bar_state" = "bar-unaccented" ]; then
+		sed -i "s/bar-mono\./bar-unaccented_accent-${palette_names[$colour_index]}\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/bar-mono-accent-bar-placeholder/bar-unaccented_accent-none/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinForeground\"/g" ./catppuccin-base.xml
+		sed -i "s/SpectrumOff=\"Accent\"/SpectrumOff=\"CatppuccinBlack1\"/g"            ./catppuccin-base.xml
+		sed -i "s/SpectrumOn=\"CatppuccinBlack1\"/SpectrumOn=\"Accent\"/g"              ./catppuccin-base.xml
+		sed -i "s/WaveBarOn=\"CatppuccinBlack2\"/WaveBarOn=\"Accent\"/g"                ./catppuccin-base.xml
+		sed -i "s/WaveBarOff=\"Accent\"/WaveBarOff=\"CatppuccinBlack2\"/g"              ./catppuccin-base.xml
+		sed -i "s/StarRatingOn=\"CatppuccinForeground\"/StarRatingOn=\"Accent\"/g"      ./catppuccin-base.xml
+	else
+		sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinBlack0\"/g"  ./catppuccin-base.xml
+	fi
+}
 
-sleep 0.1
-# It doesn't seem to accept key presses if it's not the focused window, but this at least prevents key presses being sent to the wrong window
-window_id=$(xdotool search --sync --all --onlyvisible --pid $pid --name Form1)
-sleep 0.1
-
-# Select the "Reload" button
-for i in {0..6}; do
-    xdotool key --window $window_id Tab
-done
+swap_out_bar_state() {
+	if [ "$bar_state" = "bar-unaccented" ]; then
+		sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}\./bar-mono\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/MainPlayerText=\"CatppuccinForeground\"/\\\\\\\\ Bar text placeholder/g" ./catppuccin-base.xml
+		sed -i "s/SpectrumOn=\"Accent\"/SpectrumOn=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
+		sed -i "s/SpectrumOff=\"CatppuccinBlack1\"/SpectrumOff=\"Accent\"/g"            ./catppuccin-base.xml
+		sed -i "s/WaveBarOff=\"CatppuccinBlack2\"/WaveBarOff=\"Accent\"/g"              ./catppuccin-base.xml
+		sed -i "s/WaveBarOn=\"Accent\"/WaveBarOn=\"CatppuccinBlack2\"/g"                ./catppuccin-base.xml
+		sed -i "s/StarRatingOn=\"Accent\"/StarRatingOn=\"CatppuccinForeground\"/g"      ./catppuccin-base.xml
+	else
+		sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
+		sed -i "s/MainPlayerText=\"CatppuccinBlack0\"/\\\\\\\\ Bar text placeholder/g"  ./catppuccin-base.xml
+	fi
+}
 
 for theme_index in "${!theme_names[@]}"; do
-    current_accents_name=${theme_names[$theme_index]}_accents
-    current_palette_name=${theme_names[$theme_index]}_palette
-    declare -n current_theme_accents="$current_accents_name"
-    declare -n current_palette="$current_palette_name"
+	printf "%s:\n" "${theme_names[$theme_index]}"
 
-    check_exit
+	# yeah this is jank, bash was a mistake, but sunk cost fallacy
+	current_accents_name=${theme_names[$theme_index]}_accents_rgb
+	current_palette_name=${theme_names[$theme_index]}_palette
+	declare -n current_theme_accents="$current_accents_name"
+	declare -n current_palette="$current_palette_name"
 
-    perl -p -i -e "s/\\\\\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
+	# swap in the current palette
+	perl -p -i -e "s/\\\\\\\\ Palette placeholder/${current_palette}/g" ./catppuccin-base.xml
 
-    for colour_index in "${!palette_names[@]}"; do
-        check_exit
-        sed -i "s/theme-palette-placeholder/theme-${theme_names[$theme_index]}/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/accent-placeholder/accent-${palette_names[$colour_index]}/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/Accent=\"placeholder\"/Accent=\"${current_theme_accents[colour_index]}\"/g"   ./catppuccin-base.xml
+	for colour_index in "${!palette_names[@]}"; do
+		printf "  %s\n" "${palette_names[$colour_index]}"
+		swap_in_theme_and_accent
 
-        for bar_state in "${bar_states[@]}"; do
-            check_exit
+		for bar_state in "${bar_states[@]}"; do
+			swap_in_bar_state
 
-            if [ $bar_state = "bar-unaccented" ]; then
-                bar_state_underscored="bar_unaccented"
-                sed -i "s/bar-mono\./bar-unaccented_accent-${palette_names[$colour_index]}\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/bar-mono-accent-bar-placeholder/bar-unaccented_accent-none/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinForeground\"/g" ./catppuccin-base.xml
-                sed -i "s/SpectrumOff=\"Accent\"/SpectrumOff=\"CatppuccinBlack1\"/g"            ./catppuccin-base.xml
-                sed -i "s/SpectrumOn=\"CatppuccinBlack1\"/SpectrumOn=\"Accent\"/g"              ./catppuccin-base.xml
-                sed -i "s/WaveBarOn=\"CatppuccinBlack2\"/WaveBarOn=\"Accent\"/g"                ./catppuccin-base.xml
-                sed -i "s/WaveBarOff=\"Accent\"/WaveBarOff=\"CatppuccinBlack2\"/g"              ./catppuccin-base.xml
-                sed -i "s/StarRatingOn=\"CatppuccinForeground\"/StarRatingOn=\"Accent\"/g"      ./catppuccin-base.xml
-            else
-                bar_state_underscored="bar_accented"
-                sed -i "s/accent-bar-placeholder/accent-bar-${palette_names[$colour_index]}/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/\\\\\\\\ Bar text placeholder/MainPlayerText=\"CatppuccinBlack0\"/g"  ./catppuccin-base.xml
-            fi
+			sleep 0.5
+			# reload and save
+			xdotool key --window "$window_id" Control_L+r
+			sleep 0.1
+			xdotool key --window "$window_id" Control_L+s
 
-            # Activate the reload button, then activate the save button
-            xdotool key --window $window_id Enter
-            xdotool key --window $window_id Tab
-            xdotool key --window $window_id Enter
+			sleep 1
 
-            sleep 0.25
-            check_exit
-            # Move the caret to the very end of the text box
-            xdotool keydown --window $window_id ctrl
-            for i in {0..20}; do
-                xdotool key --window $window_id Right
-            done
-            # Select the name of the file and its parent folder so they can be retyped
-            xdotool key --window $window_id shift+Left
-            xdotool key --window $window_id shift+Left
-            xdotool keyup --window $window_id ctrl
+			# move the caret to the very end of the text box
+			for i in {0..20}; do
+				xdotool key --window "$window_id" Control_L+Right
+			done
 
-            # For some reason, specifying the window id causes it to type a minus instead of an underscore. ??????
-            # So check to make sure it's still the active window before continuing
-            check_exit
-            xdotool type --delay 5 \\output\\catppuccin_${theme_names[$theme_index]}_${palette_names[$colour_index]}_${bar_state_underscored}.xmlc
+			sleep 0.5
 
-            # Save
-            xdotool key --window $window_id Tab
-            xdotool key --window $window_id Tab
-            xdotool key --window $window_id Enter
+			# select the name of the file and its parent folder so they can be retyped
+			xdotool key --window "$window_id" Control_L+Shift_L+Left
+			xdotool key --window "$window_id" Control_L+Shift_L+Left
 
-            sleep 0.35
-            check_exit
-            # Move back to the reload button
-            xdotool key --window $window_id Shift+Tab
+			# using underscores so that the file name can be selected and replaced more easily
+			bar_state_underscored=$(echo "$bar_state" | sed 's/-/_/g')
 
-            if [ $bar_state = "bar-unaccented" ]; then
-                sed -i "s/bar-unaccented_accent-none/bar-mono-accent-bar-placeholder/g"         ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/bar-unaccented_accent-${palette_names[$colour_index]}\./bar-mono\./g" ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/MainPlayerText=\"CatppuccinForeground\"/\\\\\\\\ Bar text placeholder/g" ./catppuccin-base.xml
-                sed -i "s/SpectrumOn=\"Accent\"/SpectrumOn=\"CatppuccinBlack1\"/g"              ./catppuccin-base.xml
-                sed -i "s/SpectrumOff=\"CatppuccinBlack1\"/SpectrumOff=\"Accent\"/g"            ./catppuccin-base.xml
-                sed -i "s/WaveBarOff=\"CatppuccinBlack2\"/WaveBarOff=\"Accent\"/g"              ./catppuccin-base.xml
-                sed -i "s/WaveBarOn=\"Accent\"/WaveBarOn=\"CatppuccinBlack2\"/g"                ./catppuccin-base.xml
-                sed -i "s/StarRatingOn=\"Accent\"/StarRatingOn=\"CatppuccinForeground\"/g"      ./catppuccin-base.xml
-            else
-                sed -i "s/accent-bar-${palette_names[$colour_index]}/accent-bar-placeholder/g"  ./skin_wavebar.xml ./skin.xml ./skin.bak
-                sed -i "s/MainPlayerText=\"CatppuccinBlack0\"/\\\\\\\\ Bar text placeholder/g"  ./catppuccin-base.xml
-            fi
+			xdotool type --delay 5 \\output\\catppuccin_"${theme_names[$theme_index]}"_"${palette_names[$colour_index]}"_"${bar_state_underscored}".xmlc
+			#import -window root -quality 100 ../output/"${colour_index}"_"${theme_names[$theme_index]}"_"${palette_names[$colour_index]}"_"${bar_state_underscored}".jpg
+			sleep 0.5
 
-        done
+			# save
+			xdotool key --window "$window_id" Enter
 
-        sed -i "s/theme-${theme_names[$theme_index]}/theme-palette-placeholder/g"               ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/accent-${palette_names[$colour_index]}/accent-placeholder/g"                  ./catppuccin-base.xml ./skin_wavebar.xml ./skin.xml ./skin.bak
-        sed -i "s/Accent=\"${current_theme_accents[colour_index]}\"/Accent=\"placeholder\"/g"   ./catppuccin-base.xml
-    done
+			sleep 0.5
 
-    perl -0777 -p -i -e "s/${current_palette}/\\\\\\\\ Palette placeholder/g" ./catppuccin-base.xml
+			swap_out_bar_state
+		done
 
+		swap_out_theme_and_accent
+	done
+
+	# swap out the current palette
+	perl -0777 -p -i -e "s/${current_palette}/\\\\\\\\ Palette placeholder/g" ./catppuccin-base.xml
 done
 
-kill $pid
+sleep 5
 
+kill $SkinCreator_PID
+kill $Xvfb_PID
 cd ..
