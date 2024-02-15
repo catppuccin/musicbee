@@ -19,31 +19,31 @@
 
 A [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [MusicBee](https://getmusicbee.com/).
 
-Originally based on [this](https://github.com/dracula/musicbee) Dracula MusicBee theme, which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
+Originally based on the [Dracula MusicBee theme](https://github.com/dracula/musicbee), which is based on the [MaterialMix](https://getmusicbee.com/addons/skins/203/materialmix-hidpi-supported/) theme.
 
 ## Usage
 
 1. Download the `.xmlc` file for the palette and accent colour you want, and if you want the player controls panel to be accented or not, from [the releases](https://github.com/catppuccin/musicbee/releases/latest)
 2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
-3. Browse and select the downloaded `catppuccin-palette.xmlc` file
+3. Browse and select the downloaded `.xmlc` file
 4. MusicBee should restart with the selected theme applied
 
 ## Development
 
-The theme should now be mostly finished - I'm not aware of any issues with it myself, but further testing from other people is needed to make sure of this.
+The theme should be finished, but if you find an issue, or have any suggestions for improvements, please let me know!
 
 ### Things to do
 
--   [x] Basic theme
--   [x] Theme for each palette
--   [x] Themes for different accent colours in each palette
--   [x] Version without accented main bar
--   [x] Bring icons into theme
--   [ ] Any other general improvements
+- [x] Basic theme
+  - [x] For each palette
+  - [x] For each accent colour
+- [x] Build for both accented and unaccented main bar
+- [x] Theme icons
+- [ ] Any other improvements
 
 ## 💝 Thanks to
 
--   [James-McK](https://github.com/James-McK)
+- [James-McK](https://github.com/James-McK)
 
 &nbsp;
 
