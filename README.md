@@ -43,7 +43,7 @@ The theme should be finished, but if you find an issue, or have any suggestions 
 
 ## 💝 Thanks to
 
-- [James-McK](https://github.com/James-McK)
+- [autumn-mck](https://github.com/autumn-mck)
 
 &nbsp;
 
