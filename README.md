@@ -24,7 +24,7 @@ Originally based on the [Dracula MusicBee theme](https://github.com/dracula/musi
 ## Usage
 
 1. Download the `.xmlc` file for the palette and accent colour you want, and if you want the player controls panel to be accented or not, from [the releases](https://github.com/catppuccin/musicbee/releases/latest)
-2. In MusicBee, using the menu in the top-left go to Select Skin >> Add Skin
+2. In MusicBee, using the menu in the top-left go to View >> Skins >> Add Skin
 3. Browse and select the downloaded `.xmlc` file
 4. MusicBee should restart with the selected theme applied
 
