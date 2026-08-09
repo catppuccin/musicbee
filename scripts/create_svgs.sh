@@ -26,9 +26,11 @@ render_unaccented_directory() {
     for file in *.svg; do
         [[ -f "$file" ]] || continue
         echo "$file"
+        cp "$file" "$file.source"
 
         for i in "${!theme_names[@]}"; do
             echo "${theme_names[i]}"
+            cp "$file.source" "$file"
             sed -i "s/1e2030/${mantles_hex[i]}/g; s/494d64/${surface1s_hex[i]}/g; s/181926/${crusts_svgs_hex[i]}/g; s/a5adcb/${subtext0s_hex[i]}/g; s/cad3f5/${texts_hex[i]}/g; s/ed8796/${reds_hex[i]}/g" "$file"
 
             stem=${file%.svg}
@@ -38,9 +40,8 @@ render_unaccented_directory() {
                 scale_suffix=_${BASH_REMATCH[2]}
             fi
             inkscape "$file" -o "output/${stem}_theme-${theme_names[i]}${scale_suffix}.png"
-
-            sed -i "s/${mantles_hex[i]}/1e2030/g; s/${surface1s_hex[i]}/494d64/g; s/${crusts_svgs_hex[i]}/181926/g; s/${subtext0s_hex[i]}/a5adcb/g; s/${texts_hex[i]}/cad3f5/g; s/${reds_hex[i]}/ed8796/g" "$file"
         done
+        mv "$file.source" "$file"
     done
 
     mv output/* "$destination/"
