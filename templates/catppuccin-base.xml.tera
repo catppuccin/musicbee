@@ -1,3 +1,12 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+    - accent
+    - bar: ["mono", "unaccented"]
+  filename: ".build/skins/{{ flavor.identifier }}/{{ accent }}/{{ bar }}/catppuccin-base.xml"
+---
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<variables>
@@ -5,11 +14,30 @@
 
 		\\ https://github.com/catppuccin/catppuccin
 
-		\\ Palette placeholder
 
-		Accent="placeholder"
+		CatppuccinBlack0="{{ flavor.colors.crust.rgb.channels | join(sep=",") }}"
+		CatppuccinBlack1="{{ flavor.colors.mantle.rgb.channels | join(sep=",") }}"
+		CatppuccinBlack2="{{ flavor.colors.base.rgb.channels | join(sep=",") }}"
+		CatppuccinBlack3="{{ flavor.colors.surface0.rgb.channels | join(sep=",") }}"
+		InactiveIconMask="{% if flavor.light %}123{% else %}193{% endif %},{{ flavor.colors.surface0.rgb.channels | join(sep=",") }}"
+		CatppuccinBlack4="{{ flavor.colors.surface1.rgb.channels | join(sep=",") }}"
 
-		\\ Bar text placeholder
+		CatppuccinGray0="{{ flavor.colors.surface2.rgb.channels | join(sep=",") }}"
+		CatppuccinGray1="{{ flavor.colors.overlay0.rgb.channels | join(sep=",") }}"
+		CatppuccinGray2="{{ flavor.colors.overlay1.rgb.channels | join(sep=",") }}"
+		CatppuccinGray3="{{ flavor.colors.overlay2.rgb.channels | join(sep=",") }}"
+
+		CatppuccinGray4="{{ flavor.colors.subtext0.rgb.channels | join(sep=",") }}"
+		CatppuccinGray5="{{ flavor.colors.subtext1.rgb.channels | join(sep=",") }}"
+
+		CatppuccinForeground="{{ flavor.colors.text.rgb.channels | join(sep=",") }}"
+
+{% for _, color in flavor.colors %}{% if color.accent %}		Catppuccin{{ color.name | replace(from=" ", to="") }}="{{ color.rgb.channels | join(sep=",") }}"
+{% endif %}{% endfor %}
+		Accent="{{ flavor.colors[accent].rgb.channels | join(sep=",") }}"
+
+
+		MainPlayerText="{% if bar == "mono" %}CatppuccinBlack0{% else %}CatppuccinForeground{% endif %}"
 
 		Background="CatppuccinBlack2"
 		BackgroundDarker="CatppuccinBlack1"
@@ -48,13 +76,13 @@
 		Button-Disabled-Bdr="CatppuccinBlack3"
 		Button-Disabled-Fg="CatppuccinBlack4"
 
-		SpectrumOff="Accent"
-		SpectrumOn="CatppuccinBlack1"
+		SpectrumOff="{% if bar == "mono" %}Accent{% else %}CatppuccinBlack1{% endif %}"
+		SpectrumOn="{% if bar == "mono" %}CatppuccinBlack1{% else %}Accent{% endif %}"
 
-		WaveBarOff="Accent"
-		WaveBarOn="CatppuccinBlack2"
+		WaveBarOff="{% if bar == "mono" %}Accent{% else %}CatppuccinBlack2{% endif %}"
+		WaveBarOn="{% if bar == "mono" %}CatppuccinBlack2{% else %}Accent{% endif %}"
 
-		StarRatingOn="CatppuccinForeground"
+		StarRatingOn="{% if bar == "mono" %}CatppuccinForeground{% else %}Accent{% endif %}"
 		StarRatingOff="CatppuccinBlack2"
 	</variables>
 
@@ -439,64 +467,64 @@
 	</settings>
 
 	<images id="Default">
-		<element id="LargeTick">Images\Icons\LargeTick_theme-palette-placeholder_accent-placeholder.png</element>
-		<element id="CheckTick">Images\Icons\CheckTick_theme-palette-placeholder_accent-placeholder.png</element>
-		<element id="CheckTickDisabled">Images\Icons\CheckTickDisabled_theme-palette-placeholder_accent-placeholder.png</element>
-		<element id="CheckUnknown">Images\Icons\CheckUnknown_theme-palette-placeholder_accent-placeholder.png</element>
-		<element id="PlayingIcon.Default">Images\Icons\PlayingIcon_theme-palette-placeholder.png</element>
-		<element id="PlayingIcon.Highlight">Images\Icons\PlayingIcon_theme-palette-placeholder.png</element>
-		<element id="PausedIcon.Default">Images\Icons\PausedIcon_theme-palette-placeholder.png</element>
-		<element id="PausedIcon.Highlight">Images\Icons\PausedIcon_theme-palette-placeholder.png</element>
+		<element id="LargeTick">Images\Icons\LargeTick_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
+		<element id="CheckTick">Images\Icons\CheckTick_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
+		<element id="CheckTickDisabled">Images\Icons\CheckTickDisabled_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
+		<element id="CheckUnknown">Images\Icons\CheckUnknown_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
+		<element id="PlayingIcon.Default">Images\Icons\PlayingIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlayingIcon.Highlight">Images\Icons\PlayingIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PausedIcon.Default">Images\Icons\PausedIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PausedIcon.Highlight">Images\Icons\PausedIcon_theme-{{ flavor.identifier }}.png</element>
 
-		<element id="PanelBack">Images\Icons\PanelBack_theme-palette-placeholder.png</element>
-		<element id="PanelForward">Images\Icons\PanelForward_theme-palette-placeholder.png</element>
-		<element id="MusicLibrary">Images\Icons\MusicLibrary_theme-palette-placeholder.png</element>
-		<element id="BookmarksIcon">Images\Icons\BookmarksIcon_theme-palette-placeholder.png</element>
-		<element id="PodcastsIcon">Images\Icons\PodcastsIcon_theme-palette-placeholder.png</element>
-		<element id="AudiobooksIcon">Images\Icons\AudiobooksIcon_theme-palette-placeholder.png</element>
-		<element id="VideoIcon">Images\Icons\VideoIcon_theme-palette-placeholder.png</element>
-		<element id="RadioIcon">Images\Icons\RadioIcon_theme-palette-placeholder.png</element>
-		<element id="InboxIcon">Images\Icons\InboxIcon_theme-palette-placeholder.png</element>
-		<element id="PlayHistoryIcon">Images\Icons\PlayHistoryIcon_theme-palette-placeholder.png</element>
-		<element id="NowPlayingIcon">Images\Icons\NowPlayingIcon_theme-palette-placeholder.png</element>
-		<element id="PlaylistAutoIcon">Images\Icons\PlaylistAutoIcon_theme-palette-placeholder.png</element>
-		<element id="MusicExplorerIcon">Images\Icons\MusicExplorerIcon_theme-palette-placeholder.png</element>
-		<element id="PlaylistDirectoryIcon">Images\Icons\PlaylistDirectoryIcon_theme-palette-placeholder.png</element>
-		<element id="PlaylistAutoDjIcon">Images\Icons\PlaylistAutoDjIcon_theme-palette-placeholder.png</element>
-		<element id="TrackSearchIcon">Images\Icons\TrackSearchIcon_theme-palette-placeholder.png</element>
-		<element id="UpcomingReleasesIcon">Images\Icons\UpcomingReleasesIcon_theme-palette-placeholder.png</element>
-		<element id="UpcomingConcertsIcon">Images\Icons\UpcomingConcertsIcon_theme-palette-placeholder.png</element>
-		<element id="FolderIcon">Images\Icons\FolderIcon_theme-palette-placeholder.png</element>
-		<element id="PlaylistIcon">Images\Icons\PlaylistIcon_theme-palette-placeholder.png</element>
-		<element id="PlaylistMixerIcon">Images\Icons\PlaylistMixerIcon_theme-palette-placeholder.png</element>
-		<element id="Visualiser">Images\Icons\Visualiser_theme-palette-placeholder.png</element>
-		<element id="LastFmPluginIcon">Images\Icons\LastFmPluginIcon_theme-palette-placeholder.png</element>
-		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-palette-placeholder.png</element>
-		<element id="SearchResultsIcon">Images\Icons\SearchResultsIcon_theme-palette-placeholder.png</element>
-		<element id="AddTabIcon">Images\Icons\AddTabIcon_theme-palette-placeholder.png</element>
-		<element id="AddTabIconInCaptionBar">Images\Icons\AddTabIconInCaptionBar_theme-palette-placeholder.png</element>
-		<element id="Controls.WebLinkIcon">Images\Icons\ControlsWebLinkIcon_theme-palette-placeholder.png</element>
-		<element id="ConsolidateButtonsIcon">Images\Icons\ConsolidateButtonsIcon_theme-palette-placeholder.png</element>
-		<element id="NotificationIcon">Images\Icons\NotificationIcon_theme-palette-placeholder.png</element>
-		<element id="DownloadIndicatorIcon">Images\Icons\DownloadIndicatorIcon_theme-palette-placeholder.png</element>
-		<element id="ZeroRating_theme-palette-placeholder">Images\Icons\ZeroRating_theme-palette-placeholder.png</element>
-		<element id="EditSave">Images\Icons\EditSave_theme-palette-placeholder.png</element>
-		<element id="WebBrowserIcon">Images\Icons\WebBrowserIcon_theme-palette-placeholder.png</element>
-		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-palette-placeholder.png</element>
+		<element id="PanelBack">Images\Icons\PanelBack_theme-{{ flavor.identifier }}.png</element>
+		<element id="PanelForward">Images\Icons\PanelForward_theme-{{ flavor.identifier }}.png</element>
+		<element id="MusicLibrary">Images\Icons\MusicLibrary_theme-{{ flavor.identifier }}.png</element>
+		<element id="BookmarksIcon">Images\Icons\BookmarksIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PodcastsIcon">Images\Icons\PodcastsIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="AudiobooksIcon">Images\Icons\AudiobooksIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="VideoIcon">Images\Icons\VideoIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="RadioIcon">Images\Icons\RadioIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="InboxIcon">Images\Icons\InboxIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlayHistoryIcon">Images\Icons\PlayHistoryIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="NowPlayingIcon">Images\Icons\NowPlayingIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlaylistAutoIcon">Images\Icons\PlaylistAutoIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="MusicExplorerIcon">Images\Icons\MusicExplorerIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlaylistDirectoryIcon">Images\Icons\PlaylistDirectoryIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlaylistAutoDjIcon">Images\Icons\PlaylistAutoDjIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="TrackSearchIcon">Images\Icons\TrackSearchIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="UpcomingReleasesIcon">Images\Icons\UpcomingReleasesIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="UpcomingConcertsIcon">Images\Icons\UpcomingConcertsIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="FolderIcon">Images\Icons\FolderIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlaylistIcon">Images\Icons\PlaylistIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="PlaylistMixerIcon">Images\Icons\PlaylistMixerIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="Visualiser">Images\Icons\Visualiser_theme-{{ flavor.identifier }}.png</element>
+		<element id="LastFmPluginIcon">Images\Icons\LastFmPluginIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="SearchResultsIcon">Images\Icons\SearchResultsIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="AddTabIcon">Images\Icons\AddTabIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="AddTabIconInCaptionBar">Images\Icons\AddTabIconInCaptionBar_theme-{{ flavor.identifier }}.png</element>
+		<element id="Controls.WebLinkIcon">Images\Icons\ControlsWebLinkIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="ConsolidateButtonsIcon">Images\Icons\ConsolidateButtonsIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="NotificationIcon">Images\Icons\NotificationIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="DownloadIndicatorIcon">Images\Icons\DownloadIndicatorIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="ZeroRating_theme-{{ flavor.identifier }}">Images\Icons\ZeroRating_theme-{{ flavor.identifier }}.png</element>
+		<element id="EditSave">Images\Icons\EditSave_theme-{{ flavor.identifier }}.png</element>
+		<element id="WebBrowserIcon">Images\Icons\WebBrowserIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="SearchMenuButton">Images\Icons\SearchMenuButton_theme-{{ flavor.identifier }}.png</element>
 
-		<element id="DeviceReadyIcon">Images\Icons\DeviceReadyIcon_theme-palette-placeholder.png</element>
-		<element id="NetworkDriveIcon">Images\Icons\NetworkDriveIcon_theme-palette-placeholder.png</element>
-		<element id="OpticalDriveIcon">Images\Icons\OpticalDriveIcon_theme-palette-placeholder.png</element>
-		<element id="StorageIcon">Images\Icons\StorageIcon_theme-palette-placeholder.png</element>
-		<element id="UsbDeviceIcon">Images\Icons\UsbDeviceIcon_theme-palette-placeholder.png</element>
-		<element id="WpdDeviceIcon">Images\Icons\WpdDeviceIcon_theme-palette-placeholder.png</element>
+		<element id="DeviceReadyIcon">Images\Icons\DeviceReadyIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="NetworkDriveIcon">Images\Icons\NetworkDriveIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="OpticalDriveIcon">Images\Icons\OpticalDriveIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="StorageIcon">Images\Icons\StorageIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="UsbDeviceIcon">Images\Icons\UsbDeviceIcon_theme-{{ flavor.identifier }}.png</element>
+		<element id="WpdDeviceIcon">Images\Icons\WpdDeviceIcon_theme-{{ flavor.identifier }}.png</element>
 
-		<element id="PanelLayout">Images\Icons\PanelLayout_theme-palette-placeholder.png</element>
-		<element id="AlertIcon">Images\Icons\AlertIcon_theme-palette-placeholder.png</element>
+		<element id="PanelLayout">Images\Icons\PanelLayout_theme-{{ flavor.identifier }}.png</element>
+		<element id="AlertIcon">Images\Icons\AlertIcon_theme-{{ flavor.identifier }}.png</element>
 
-		<element id="LastFmLove">Images\Icons\LastFmLove_theme-palette-placeholder_accent-placeholder.png</element>
-		<element id="LastFmNotLove">Images\Icons\LastFmNotLove_theme-palette-placeholder.png</element>
-		<element id="LastFmLoveSelected">Images\Icons\LastFmLove_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="LastFmLove">Images\Icons\LastFmLove_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
+		<element id="LastFmNotLove">Images\Icons\LastFmNotLove_theme-{{ flavor.identifier }}.png</element>
+		<element id="LastFmLoveSelected">Images\Icons\LastFmLove_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
 
 		<element id="PlayerLastFmLove">Images\Controls\CompactPlayerLastFmLove.png</element>
 
@@ -528,29 +556,29 @@
 		</element>
 
 		<!-- Window Borders -->
-		<element id="FormBorderBottom">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderBottomLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderBottomRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderTop">Images\Window\FormBorderTop_theme-palette-placeholder.png</element>
-		<element id="FormBorderTopLeft">Images\Window\Placeholder_theme-palette-placeholder.png</element>
-		<element id="FormBorderTopRight">Images\Window\Placeholder_theme-palette-placeholder.png</element>
+		<element id="FormBorderBottom">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderBottomLeft">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderBottomRight">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderLeft">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderRight">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderTop">Images\Window\FormBorderTop_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderTopLeft">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormBorderTopRight">Images\Window\Placeholder_theme-{{ flavor.identifier }}.png</element>
 
 		<!-- Window Buttons -->
-		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-palette-placeholder.png</element>
-		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-palette-placeholder.png</element>
-		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-palette-placeholder.png</element>
-		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-palette-placeholder.png</element>
-		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-palette-placeholder.png</element>
-		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-palette-placeholder.png</element>
-		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-palette-placeholder.png</element>
-		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-palette-placeholder.png</element>
+		<element id="FormMinimiseButton">Images\Window\FormMinimiseButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormMinimiseHighlightButton">Images\Window\FormMinimiseHighlightButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormMaximiseButton">Images\Window\FormMaximiseButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormMaximiseHighlightButton">Images\Window\FormMaximiseHighlightButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormRestoreButton">Images\Window\FormRestoreButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormRestoreHighlightButton">Images\Window\FormRestoreHighlightButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormCloseButton">Images\Window\FormCloseButton_theme-{{ flavor.identifier }}.png</element>
+		<element id="FormCloseHighlightButton">Images\Window\FormCloseHighlightButton_theme-{{ flavor.identifier }}.png</element>
 
-		<element id="NoArtwork">Images\Others\NoArtwork_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="NoArtwork">Images\Others\NoArtwork_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
 		<element id="SplashScreen">Images\Others\SplashScreen.png</element>
-		<element id="UnknownArtist">Images\Others\UnknownArtist_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="UnknownArtist">Images\Others\UnknownArtist_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
 		<element id="DragIcon">Images\Others\DragIcon.png</element>
-		<element id="UnknownAlbumIcon">Images\Others\NoArtwork_theme-palette-placeholder_accent-placeholder.png</element>
+		<element id="UnknownAlbumIcon">Images\Others\NoArtwork_theme-{{ flavor.identifier }}_accent-{{ accent }}.png</element>
 	</images>
 </root>
